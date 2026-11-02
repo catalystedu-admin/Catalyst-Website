@@ -1,0 +1,14 @@
+{
+  "name": "catalyst-education-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catalyst Education — Ignite Potential. Engineer Excellence.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
+    "build:watch": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch",
+    "preview": "npx --yes serve -l 8765 ."
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

@@ -1,0 +1,2 @@
+# Only allow PHP endpoints in this folder; deny directory listing
+Options -Indexes

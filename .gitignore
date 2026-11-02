@@ -1,0 +1,9 @@
+node_modules/
+storage/*.log
+*.log
+.DS_Store
+Thumbs.db
+.sf/
+_*.js
+.env
+.env.*
