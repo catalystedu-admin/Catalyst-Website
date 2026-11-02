@@ -13,6 +13,12 @@ const CatalystApp = (function () {
                     phone: '+91 91631 94805',
                     mapShortUrl: 'https://maps.app.goo.gl/uCdQUWaw2RVJAuqQA'
                 },
+                // Paste Google Form embed URLs here (Send → <> Embed → copy src="...")
+                // Example: 'https://docs.google.com/forms/d/e/XXXX/viewform?embedded=true'
+                googleForms: {
+                    enquiry: '',
+                    mockTest: ''
+                },
                 features: {
                     autoOpenMockPopup: false
                 }
@@ -47,8 +53,8 @@ const CatalystApp = (function () {
                         badgeStyle: 'bg-[#FFF3B0] text-midnight border-[#F2D06B]',
                         headline: 'Festival Scholarship & Test Series Offer',
                         subheadline: 'Special Seasonal Benefits on Target 2027 Final Board Mock Test Series (ICSE, CBSE & WBBSE)',
-                        description: 'Avail seasonal scholarship waivers on our structured Class X & XII Final Board Mock Test Series and 1:6 Batch Focus programmes. Valid for current festival registrations.',
-                        boardsPill: ['Diwali & Christmas Seasonal Offer', 'Target 2027 Mock Series', 'Limited Validity'],
+                        description: 'Seasonal benefits on Class X & XII Final Board Mock Test Series and 1:6 Batch Focus programmes. Contact us for current offer details and fees.',
+                        boardsPill: ['Seasonal Offer', 'Target 2027 Mock Series', 'Contact for Details'],
                         ctaLabel: 'Explore Offer',
                         ctaActionType: 'scroll-goal',
                         ctaBoardDefault: 'CBSE',
@@ -57,7 +63,7 @@ const CatalystApp = (function () {
                         themeGradient: 'from-[#4A1525] via-[#881337] to-[#16233B]',
                         artworkTag: 'Seasonal Promotional Offer',
                         highlightBoxTitle: 'Festive Enrolment Benefits',
-                        highlightBoxSub: 'Applicable on Target 2027 Final Board Mock Test Series'
+                        highlightBoxSub: 'Ask us for current offer details & fees'
                     },
                     {
                         id: 'banner-3-new-courses',
@@ -127,10 +133,11 @@ const CatalystApp = (function () {
                                 name: 'Target 2027 CISCE — Final Board Mock Test Series',
                                 targetAudience: 'Class X students preparing for the ICSE board examination in 2027.',
                                 purpose: 'Structured mock test practice for the final board examinations.',
-                                priceDisplay: 'To be announced upon schedule release',
+                                priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'Full-Length CISCE Pattern Mock Papers',
-                                ctaLabel: 'Explore Test Series',
-                                secondaryCtaLabel: 'Enrol Now',
+                                ctaLabel: 'Ask for fees & schedule',
+                                secondaryCtaLabel: 'WhatsApp Us',
+                                whatsapp: true,
                                 boardCode: 'ICSE'
                             }
                         ]
@@ -162,10 +169,11 @@ const CatalystApp = (function () {
                                 name: 'Target 2027 CBSE — Final Board Mock Test Series',
                                 targetAudience: 'Class X CBSE students preparing for the 2027 board examination.',
                                 purpose: 'Structured board-pattern mock test practice.',
-                                priceDisplay: 'To be announced upon schedule release',
+                                priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'Latest NCERT & CBSE Competency Pattern',
-                                ctaLabel: 'Explore Test Series',
-                                secondaryCtaLabel: 'Enrol Now',
+                                ctaLabel: 'Ask for fees & schedule',
+                                secondaryCtaLabel: 'WhatsApp Us',
+                                whatsapp: true,
                                 boardCode: 'CBSE'
                             }
                         ]
@@ -197,11 +205,35 @@ const CatalystApp = (function () {
                                 name: 'Target 2027 WBBSE — Final Board Mock Test Series',
                                 targetAudience: 'Class X WBBSE students preparing for the 2027 board examination.',
                                 purpose: 'Structured practice through board-oriented mock tests.',
-                                priceDisplay: 'To be announced upon schedule release',
+                                priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'WBBSE Madhyamik Pattern • English & Bengali Medium',
-                                ctaLabel: 'Explore Test Series',
-                                secondaryCtaLabel: 'Enrol Now',
+                                ctaLabel: 'Ask for fees & schedule',
+                                secondaryCtaLabel: 'WhatsApp Us',
+                                whatsapp: true,
                                 boardCode: 'WBBSE'
+                            }
+                        ]
+                    },
+                    CLASS12: {
+                        key: 'CLASS12',
+                        pageTitle: 'Class 12 Programmes',
+                        breadcrumb: 'Class 12 Programmes',
+                        subtitle: 'Mock test series and 1:6 batch support for ISC, CBSE Class 12, and WBCHSE — contact us for fees and schedule.',
+                        programmes: [
+                            {
+                                id: 'class12-prog-mock',
+                                type: 'PAID',
+                                badgeText: 'CLASS 12 • FINAL SERIES',
+                                subBadgeText: 'ISC • CBSE • WBCHSE',
+                                name: 'Target 2027 — Class 12 Board Mock Test Series',
+                                targetAudience: 'Class 11–12 students preparing for ISC, CBSE, or WBCHSE examinations.',
+                                purpose: 'Full-length board-pattern practice with script evaluation and doubt clearing.',
+                                priceDisplay: 'Contact us for fees & schedule',
+                                highlightNote: 'Physics, Chemistry, Maths, Biology tracks',
+                                ctaLabel: 'Ask for fees & schedule',
+                                secondaryCtaLabel: 'WhatsApp Us',
+                                boardCode: 'CLASS12',
+                                whatsapp: true
                             }
                         ]
                     },
@@ -249,8 +281,8 @@ const CatalystApp = (function () {
                     {
                         id: 'fac-slot-2',
                         active: true,
-                        name: 'Senior Science Panel',
-                        role: 'Physics, Chemistry & Biology Specialists',
+                        name: 'Science Faculty Panel',
+                        role: 'Physics, Chemistry & Biology mentors',
                         specialization: 'Numerical problem-solving, diagram precision & board marking scheme audits',
                         experience: 'ICSE, ISC, CBSE, WBBSE & WBCHSE',
                         badge: 'Subject Panel'
@@ -258,8 +290,8 @@ const CatalystApp = (function () {
                     {
                         id: 'fac-slot-3',
                         active: true,
-                        name: 'Mathematics & Foundation Panel',
-                        role: 'Pure Mathematics & Analytical Reasoning',
+                        name: 'Mathematics Faculty Panel',
+                        role: 'Mathematics & analytical reasoning mentors',
                         specialization: 'Step-marking optimization, speed drills & post-test doubt clearing',
                         experience: 'Classes 9 to 12 • All Boards',
                         badge: 'Subject Panel'
@@ -440,6 +472,8 @@ const CatalystApp = (function () {
             const QUIZ_STORAGE_KEY_11_12 = 'catalyst_used_q_ids_11_12_v2';
             let activeBannerIndex = 0;
             let bannerAutoTimer = null;
+            let carouselDirection = 1;
+            let carouselAnimating = false;
             let activeBoardProgrammeKey = null;
             let activeCountdownBoard = 'CBSE';
             let activeSyllabusBoard = 'ICSE10';
@@ -456,53 +490,46 @@ const CatalystApp = (function () {
                 return (ContentStore.banners || []).filter(function (b) { return b.active !== false; });
             }
 
-            function renderBannerCarousel() {
-                const viewport = document.getElementById('hero-carousel-viewport');
-                const dotsContainer = document.getElementById('carousel-dots');
-                const counterBadge = document.getElementById('carousel-counter-badge');
-                if (!viewport) return;
+            function prefersReducedMotion() {
+                return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            }
 
-                const slides = getActiveBanners();
-                if (!slides.length) return;
-                if (activeBannerIndex >= slides.length) activeBannerIndex = 0;
-                if (activeBannerIndex < 0) activeBannerIndex = slides.length - 1;
-
-                const slide = slides[activeBannerIndex];
+            function buildBannerSlideInnerHtml(slide) {
                 const pillsHtml = (slide.boardsPill || []).map(function (p) {
                     return '<span class="bg-white/15 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">' + p + '</span>';
                 }).join('');
 
-                viewport.innerHTML =
-                    '<div class="w-full h-full bg-gradient-to-r ' + slide.themeGradient + ' text-white px-12 sm:px-16 md:px-20 py-10 sm:py-12 transition-all duration-300">' +
-                        '<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">' +
-                            '<div class="lg:col-span-8 space-y-4">' +
+                return (
+                    '<div class="carousel-slide-inner w-full h-full bg-gradient-to-r ' + slide.themeGradient + ' text-white px-12 sm:px-16 md:px-20">' +
+                        '<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center h-full py-8 sm:py-9">' +
+                            '<div class="lg:col-span-8 space-y-3 sm:space-y-3.5 min-w-0">' +
                                 '<div class="flex flex-wrap items-center gap-2">' +
                                     '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-extrabold border ' + slide.badgeStyle + '">' +
                                         '<i class="fa-solid fa-bullhorn"></i><span>' + slide.badge + '</span>' +
                                     '</span>' +
                                 '</div>' +
-                                '<h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-logoYellow leading-tight"' + ( /[\u0980-\u09FF]/.test(slide.headline) ? ' lang="bn"' : '' ) + '>' + slide.headline + '</h2>' +
-                                '<p class="text-sm sm:text-lg font-bold text-white">' + slide.subheadline + '</p>' +
-                                '<p class="text-xs sm:text-sm text-gray-200 max-w-2xl leading-relaxed">' + slide.description + '</p>' +
-                                '<div class="flex flex-wrap items-center gap-2 pt-1">' + pillsHtml + '</div>' +
-                                '<div class="pt-3 flex flex-wrap items-center gap-3">' +
-                                    '<button type="button" onclick="CatalystApp.triggerBannerCta(\'' + slide.ctaActionType + '\', \'' + slide.ctaBoardDefault + '\')" class="bg-[#15803D] hover:bg-[#166534] text-white font-extrabold px-6 py-3.5 rounded-2xl shadow-lg transition text-xs sm:text-sm cursor-pointer flex items-center gap-2 border border-[#86EFAC]/40">' +
+                                '<h2 class="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-logoYellow leading-tight"' + ( /[\u0980-\u09FF]/.test(slide.headline) ? ' lang="bn"' : '' ) + '>' + slide.headline + '</h2>' +
+                                '<p class="text-sm sm:text-base font-bold text-white line-clamp-2">' + slide.subheadline + '</p>' +
+                                '<p class="text-xs sm:text-sm text-gray-200 max-w-2xl leading-relaxed line-clamp-2">' + slide.description + '</p>' +
+                                '<div class="flex flex-wrap items-center gap-2">' + pillsHtml + '</div>' +
+                                '<div class="pt-1 flex flex-wrap items-center gap-3">' +
+                                    '<button type="button" onclick="CatalystApp.triggerBannerCta(\'' + slide.ctaActionType + '\', \'' + slide.ctaBoardDefault + '\')" class="bg-[#15803D] hover:bg-[#166534] text-white font-extrabold px-5 py-3 rounded-2xl shadow-lg transition text-xs sm:text-sm cursor-pointer flex items-center gap-2 border border-[#86EFAC]/40">' +
                                         '<span>' + slide.ctaLabel + '</span><i class="fa-solid fa-arrow-right text-logoYellow"></i>' +
                                     '</button>' +
-                                    '<a href="' + (slide.secondaryTarget || '#select-your-goal') + '" class="bg-white/10 hover:bg-white/20 text-white font-bold px-5 py-3.5 rounded-2xl border border-white/25 transition text-xs sm:text-sm">' +
+                                    '<a href="' + (slide.secondaryTarget || '#select-your-goal') + '" class="bg-white/10 hover:bg-white/20 text-white font-bold px-5 py-3 rounded-2xl border border-white/25 transition text-xs sm:text-sm">' +
                                         (slide.secondaryLabel || 'Select Your Goal') +
                                     '</a>' +
                                 '</div>' +
                             '</div>' +
                             '<div class="lg:col-span-4 hidden lg:block">' +
-                                '<div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border-2 border-logoYellow/60 shadow-xl space-y-4 text-left">' +
-                                    '<div class="flex items-center justify-between">' +
+                                '<div class="bg-white/10 backdrop-blur-md rounded-3xl p-5 border-2 border-logoYellow/60 shadow-xl space-y-3 text-left">' +
+                                    '<div class="flex items-center justify-between gap-2">' +
                                         '<span class="bg-[#DCFCE7] text-[#15803D] text-xs font-extrabold px-3 py-1 rounded-full">TARGET 2027</span>' +
                                         '<span class="text-xs font-bold text-logoYellow">ICSE • CBSE • WBBSE</span>' +
                                     '</div>' +
                                     '<div class="space-y-1">' +
-                                        '<div class="text-lg font-extrabold text-white">' + slide.highlightBoxTitle + '</div>' +
-                                        '<p class="text-xs text-gray-200">' + slide.highlightBoxSub + '</p>' +
+                                        '<div class="text-base font-extrabold text-white line-clamp-2">' + slide.highlightBoxTitle + '</div>' +
+                                        '<p class="text-xs text-gray-200 line-clamp-2">' + slide.highlightBoxSub + '</p>' +
                                     '</div>' +
                                     '<div class="border-t border-white/15 pt-3 space-y-2 text-xs text-gray-100">' +
                                         '<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4ADE80]"></i><span>Class X Board-Pattern Question Papers</span></div>' +
@@ -512,12 +539,19 @@ const CatalystApp = (function () {
                                 '</div>' +
                             '</div>' +
                         '</div>' +
-                    '</div>';
+                    '</div>'
+                );
+            }
 
+            function updateCarouselChrome(slides) {
+                const dotsContainer = document.getElementById('carousel-dots');
+                const counterBadge = document.getElementById('carousel-counter-badge');
                 if (dotsContainer) {
                     dotsContainer.innerHTML = slides.map(function (s, idx) {
-                        const cls = idx === activeBannerIndex ? 'w-8 bg-logoYellow' : 'w-2.5 bg-white/50 hover:bg-white';
-                        return '<button type="button" onclick="CatalystApp.goToBanner(' + idx + ')" aria-label="Slide ' + (idx + 1) + '" class="h-2.5 rounded-full transition-all cursor-pointer ' + cls + '"></button>';
+                        const cls = idx === activeBannerIndex
+                            ? 'carousel-dot h-2.5 w-8 bg-logoYellow'
+                            : 'carousel-dot h-2.5 w-2.5 bg-white/50 hover:bg-white';
+                        return '<button type="button" onclick="CatalystApp.goToBanner(' + idx + ')" aria-label="Slide ' + (idx + 1) + '" class="rounded-full cursor-pointer ' + cls + '"></button>';
                     }).join('');
                 }
                 if (counterBadge) {
@@ -525,9 +559,63 @@ const CatalystApp = (function () {
                 }
             }
 
-            function nextBanner() {
+            function renderBannerCarousel(options) {
+                const viewport = document.getElementById('hero-carousel-viewport');
+                if (!viewport) return;
+
                 const slides = getActiveBanners();
                 if (!slides.length) return;
+                if (activeBannerIndex >= slides.length) activeBannerIndex = 0;
+                if (activeBannerIndex < 0) activeBannerIndex = slides.length - 1;
+
+                const slide = slides[activeBannerIndex];
+                const animate = !(options && options.immediate) && !prefersReducedMotion() && viewport.querySelector('.carousel-slide');
+                updateCarouselChrome(slides);
+
+                const incoming = document.createElement('div');
+                incoming.className = 'carousel-slide';
+                incoming.innerHTML = buildBannerSlideInnerHtml(slide);
+
+                if (!animate) {
+                    viewport.innerHTML = '';
+                    incoming.classList.add('is-active');
+                    viewport.appendChild(incoming);
+                    carouselAnimating = false;
+                    return;
+                }
+
+                if (carouselAnimating) return;
+                carouselAnimating = true;
+
+                const outgoing = viewport.querySelector('.carousel-slide.is-active');
+                const enterClass = carouselDirection >= 0 ? 'is-enter-right' : 'is-enter-left';
+                const exitClass = carouselDirection >= 0 ? 'is-exit-left' : 'is-exit-right';
+
+                incoming.classList.add(enterClass);
+                viewport.appendChild(incoming);
+
+                // Force reflow so the enter transition runs
+                void incoming.offsetWidth;
+
+                incoming.classList.remove(enterClass);
+                incoming.classList.add('is-active');
+
+                if (outgoing) {
+                    outgoing.classList.remove('is-active');
+                    outgoing.classList.add(exitClass);
+                    setTimeout(function () {
+                        if (outgoing.parentNode) outgoing.parentNode.removeChild(outgoing);
+                        carouselAnimating = false;
+                    }, 560);
+                } else {
+                    carouselAnimating = false;
+                }
+            }
+
+            function nextBanner() {
+                const slides = getActiveBanners();
+                if (!slides.length || carouselAnimating) return;
+                carouselDirection = 1;
                 activeBannerIndex = (activeBannerIndex + 1) % slides.length;
                 renderBannerCarousel();
                 resetBannerAutoTimer();
@@ -535,7 +623,8 @@ const CatalystApp = (function () {
 
             function prevBanner() {
                 const slides = getActiveBanners();
-                if (!slides.length) return;
+                if (!slides.length || carouselAnimating) return;
+                carouselDirection = -1;
                 activeBannerIndex = (activeBannerIndex - 1 + slides.length) % slides.length;
                 renderBannerCarousel();
                 resetBannerAutoTimer();
@@ -543,24 +632,74 @@ const CatalystApp = (function () {
 
             function goToBanner(index) {
                 const slides = getActiveBanners();
-                if (index >= 0 && index < slides.length) {
-                    activeBannerIndex = index;
-                    renderBannerCarousel();
-                    resetBannerAutoTimer();
+                if (index < 0 || index >= slides.length || index === activeBannerIndex || carouselAnimating) return;
+                carouselDirection = index > activeBannerIndex ? 1 : -1;
+                activeBannerIndex = index;
+                renderBannerCarousel();
+                resetBannerAutoTimer();
+            }
+
+            function stopBannerAutoTimer() {
+                if (bannerAutoTimer) {
+                    clearTimeout(bannerAutoTimer);
+                    bannerAutoTimer = null;
                 }
             }
 
+            function advanceBannerAuto() {
+                const activeSlides = getActiveBanners();
+                if (activeSlides.length < 2 || carouselAnimating) return;
+                carouselDirection = 1;
+                activeBannerIndex = (activeBannerIndex + 1) % activeSlides.length;
+                renderBannerCarousel();
+            }
+
             function resetBannerAutoTimer() {
-                if (bannerAutoTimer) clearInterval(bannerAutoTimer);
-                const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-                if (prefersReducedMotion) return;
-                bannerAutoTimer = setInterval(function () {
-                    const slides = getActiveBanners();
-                    if (slides.length > 1) {
-                        activeBannerIndex = (activeBannerIndex + 1) % slides.length;
-                        renderBannerCarousel();
+                stopBannerAutoTimer();
+                const slides = getActiveBanners();
+                if (slides.length < 2) return;
+
+                // Always auto-rotate (hover no longer pauses — that felt broken while watching)
+                bannerAutoTimer = setTimeout(function tick() {
+                    if (!document.hidden) {
+                        advanceBannerAuto();
                     }
-                }, 7000);
+                    bannerAutoTimer = setTimeout(tick, 4000);
+                }, 4000);
+            }
+
+            function bindBannerAutoplayControls() {
+                if (document.documentElement.getAttribute('data-banner-autoplay-bound') === 'true') return;
+                document.documentElement.setAttribute('data-banner-autoplay-bound', 'true');
+
+                document.addEventListener('visibilitychange', function () {
+                    if (document.hidden) stopBannerAutoTimer();
+                    else resetBannerAutoTimer();
+                });
+            }
+
+            function bindScrollReveals() {
+                const nodes = document.querySelectorAll('.reveal-on-scroll');
+                if (!nodes.length) return;
+
+                if (prefersReducedMotion() || !('IntersectionObserver' in window)) {
+                    Array.prototype.forEach.call(nodes, function (el) {
+                        el.classList.add('is-visible');
+                    });
+                    return;
+                }
+
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+                Array.prototype.forEach.call(nodes, function (el) {
+                    observer.observe(el);
+                });
             }
 
             function triggerBannerCta(actionType, boardDefault) {
@@ -591,7 +730,7 @@ const CatalystApp = (function () {
                 subEl.textContent = boardData.subtitle;
                 breadEl.textContent = boardData.breadcrumb;
 
-                ['ICSE', 'CBSE', 'WBBSE', 'FOUNDATION'].forEach(function (k) {
+                ['ICSE', 'CBSE', 'WBBSE', 'CLASS12', 'FOUNDATION'].forEach(function (k) {
                     const tabBtn = document.getElementById('board-tab-' + k);
                     if (tabBtn) {
                         tabBtn.className = (k === normalizedKey)
@@ -599,6 +738,15 @@ const CatalystApp = (function () {
                             : 'px-3.5 py-2 rounded-xl text-xs font-extrabold text-slateText hover:bg-white transition cursor-pointer';
                     }
                 });
+
+                try {
+                    const hashKey = normalizedKey.toLowerCase();
+                    if (history && history.replaceState) {
+                        history.replaceState(null, '', '#programmes/' + hashKey);
+                    } else {
+                        location.hash = 'programmes/' + hashKey;
+                    }
+                } catch (e) { /* ignore */ }
 
                 if (normalizedKey === 'FOUNDATION') {
                     const fProg = boardData.programmes[0];
@@ -664,6 +812,12 @@ const CatalystApp = (function () {
                                 '</article>'
                             );
                         }
+                        const waText = encodeURIComponent('Hi Catalyst Education, I want fees and schedule for ' + prog.name + ' (' + prog.boardCode + ').');
+                        const secondaryBtn = prog.whatsapp
+                            ? ('<a href="https://wa.me/919163194805?text=' + waText + '" target="_blank" rel="noopener noreferrer" class="w-full sm:w-1/2 bg-white hover:bg-[#DCFCE7] text-[#15803D] border-2 border-[#15803D] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
+                                '<i class="fa-brands fa-whatsapp"></i><span>' + (prog.secondaryCtaLabel || 'WhatsApp Us') + '</span></a>')
+                            : ('<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name.replace(/'/g, "\\'") + '\')" class="w-full sm:w-1/2 bg-white hover:bg-[#DBEAFE] text-[#1D3B8B] border-2 border-[#1D3B8B] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
+                                '<span>' + (prog.secondaryCtaLabel || 'Contact for fees') + '</span><i class="fa-solid fa-arrow-right text-xs"></i></button>');
                         return (
                             '<article class="rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#EFF6FF] to-white border-2 border-[#1D3B8B] shadow-soothing flex flex-col justify-between space-y-5 relative">' +
                                 '<div class="space-y-4">' +
@@ -674,22 +828,20 @@ const CatalystApp = (function () {
                                         '<span class="bg-[#DBEAFE] text-[#1D3B8B] text-xs font-extrabold px-3 py-1 rounded-full border border-[#93C5FD]">' + prog.subBadgeText + '</span>' +
                                     '</div>' +
                                     '<div>' +
-                                        '<div class="text-[11px] font-extrabold uppercase tracking-wider text-soothingBlue">Programme B — Paid Programme</div>' +
+                                        '<div class="text-[11px] font-extrabold uppercase tracking-wider text-soothingBlue">Paid Programme — Contact for Fees</div>' +
                                         '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight mt-1">' + prog.name + '</h4>' +
                                     '</div>' +
                                     '<div class="space-y-2.5 text-xs sm:text-sm text-slateText border-t border-[#BFDBFE] pt-4">' +
                                         '<div><strong class="text-midnight">Target Audience:</strong> ' + prog.targetAudience + '</div>' +
                                         '<div><strong class="text-midnight">Purpose:</strong> ' + prog.purpose + '</div>' +
-                                        '<div><strong class="text-midnight">Price:</strong> <span class="text-soothingBlue font-bold">' + prog.priceDisplay + '</span></div>' +
+                                        '<div><strong class="text-midnight">Fees:</strong> <span class="text-soothingBlue font-bold">' + prog.priceDisplay + '</span></div>' +
                                     '</div>' +
                                 '</div>' +
                                 '<div class="pt-4 border-t border-[#BFDBFE] flex flex-wrap sm:flex-nowrap items-center gap-3">' +
-                                    '<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name + '\')" class="w-full sm:w-1/2 bg-[#1D3B8B] hover:bg-midnight text-white font-extrabold py-3.5 px-4 rounded-2xl shadow-md transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
-                                        '<i class="fa-solid fa-compass text-logoYellow"></i><span>' + prog.ctaLabel + '</span>' +
+                                    '<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name.replace(/'/g, "\\'") + '\')" class="w-full sm:w-1/2 bg-[#1D3B8B] hover:bg-midnight text-white font-extrabold py-3.5 px-4 rounded-2xl shadow-md transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
+                                        '<i class="fa-solid fa-comments text-logoYellow"></i><span>' + (prog.ctaLabel || 'Ask for fees & schedule') + '</span>' +
                                     '</button>' +
-                                    '<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name + '\')" class="w-full sm:w-1/2 bg-white hover:bg-[#DBEAFE] text-[#1D3B8B] border-2 border-[#1D3B8B] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
-                                        '<span>' + (prog.secondaryCtaLabel || 'Enrol Now') + '</span><i class="fa-solid fa-arrow-right text-xs"></i>' +
-                                    '</button>' +
+                                    secondaryBtn +
                                 '</div>' +
                             '</article>'
                         );
@@ -704,6 +856,12 @@ const CatalystApp = (function () {
                 const pageContainer = document.getElementById('board-programme-page-view');
                 if (pageContainer) pageContainer.classList.add('hidden');
                 activeBoardProgrammeKey = null;
+                try {
+                    if (history && history.replaceState) {
+                        const path = location.pathname + location.search;
+                        history.replaceState(null, '', path + (scrollToGoals ? '#select-your-goal' : '#hero'));
+                    }
+                } catch (e) { /* ignore */ }
                 if (scrollToGoals) {
                     const goalSec = document.getElementById('select-your-goal');
                     if (goalSec) goalSec.scrollIntoView({ behavior: 'smooth' });
@@ -712,11 +870,30 @@ const CatalystApp = (function () {
 
             function enrolPaidSeries(boardCode, programmeName) {
                 const msgField = document.getElementById('contact-message');
+                const boardSel = document.getElementById('contact-board');
+                const classSel = document.getElementById('contact-class');
                 if (msgField) {
-                    msgField.value = 'Enquiry for Paid Programme: ' + programmeName + ' (' + boardCode + ' Class X). Please share test schedule and enrolment details once finalised.';
+                    msgField.value = 'Please share fees and schedule for: ' + programmeName + ' (' + boardCode + ').';
+                }
+                if (boardSel) {
+                    const map = { ICSE: 'ICSE', CBSE: 'CBSE', WBBSE: 'WBBSE', CLASS12: 'CLASS12', WBCHSE: 'WBCHSE' };
+                    boardSel.value = map[boardCode] || boardCode || '';
+                }
+                if (classSel) {
+                    classSel.value = (boardCode === 'CLASS12' || boardCode === 'WBCHSE') ? '12' : '10';
                 }
                 const contactSec = document.getElementById('contact');
                 if (contactSec) contactSec.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            function restoreBoardFromHash() {
+                const hash = (location.hash || '').replace(/^#/, '');
+                const match = hash.match(/^programmes\/([a-z0-9]+)/i);
+                if (!match) return;
+                const key = match[1].toUpperCase();
+                if (ContentStore.boardProgrammes[key]) {
+                    openBoardPage(key);
+                }
             }
 
             // 06. LIVE 2027 BOARD COUNTDOWN
@@ -1079,6 +1256,7 @@ const CatalystApp = (function () {
                 const raw = String(boardCode || 'ICSE').toUpperCase().trim();
                 if (raw === 'WBSE' || raw === 'WBBSE') return 'WBBSE';
                 if (raw === 'FOUNDATION') return 'FOUNDATION';
+                if (raw === 'CLASS12' || raw === 'CLASS-12') return 'CLASS12';
                 if (raw === 'WBCHSE' || raw === 'ISC' || raw === 'XII') return 'WBCHSE';
                 if (raw === 'CBSE') return 'CBSE';
                 return 'ICSE';
@@ -1115,11 +1293,11 @@ const CatalystApp = (function () {
                     }
                     drawer.classList.remove('hidden');
                     if (btn) btn.setAttribute('aria-expanded', 'true');
-                    if (label) label.textContent = 'Hide Google Map';
+                    if (label) label.textContent = 'Hide map';
                 } else {
                     drawer.classList.add('hidden');
                     if (btn) btn.setAttribute('aria-expanded', 'false');
-                    if (label) label.textContent = 'Open in Google Maps';
+                    if (label) label.textContent = 'Show map';
                 }
             }
 
@@ -1127,16 +1305,24 @@ const CatalystApp = (function () {
                 if (event) event.preventDefault();
                 const nameEl = document.getElementById('contact-name');
                 const phoneEl = document.getElementById('contact-phone');
+                const emailEl = document.getElementById('contact-email');
+                const boardEl = document.getElementById('contact-board');
+                const classEl = document.getElementById('contact-class');
                 const messageEl = document.getElementById('contact-message');
+                const companyEl = document.getElementById('contact-company');
                 const statusEl = document.getElementById('contact-status-msg');
                 const submitBtn = document.querySelector('#contact-form button[type="submit"]');
                 const name = (nameEl && nameEl.value || '').trim();
                 const phone = (phoneEl && phoneEl.value || '').trim();
+                const email = (emailEl && emailEl.value || '').trim();
+                const board = (boardEl && boardEl.value || '').trim();
+                const studentClass = (classEl && classEl.value || '').trim();
                 const message = (messageEl && messageEl.value || '').trim();
+                const company = (companyEl && companyEl.value || '').trim();
 
-                if (!name || !phone || !message || !isValidPhone(phone)) {
+                if (!name || !phone || !message || !board || !studentClass || !isValidPhone(phone)) {
                     if (statusEl) {
-                        statusEl.textContent = 'Please enter a valid name, 10-digit mobile number, and your enquiry message.';
+                        statusEl.textContent = 'Please enter name, valid mobile, board, class, and your enquiry (fees, schedule, or free test).';
                         statusEl.className = 'p-3.5 rounded-xl bg-[#FFF1F2] text-soothingRed text-xs font-bold border border-[#FDA4AF]';
                         statusEl.classList.remove('hidden');
                     }
@@ -1151,17 +1337,28 @@ const CatalystApp = (function () {
                 fetch('api/contact.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                    body: JSON.stringify({ name: name, phone: phone, message: message, source: 'contact-form' })
+                    body: JSON.stringify({
+                        name: name,
+                        phone: phone,
+                        email: email,
+                        board: board,
+                        studentClass: studentClass,
+                        message: message,
+                        company: company,
+                        source: 'contact-form'
+                    })
                 })
                 .then(function (res) { return res.json().catch(function () { return { ok: false }; }); })
                 .then(function (data) {
                     if (statusEl) {
                         if (data && data.ok) {
-                            statusEl.textContent = 'Thank you, ' + name + '! Your enquiry has been received by our academic desk at 65, Jodhpur Park. We will call you shortly.';
+                            statusEl.textContent = (data.message)
+                                ? ('Thank you, ' + name + '! ' + data.message)
+                                : ('Thank you, ' + name + '! Your enquiry has been received. We will call or WhatsApp you shortly about fees and schedules.');
                             statusEl.className = 'p-3.5 rounded-xl bg-[#DCFCE7] text-[#15803D] text-xs font-bold border border-[#86EFAC]';
                             document.getElementById('contact-form').reset();
                         } else {
-                            statusEl.textContent = (data && data.error) || 'Unable to send right now. Please call +91 91631 94805 or email info@catalysteducation.net.';
+                            statusEl.textContent = (data && data.error) || 'Unable to send right now. Please WhatsApp / call +91 91631 94805.';
                             statusEl.className = 'p-3.5 rounded-xl bg-[#FFF1F2] text-soothingRed text-xs font-bold border border-[#FDA4AF]';
                         }
                         statusEl.classList.remove('hidden');
@@ -1169,7 +1366,7 @@ const CatalystApp = (function () {
                 })
                 .catch(function () {
                     if (statusEl) {
-                        statusEl.textContent = 'Unable to send right now. Please call +91 91631 94805 or email info@catalysteducation.net.';
+                        statusEl.textContent = 'Unable to send right now. Please WhatsApp / call +91 91631 94805 or email info@catalysteducation.net.';
                         statusEl.className = 'p-3.5 rounded-xl bg-[#FFF1F2] text-soothingRed text-xs font-bold border border-[#FDA4AF]';
                         statusEl.classList.remove('hidden');
                     }
@@ -1356,7 +1553,7 @@ const CatalystApp = (function () {
                     { name: 'Reliable Google Maps Embed Configured (22.5075016,88.3647385)', pass: Boolean(mapIframe) && (mapIframe.getAttribute('data-src') || '').includes('22.5075016,88.3647385') },
                     { name: 'EdufinGrow LLP Disclosure Intact', pass: bodyText.includes(SiteConfig.legalDisclosure) },
                     { name: 'Alapan Roy Faculty Profile Active', pass: ContentStore.faculty.some(function (f) { return f.name === 'Alapan Roy' && f.active; }) },
-                    { name: 'Fault-Isolated Modules Healthy', pass: Object.keys(mountedModules).length >= 6 && Object.values(mountedModules).every(function (m) { return m.status === 'OK'; }) },
+                    { name: 'Fault-Isolated Modules Healthy', pass: Object.keys(mountedModules).length >= 3 && Object.values(mountedModules).every(function (m) { return m.status === 'OK'; }) },
                     { name: 'Compact Toggleable Map Drawer Hidden by Default & Ready', pass: Boolean(mapDrawer && mapIframe) && mapDrawer.classList.contains('hidden') && typeof toggleMapIframe === 'function' }
                 ];
 
@@ -1366,29 +1563,127 @@ const CatalystApp = (function () {
             }
 
             // 12. INITIALIZATION
+            function toGoogleFormEmbedUrl(url) {
+                const raw = String(url || '').trim();
+                if (!raw) return '';
+                if (raw.indexOf('embedded=true') !== -1) return raw;
+                if (raw.indexOf('/viewform') !== -1) {
+                    return raw + (raw.indexOf('?') === -1 ? '?embedded=true' : '&embedded=true');
+                }
+                return raw;
+            }
+
+            function mountGoogleForm(wrapId, iframeId, linkId, url) {
+                const wrap = document.getElementById(wrapId);
+                const iframe = document.getElementById(iframeId);
+                const link = document.getElementById(linkId);
+                const embedUrl = toGoogleFormEmbedUrl(url);
+                if (!wrap || !iframe || !embedUrl) return false;
+                iframe.setAttribute('src', embedUrl);
+                if (link) {
+                    link.href = embedUrl.replace('embedded=true', 'usp=sf_link').replace('?&', '?');
+                    if (link.href.indexOf('http') !== 0) link.href = embedUrl;
+                }
+                wrap.classList.remove('hidden');
+                return true;
+            }
+
+            function mountGoogleForms() {
+                mountGoogleForm(
+                    'enquiry-google-form-wrap',
+                    'enquiry-google-form',
+                    'enquiry-google-form-link',
+                    SiteConfig.googleForms && SiteConfig.googleForms.enquiry
+                );
+                mountGoogleForm(
+                    'mock-google-form-wrap',
+                    'mock-google-form',
+                    'mock-google-form-link',
+                    SiteConfig.googleForms && SiteConfig.googleForms.mockTest
+                );
+            }
+
+            function whenVisible(selector, callback, rootMargin) {
+                const el = document.querySelector(selector);
+                if (!el) {
+                    callback();
+                    return;
+                }
+                let done = false;
+                function run() {
+                    if (done) return;
+                    done = true;
+                    callback();
+                }
+                if (location.hash && el.id && location.hash === '#' + el.id) {
+                    run();
+                    return;
+                }
+                if (!('IntersectionObserver' in window)) {
+                    run();
+                    return;
+                }
+                const observer = new IntersectionObserver(function (entries) {
+                    if (entries.some(function (entry) { return entry.isIntersecting; })) {
+                        observer.disconnect();
+                        run();
+                    }
+                }, { rootMargin: rootMargin || '280px 0px' });
+                observer.observe(el);
+            }
+
             function init() {
                 mountModule('BannerCarousel', function () {
-                    renderBannerCarousel();
+                    renderBannerCarousel({ immediate: true });
+                    bindBannerAutoplayControls();
                     resetBannerAutoTimer();
+                    setTimeout(resetBannerAutoTimer, 500);
+                });
+                mountModule('ScrollReveal', function () {
+                    bindScrollReveals();
                 });
                 mountModule('CountdownClock', function () {
                     updateCountdownDisplay();
                     setInterval(updateCountdownDisplay, 1000);
                 });
-                mountModule('DiagnosticQuiz', function () {
-                    activeQuizSet = buildNonRepeatingQuizSet();
-                    renderQuizQuestion();
-                });
-                mountModule('SyllabusExplorer', function () {
-                    renderSyllabusView();
-                });
-                mountModule('FacultyRegistry', function () {
-                    renderFacultyGrid();
-                });
                 mountModule('KeyboardAccessibility', function () {
                     bindGlobalKeyboardHandlers();
                 });
-                setTimeout(runRegressionSuite, 200);
+
+                // Defer heavier below-fold work until near viewport (faster first paint)
+                whenVisible('#diagnostic-quiz', function () {
+                    mountModule('DiagnosticQuiz', function () {
+                        activeQuizSet = buildNonRepeatingQuizSet();
+                        renderQuizQuestion();
+                    });
+                });
+                whenVisible('#syllabus', function () {
+                    mountModule('SyllabusExplorer', function () {
+                        renderSyllabusView();
+                    });
+                });
+                whenVisible('#faculty', function () {
+                    mountModule('FacultyRegistry', function () {
+                        renderFacultyGrid();
+                    });
+                }, '200px 0px');
+                whenVisible('#contact', function () {
+                    mountModule('GoogleForms', function () {
+                        mountGoogleForms();
+                    });
+                }, '160px 0px');
+
+                restoreBoardFromHash();
+                if ((location.hash || '').replace(/^#/, '') === 'terms') {
+                    openTermsModal();
+                }
+                window.addEventListener('hashchange', function () {
+                    const hash = (location.hash || '').replace(/^#/, '');
+                    if (hash.indexOf('programmes/') === 0) restoreBoardFromHash();
+                    if (hash === 'terms') openTermsModal();
+                });
+
+                setTimeout(runRegressionSuite, 1200);
             }
 
             if (document.readyState === 'loading') {

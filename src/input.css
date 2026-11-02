@@ -3,14 +3,49 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   body {
     font-family: 'Inter', sans-serif;
     color: #2A364F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, .font-display {
     font-family: 'Plus Jakarta Sans', sans-serif;
     letter-spacing: -0.02em;
+  }
+
+  /* Prevent iOS Safari zoom-on-focus (needs >= 16px) */
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  button,
+  [type="button"],
+  [type="submit"] {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  img,
+  svg,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  iframe {
+    border: 0;
   }
 }
 
@@ -18,16 +53,31 @@
   .ambient-mesh-bg {
     background-color: #FAF8F3;
     background-image:
-      radial-gradient(at 8% 12%, rgba(255, 243, 176, 0.55) 0px, transparent 48%),
-      radial-gradient(at 92% 18%, rgba(224, 234, 255, 0.65) 0px, transparent 50%),
-      radial-gradient(at 50% 60%, rgba(255, 228, 232, 0.40) 0px, transparent 55%),
-      radial-gradient(at 15% 88%, rgba(224, 234, 255, 0.50) 0px, transparent 50%);
-    background-attachment: fixed;
+      radial-gradient(at 8% 12%, rgba(255, 243, 176, 0.45) 0px, transparent 46%),
+      radial-gradient(at 92% 18%, rgba(224, 234, 255, 0.50) 0px, transparent 48%);
+    background-attachment: scroll;
   }
 
   .colorful-card-glass {
-    background: rgba(255, 253, 249, 0.92);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 253, 249, 0.96);
+  }
+
+  /* Skip rendering work for off-screen sections until needed */
+  #diagnostic-quiz-section,
+  #syllabus,
+  #faculty,
+  #success-stories,
+  #campuses-faq,
+  #contact {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 720px;
+  }
+
+  .sticky-contact-fab {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 40;
   }
 
   .card-hover {
@@ -62,6 +112,119 @@
   .skip-link:focus {
     left: 0;
   }
+
+  .google-form-embed {
+    width: 100%;
+    min-height: 520px;
+    height: 70vh;
+    max-height: 720px;
+    border: 0;
+    border-radius: 1rem;
+    background: #fff;
+  }
+
+  .modal-panel {
+    max-height: min(90vh, 900px);
+    max-height: min(90dvh, 900px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Carousel: fixed frame so every slide is the same size */
+  #hero-carousel-viewport {
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+  }
+
+  @media (min-width: 640px) {
+    #hero-carousel-viewport {
+      height: 370px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #hero-carousel-viewport {
+      height: 400px;
+    }
+  }
+
+  .carousel-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    will-change: opacity, transform;
+    transition:
+      opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .carousel-slide.is-active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+  }
+
+  .carousel-slide-inner {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .carousel-slide.is-enter-right,
+  .carousel-slide.is-enter-left,
+  .carousel-slide.is-exit-left,
+  .carousel-slide.is-exit-right {
+    z-index: 1;
+  }
+
+  .carousel-slide.is-enter-right {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+
+  .carousel-slide.is-enter-left {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+
+  .carousel-slide.is-exit-left {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+
+  .carousel-slide.is-exit-right {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+
+  .carousel-dot {
+    transition: width 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
+  }
+
+  /* Scroll reveal */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.08s; }
+  .reveal-delay-2 { transition-delay: 0.16s; }
+  .reveal-delay-3 { transition-delay: 0.24s; }
+
+  /* Modal entrance */
+  .modal-panel-animate {
+    animation: modalIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
 }
 
 @keyframes subtlePulseFree {
@@ -75,8 +238,28 @@
   }
 }
 
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .google-form-embed {
+    min-height: 640px;
+    height: 75vh;
+    height: 75dvh;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .free-badge-pulse {
+  .free-badge-pulse,
+  .modal-panel-animate {
     animation: none;
   }
 
@@ -85,9 +268,16 @@
   }
 
   .card-hover,
-  .card-hover:hover {
-    transition: none;
-    transform: none;
+  .card-hover:hover,
+  .carousel-slide,
+  .reveal-on-scroll,
+  .carousel-dot {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .reveal-on-scroll {
+    opacity: 1;
   }
 }
 

@@ -18,6 +18,7 @@ Contact / free-test **email sending** needs PHP on GoDaddy. The page itself stil
 
 ```text
 index.html
+disclaimer.html
 .htaccess
 robots.txt
 sitemap.xml
@@ -65,6 +66,32 @@ The Catalyst brand logo SVG (`#catalyst-brand-logo`) must stay intact — do not
 - `api/contact.php` and `api/register.php` send to `info@catalysteducation.net`.
 - If the host blocks PHP `mail()`, leads are still saved under `storage/*.log` for follow-up.
 - Change `$TO_EMAIL` in those PHP files only if your inbox changes.
+
+## Fees policy (on the site)
+
+Paid Final Series / Class 12 fees are **not listed on the website**. Visitors are asked to **Contact us / WhatsApp** for fees and schedule. Update programme copy in `js/app.js` only when you decide to publish numbers.
+
+## Add Google Forms under Enquiry + Free Mock popup
+
+1. Open your Google Form → **Send** → **<>** (Embed).
+2. Copy the `src` URL (it looks like `https://docs.google.com/forms/d/e/.../viewform?embedded=true`).
+3. Open `js/app.js` and paste into `SiteConfig.googleForms`:
+
+```js
+googleForms: {
+  enquiry: 'PASTE_ENQUIRY_FORM_EMBED_URL_HERE',
+  mockTest: 'PASTE_MOCK_TEST_FORM_EMBED_URL_HERE'
+}
+```
+
+4. Save and refresh. The Google Form appears under each built-in form.  
+   If either URL is left empty, that Google Form block stays hidden.
+
+## Browser & mobile support
+
+- Responsive layout for phones/tablets (grids collapse, larger tap targets).
+- Safari/iOS fixes: input zoom prevention, backdrop-filter prefixes, no fixed background jank.
+- Works in current Chrome, Edge, Firefox, Safari, and mobile browsers.
 
 ## GitHub (optional backup)
 

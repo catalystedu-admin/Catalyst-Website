@@ -17,13 +17,19 @@ if (!is_array($data)) {
     $data = $_POST;
 }
 
+$honeypot = trim((string)($data['company'] ?? ''));
+if ($honeypot !== '') {
+    echo json_encode(['ok' => true, 'passId' => '#CAT-2027-000', 'queued' => true]);
+    exit;
+}
+
 $name = trim((string)($data['name'] ?? ''));
 $phone = trim((string)($data['phone'] ?? ''));
 $board = strtoupper(trim((string)($data['board'] ?? 'ICSE')));
 $source = trim((string)($data['source'] ?? 'free-mock-popup'));
 
 $digits = preg_replace('/\D+/', '', $phone);
-$allowedBoards = ['ICSE', 'CBSE', 'WBBSE', 'WBCHSE', 'WBSE'];
+$allowedBoards = ['ICSE', 'CBSE', 'WBBSE', 'WBCHSE', 'WBSE', 'CLASS12'];
 
 if ($name === '' || strlen($digits) < 10 || strlen($digits) > 13) {
     http_response_code(422);
@@ -64,8 +70,12 @@ if (!is_dir($logDir)) {
 }
 @file_put_contents(
     $logDir . '/registrations.log',
-    date('c') . "\t{$passId}\t{$name}\t{$phone}\t{$board}\n",
+    date('c') . "\t{$passId}\t{$name}\t{$phone}\t{$board}\tmail=" . ($sent ? '1' : '0') . "\n",
     FILE_APPEND | LOCK_EX
 );
 
-echo json_encode(['ok' => true, 'passId' => $passId]);
+echo json_encode([
+    'ok' => true,
+    'passId' => $passId,
+    'delivered' => (bool)$sent,
+]);

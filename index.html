@@ -2,7 +2,10 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Catalyst Education | Coaching &amp; Mock Test Centre in Kolkata (ICSE, CBSE, WBBSE, WBCHSE)</title>
     <meta name="description" content="Catalyst Education at 65, Jodhpur Park, Kolkata 700068 — Ignite Potential. Engineer Excellence. 1:6 batch coaching and board mock tests for Class 9 to 12 (ICSE, CBSE, WBBSE, WBCHSE).">
     <meta name="keywords" content="Catalyst Education Kolkata, mock test in Kolkata, coaching institute in Kolkata, ICSE mock test Kolkata, CBSE coaching Jodhpur Park, WBBSE Madhyamik mock test, WBCHSE coaching South Kolkata">
@@ -61,12 +64,44 @@
       }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Target 2027 Pre-Board Practice Test really 100% Free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Target 2027 Pre-Board Practice Test for Class X students (ICSE, CBSE, and WBBSE) is 100% FREE with no course purchase required." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know the fees for the Final Board Mock Test Series?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fees and schedules for the Final Board Mock Test Series are shared directly by the centre. Contact Catalyst Education on WhatsApp or phone, or submit an enquiry on the website." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the batch size at Catalyst Education?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Catalyst Education maintains a 1:6 Batch Focus for Classes 9 to 12 across boards." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer Class 12 / ISC / WBCHSE programmes?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Class 12 programmes for ISC, CBSE, and WBCHSE are available. Contact the centre for schedule and fees." }
+        }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome loaded async so it does not block first paint -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body class="ambient-mesh-bg text-slateText antialiased selection:bg-logoYellow selection:text-midnight min-h-screen flex flex-col">
     <a href="#website-view" class="skip-link">Skip to main content</a>
@@ -141,7 +176,7 @@
     <header class="sticky top-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-warmBorder px-4 md:px-10 py-2.5 shadow-sm">
         <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
             <!-- Brand Identity -->
-            <a href="#top-carousel" onclick="CatalystApp.closeBoardPage(false)" class="flex items-center gap-3 group focus:outline-none" aria-label="Catalyst Education Home">
+            <a href="#hero" onclick="CatalystApp.closeBoardPage(false)" class="flex items-center gap-3 group focus:outline-none" aria-label="Catalyst Education Home">
                 <div class="bg-logoYellow px-3 py-1.5 rounded-xl shadow-logo-badge border border-[#E6CF00] transition-transform duration-200 group-hover:scale-[1.01]">
                     <svg class="h-10 sm:h-12 md:h-14 w-auto block" viewBox="0 0 680 230" role="img" aria-label="Catalyst — ICSE, CBSE, WBBSE, Foundation — Ignite Potential, Engineer Excellence">
                         <use href="#catalyst-brand-logo"></use>
@@ -154,13 +189,17 @@
                 <a href="#select-your-goal" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Programmes</a>
                 <a href="#diagnostic-quiz" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Free Quiz</a>
                 <a href="#syllabus" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Syllabus</a>
-                <a href="#results" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Faculty</a>
+                <a href="#faculty" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Faculty</a>
                 <a href="#success-stories" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Testimonials</a>
                 <a href="#contact" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-soothingBlue transition">Contact Us</a>
             </nav>
 
             <!-- Primary Action & Mobile Drawer Button -->
             <div class="flex items-center gap-2.5">
+                <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20about%20mock%20tests%20and%20fees." target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold px-3.5 py-2.5 rounded-xl shadow-sm transition text-xs cursor-pointer" aria-label="WhatsApp Catalyst Education">
+                    <i class="fa-brands fa-whatsapp text-sm" aria-hidden="true"></i>
+                    <span>WhatsApp</span>
+                </a>
                 <button type="button" onclick="CatalystApp.openMockPopup()" class="hidden sm:inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-bold px-4 py-2.5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer">
                     <i class="fa-solid fa-check-circle text-logoYellow" aria-hidden="true"></i>
                     <span>Register for Free Test</span>
@@ -176,9 +215,10 @@
             <a href="#select-your-goal" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Programmes</a>
             <a href="#diagnostic-quiz" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Free Quiz</a>
             <a href="#syllabus" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Syllabus</a>
-            <a href="#results" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Faculty</a>
+            <a href="#faculty" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Faculty</a>
             <a href="#success-stories" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Testimonials</a>
             <a href="#contact" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Contact Us</a>
+            <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20about%20mock%20tests%20and%20fees." target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-lg bg-[#DCFCE7] text-[#15803D] font-bold">WhatsApp Us</a>
             <button type="button" onclick="CatalystApp.openMockPopup(); CatalystApp.toggleMobileMenu()" class="text-left px-3 py-2.5 rounded-lg bg-[#DCFCE7] text-[#15803D] font-bold mt-1">Register for Free Test</button>
         </nav>
     </header>
@@ -188,118 +228,107 @@
          ===================================================================== -->
     <main id="website-view" class="flex-grow">
 
-        <!-- SECTION 1: HOMEPAGE BANNER CAROUSEL -->
-        <section id="top-carousel" class="pt-6 pb-8 px-4 md:px-10 border-b border-warmBorder" aria-label="Promotional Highlights Carousel">
-            <div class="max-w-7xl mx-auto">
-                <div class="relative rounded-3xl overflow-hidden shadow-soothing-lg border-2 border-[#93B4FF]/80 bg-midnight">
-                    <!-- Dynamic Slides Container -->
-                    <div id="hero-carousel-viewport" class="relative min-h-[340px] sm:min-h-[360px] md:min-h-[380px] flex items-center"></div>
+        <!-- SECTION 1: OPENING — SLIM MOTTO + CAROUSEL + COUNTDOWN (one top story) -->
+        <section id="hero" class="pt-5 pb-10 md:pt-6 md:pb-12 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="ignite-heading">
+            <div class="max-w-7xl mx-auto space-y-5">
 
-                    <!-- Left Arrow -->
-                    <button type="button" id="carousel-prev-btn" onclick="CatalystApp.prevBanner()" aria-label="Previous Promotional Banner" class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
-                        <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
-                    </button>
-
-                    <!-- Right Arrow -->
-                    <button type="button" id="carousel-next-btn" onclick="CatalystApp.nextBanner()" aria-label="Next Promotional Banner" class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
-                        <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
-                    </button>
-
-                    <!-- Slide Dots & Counter -->
-                    <div class="absolute bottom-3.5 left-0 right-0 z-20 px-6 flex items-center justify-between pointer-events-none">
-                        <div id="carousel-dots" class="flex items-center gap-2 pointer-events-auto" role="tablist" aria-label="Select Banner Slide"></div>
-                        <span id="carousel-counter-badge" class="bg-midnight/80 backdrop-blur-md text-logoYellow text-[11px] font-extrabold px-3 py-1 rounded-full border border-white/15">1 / 3</span>
+                <!-- Slim brand band: motto stays visible without pushing carousel down a full screen -->
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 reveal-on-scroll is-visible">
+                    <div class="space-y-2 max-w-3xl">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="inline-flex items-center gap-1.5 bg-[#FFF3B0] text-midnight px-3 py-1 rounded-full text-[11px] font-extrabold border border-[#F2D06B]">
+                                <i class="fa-solid fa-users-viewfinder text-soothingRed" aria-hidden="true"></i>
+                                1:6 Batch Focus
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-[#E0EAFF] text-soothingBlue px-3 py-1 rounded-full text-[11px] font-extrabold border border-[#93B4FF]">
+                                Classes 9–12 • Jodhpur Park
+                            </span>
+                        </div>
+                        <h1 id="ignite-heading" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-midnight tracking-tight leading-[1.15]">
+                            Ignite Potential. <span class="text-soothingBlue">Engineer</span> <span class="text-soothingRed">Excellence.</span>
+                        </h1>
+                        <p class="text-xs sm:text-sm text-slateText max-w-2xl">
+                            Board-pattern mock tests for <strong>ICSE, ISC, CBSE, WBBSE &amp; WBCHSE</strong> — free Class X pre-board practice; fees for Final Series on enquiry.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+                        <button type="button" onclick="CatalystApp.openMockPopup()" class="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold px-4 py-2.5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer">
+                            <i class="fa-solid fa-clipboard-check text-logoYellow" aria-hidden="true"></i>
+                            <span>Free Pre-Board Test</span>
+                        </button>
+                        <a href="#select-your-goal" class="inline-flex items-center gap-2 bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold px-4 py-2.5 rounded-xl transition text-xs sm:text-sm">
+                            <span>Programmes</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- SECTION 2: IGNITE POTENTIAL + BOARD COUNTDOWN -->
-        <section id="hero" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="ignite-heading">
-            <div class="max-w-4xl mx-auto space-y-5">
-                    <div class="flex flex-wrap items-center gap-2">
-                        <span class="inline-flex items-center gap-1.5 bg-[#FFF3B0] text-midnight px-3.5 py-1 rounded-full text-xs font-extrabold border border-[#F2D06B] shadow-sm">
-                            <i class="fa-solid fa-users-viewfinder text-soothingRed"></i>
-                            1:6 Batch Focus
-                        </span>
-                        <span class="inline-flex items-center gap-1.5 bg-[#E0EAFF] text-soothingBlue px-3 py-1 rounded-full text-xs font-extrabold border border-[#93B4FF]">
-                            Classes 9 to 12 • All Boards
-                        </span>
+                <!-- Carousel stays high on the page as the main promo stage -->
+                <div id="top-carousel" class="reveal-on-scroll is-visible" aria-label="Promotional Highlights Carousel">
+                    <div class="relative rounded-3xl overflow-hidden shadow-soothing-lg border-2 border-[#93B4FF]/80 bg-midnight">
+                        <div id="hero-carousel-viewport" class="relative w-full" aria-live="polite"></div>
+
+                        <button type="button" id="carousel-prev-btn" onclick="CatalystApp.prevBanner()" aria-label="Previous Promotional Banner" class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
+                            <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
+                        </button>
+                        <button type="button" id="carousel-next-btn" onclick="CatalystApp.nextBanner()" aria-label="Next Promotional Banner" class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
+                            <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
+                        </button>
+
+                        <div class="absolute bottom-3.5 left-0 right-0 z-20 px-6 flex items-center justify-between pointer-events-none">
+                            <div id="carousel-dots" class="flex items-center gap-2 pointer-events-auto" role="tablist" aria-label="Select Banner Slide"></div>
+                            <span id="carousel-counter-badge" class="bg-midnight/80 backdrop-blur-md text-logoYellow text-[11px] font-extrabold px-3 py-1 rounded-full border border-white/15">1 / 3</span>
+                        </div>
                     </div>
+                </div>
 
-                    <h1 id="ignite-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-midnight tracking-tight leading-[1.12]">
-                        Ignite Potential. <br/>
-                        <span class="text-soothingBlue">Engineer</span> <span class="text-soothingRed">Excellence.</span>
-                    </h1>
-
-                    <p class="text-sm sm:text-base text-slateText leading-relaxed">
-                        Focused board preparation and full-length mock test simulations for <strong>ICSE, ISC, CBSE, WBBSE &amp; WBCHSE</strong> students at our Jodhpur Park, Kolkata centre.
-                    </p>
-
-                    <!-- Compact Live 2027 Board Exam Countdown -->
-                    <div class="colorful-card-glass rounded-2xl p-4 border-2 border-[#93B4FF] shadow-soothing space-y-3">
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-                            <div class="flex items-center gap-1.5">
-                                <span class="w-2 h-2 rounded-full bg-soothingRed animate-ping"></span>
-                                <span class="text-xs font-extrabold uppercase tracking-wider text-midnight">2027 Board Exam Countdown</span>
-                            </div>
-                            <div class="flex items-center gap-1 bg-[#EEF3FF] p-1 rounded-xl border border-[#C7D8FF]">
-                                <button type="button" onclick="CatalystApp.switchCountdownBoard('CBSE')" id="cd-tab-CBSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold bg-soothingBlue text-white transition cursor-pointer">CBSE</button>
-                                <button type="button" onclick="CatalystApp.switchCountdownBoard('ICSE')" id="cd-tab-ICSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">ICSE</button>
-                                <button type="button" onclick="CatalystApp.switchCountdownBoard('WBBSE')" id="cd-tab-WBBSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">WBBSE</button>
-                                <button type="button" onclick="CatalystApp.switchCountdownBoard('WBCHSE')" id="cd-tab-WBCHSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">WBCHSE</button>
-                            </div>
+                <!-- Countdown sits under the carousel so motto + slides stay the opening focus -->
+                <div class="colorful-card-glass rounded-2xl p-4 border-2 border-[#93B4FF] shadow-soothing space-y-3 max-w-4xl mx-auto w-full reveal-on-scroll">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-soothingRed animate-ping" aria-hidden="true"></span>
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-midnight">2027 Board Exam Countdown</span>
                         </div>
-
-                        <div class="grid grid-cols-4 gap-2 text-center">
-                            <div class="bg-midnight text-white rounded-xl py-2 px-1">
-                                <div id="cd-days" class="text-lg sm:text-xl font-extrabold text-logoYellow font-display">105</div>
-                                <div class="text-[10px] uppercase tracking-wider text-gray-300">Days</div>
-                            </div>
-                            <div class="bg-midnight text-white rounded-xl py-2 px-1">
-                                <div id="cd-hours" class="text-lg sm:text-xl font-extrabold text-white font-display">08</div>
-                                <div class="text-[10px] uppercase tracking-wider text-gray-300">Hours</div>
-                            </div>
-                            <div class="bg-midnight text-white rounded-xl py-2 px-1">
-                                <div id="cd-mins" class="text-lg sm:text-xl font-extrabold text-white font-display">42</div>
-                                <div class="text-[10px] uppercase tracking-wider text-gray-300">Mins</div>
-                            </div>
-                            <div class="bg-midnight text-white rounded-xl py-2 px-1">
-                                <div id="cd-secs" class="text-lg sm:text-xl font-extrabold text-[#FDA4AF] font-display">19</div>
-                                <div class="text-[10px] uppercase tracking-wider text-gray-300">Secs</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-between text-[11px] font-bold text-slateText pt-1 border-t border-warmBorder">
-                            <span id="cd-board-title" class="text-soothingBlue font-extrabold">CBSE Board Exam • Target: Feb 15, 2027</span>
-                            <span id="cd-milestone" class="bg-[#FFF3B0] text-midnight px-2 py-0.5 rounded-md">Mock Test Roadmap</span>
+                        <div class="flex items-center gap-1 bg-[#EEF3FF] p-1 rounded-xl border border-[#C7D8FF]">
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('CBSE')" id="cd-tab-CBSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold bg-soothingBlue text-white transition cursor-pointer">CBSE</button>
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('ICSE')" id="cd-tab-ICSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">ICSE</button>
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('WBBSE')" id="cd-tab-WBBSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">WBBSE</button>
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('WBCHSE')" id="cd-tab-WBCHSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">WBCHSE</button>
                         </div>
                     </div>
 
-                    <!-- Core Pillars -->
-                    <div class="grid grid-cols-2 gap-3 text-xs">
-                        <div class="bg-white/85 p-3.5 rounded-2xl border border-warmBorder shadow-sm">
-                            <div class="font-extrabold text-midnight flex items-center gap-1.5">
-                                <i class="fa-solid fa-file-pen text-soothingBlue"></i>
-                                <span>Instant Script Evaluation</span>
-                            </div>
-                            <p class="text-[11px] text-mutedText mt-1">After tests, evaluation &amp; doubt clearing with examiners.</p>
+                    <div class="grid grid-cols-4 gap-2 text-center">
+                        <div class="bg-midnight text-white rounded-xl py-2 px-1">
+                            <div id="cd-days" class="text-lg sm:text-xl font-extrabold text-logoYellow font-display">105</div>
+                            <div class="text-[10px] uppercase tracking-wider text-gray-300">Days</div>
                         </div>
-                        <div class="bg-white/85 p-3.5 rounded-2xl border border-warmBorder shadow-sm">
-                            <div class="font-extrabold text-midnight flex items-center gap-1.5">
-                                <i class="fa-solid fa-user-check text-soothingRed"></i>
-                                <span>1:6 Batch Focus</span>
-                            </div>
-                            <p class="text-[11px] text-mutedText mt-1">Individual attention for every student in small batches.</p>
+                        <div class="bg-midnight text-white rounded-xl py-2 px-1">
+                            <div id="cd-hours" class="text-lg sm:text-xl font-extrabold text-white font-display">08</div>
+                            <div class="text-[10px] uppercase tracking-wider text-gray-300">Hours</div>
+                        </div>
+                        <div class="bg-midnight text-white rounded-xl py-2 px-1">
+                            <div id="cd-mins" class="text-lg sm:text-xl font-extrabold text-white font-display">42</div>
+                            <div class="text-[10px] uppercase tracking-wider text-gray-300">Mins</div>
+                        </div>
+                        <div class="bg-midnight text-white rounded-xl py-2 px-1">
+                            <div id="cd-secs" class="text-lg sm:text-xl font-extrabold text-[#FDA4AF] font-display">19</div>
+                            <div class="text-[10px] uppercase tracking-wider text-gray-300">Secs</div>
                         </div>
                     </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] font-bold text-slateText pt-1 border-t border-warmBorder">
+                        <span id="cd-board-title" class="text-soothingBlue font-extrabold">CBSE Board Exam • Target: Feb 15, 2027</span>
+                        <span id="cd-milestone" class="bg-[#FFF3B0] text-midnight px-2 py-0.5 rounded-md">Mock Test Roadmap</span>
+                    </div>
+                    <p class="text-[10px] text-mutedText">Indicative target dates for planning — final board schedules are announced by the respective boards.</p>
+                </div>
             </div>
         </section>
 
         <!-- SECTION 3: HOMEPAGE — SELECT YOUR GOAL -->
         <section id="select-your-goal" class="py-12 md:py-16 px-4 md:px-10 bg-white/65 backdrop-blur-md border-b border-warmBorder" aria-labelledby="select-goal-heading">
             <div class="max-w-7xl mx-auto space-y-8">
-                <div class="text-center max-w-2xl mx-auto space-y-2">
+                <div class="text-center max-w-2xl mx-auto space-y-2 reveal-on-scroll">
                     <span class="inline-flex items-center gap-1.5 bg-[#FFF3B0] text-midnight px-3.5 py-1 rounded-full text-xs font-extrabold border border-[#F2D06B]">
                         <i class="fa-solid fa-compass text-soothingRed"></i>
                         Target 2027 Board &amp; School Examinations
@@ -312,10 +341,9 @@
                     </p>
                 </div>
 
-                <!-- 4 Goal Selection Cards -->
+                <!-- Goal Selection Cards: Class X boards + Class 12 -->
                 <div id="goal-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Goal 1: ICSE -->
-                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#93B4FF] shadow-soothing card-hover flex flex-col justify-between text-center group">
+                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#93B4FF] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-1">
                         <div class="space-y-3">
                             <div class="w-14 h-14 rounded-2xl bg-[#E0EAFF] border border-[#93B4FF] text-soothingBlue flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
                                 <i class="fa-solid fa-graduation-cap"></i>
@@ -325,19 +353,18 @@
                             </div>
                             <h3 class="text-2xl font-extrabold text-midnight">ICSE</h3>
                             <p class="text-xs text-slateText leading-relaxed">
-                                Target 2027 CISCE Class X Pre-Board Practice Test (100% FREE) &amp; Final Board Mock Test Series.
+                                Class X free pre-board practice test &amp; Final Board Mock Test Series — contact us for fees.
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
                             <button type="button" onclick="CatalystApp.openBoardPage('ICSE')" id="goal-btn-ICSE" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
-                                <span>Click Here</span>
+                                <span>View ICSE Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs text-logoYellow"></i>
                             </button>
                         </div>
                     </article>
 
-                    <!-- Goal 2: CBSE -->
-                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#FDA4AF] shadow-soothing card-hover flex flex-col justify-between text-center group">
+                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#FDA4AF] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-2">
                         <div class="space-y-3">
                             <div class="w-14 h-14 rounded-2xl bg-[#FFE4E8] border border-[#FDA4AF] text-soothingRed flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
                                 <i class="fa-solid fa-book-open-reader"></i>
@@ -347,19 +374,18 @@
                             </div>
                             <h3 class="text-2xl font-extrabold text-midnight">CBSE</h3>
                             <p class="text-xs text-slateText leading-relaxed">
-                                Target 2027 CBSE Class X Pre-Board Practice Test (100% FREE) &amp; Final Board Mock Test Series.
+                                Class X free pre-board practice test &amp; Final Board Mock Test Series — contact us for fees.
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
                             <button type="button" onclick="CatalystApp.openBoardPage('CBSE')" id="goal-btn-CBSE" class="w-full bg-soothingRed hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
-                                <span>Click Here</span>
+                                <span>View CBSE Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs text-logoYellow"></i>
                             </button>
                         </div>
                     </article>
 
-                    <!-- Goal 3: WBBSE -->
-                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#F2D06B] shadow-soothing card-hover flex flex-col justify-between text-center group">
+                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#F2D06B] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-3">
                         <div class="space-y-3">
                             <div class="w-14 h-14 rounded-2xl bg-[#FFF3B0] border border-[#F2D06B] text-[#B45309] flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
                                 <i class="fa-solid fa-award"></i>
@@ -369,38 +395,75 @@
                             </div>
                             <h3 class="text-2xl font-extrabold text-midnight">WBBSE</h3>
                             <p class="text-xs text-slateText leading-relaxed">
-                                Target 2027 WBBSE Class X Pre-Board Practice Test (100% FREE) &amp; Final Board Mock Test Series.
+                                Class X Madhyamik free pre-board practice &amp; Final Series — English &amp; Bengali medium; contact us for fees.
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
                             <button type="button" onclick="CatalystApp.openBoardPage('WBBSE')" id="goal-btn-WBBSE" class="w-full bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
-                                <span>Click Here</span>
+                                <span>View WBBSE Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
                     </article>
 
-                    <!-- Goal 4: Foundation -->
-                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-warmBorder shadow-soothing card-hover flex flex-col justify-between text-center group">
+                    <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#93B4FF] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-3">
                         <div class="space-y-3">
-                            <div class="w-14 h-14 rounded-2xl bg-[#F3F4F6] border border-[#D1D5DB] text-slateText flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
-                                <i class="fa-solid fa-seedling text-soothingBlue"></i>
+                            <div class="w-14 h-14 rounded-2xl bg-[#EEF3FF] border border-[#93B4FF] text-soothingBlue flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
+                                <i class="fa-solid fa-flask"></i>
                             </div>
-                            <div class="inline-block bg-[#FEF3C7] text-[#B45309] text-[11px] font-extrabold px-3 py-0.5 rounded-full border border-[#FDE68A]">
-                                *Launching Soon
+                            <div class="inline-block bg-[#E0EAFF] text-soothingBlue text-[11px] font-extrabold px-3 py-0.5 rounded-full border border-[#93B4FF]">
+                                ISC • CBSE • WBCHSE
                             </div>
-                            <h3 class="text-2xl font-extrabold text-midnight">Foundation</h3>
+                            <h3 class="text-2xl font-extrabold text-midnight">Class 12</h3>
                             <p class="text-xs text-slateText leading-relaxed">
-                                School Annual Examination Test Series* for Foundation school classes.
+                                Higher Secondary mock test series &amp; 1:6 batch focus — contact us for schedule and fees.
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
-                            <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" id="goal-btn-FOUNDATION" class="w-full bg-white hover:bg-champagne text-midnight border-2 border-midnight font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
-                                <span>Click Here</span>
-                                <i class="fa-solid fa-arrow-right text-xs text-soothingBlue"></i>
+                            <button type="button" onclick="CatalystApp.openBoardPage('CLASS12')" id="goal-btn-CLASS12" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
+                                <span>View Class 12 Programmes</span>
+                                <i class="fa-solid fa-arrow-right text-xs text-logoYellow"></i>
                             </button>
                         </div>
                     </article>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs max-w-3xl mx-auto">
+                    <div class="bg-white/85 p-3.5 rounded-2xl border border-warmBorder shadow-sm">
+                        <div class="font-extrabold text-midnight flex items-center gap-1.5">
+                            <i class="fa-solid fa-file-pen text-soothingBlue"></i>
+                            <span>Instant Script Evaluation</span>
+                        </div>
+                        <p class="text-[11px] text-mutedText mt-1">After tests, evaluation &amp; doubt clearing with examiners.</p>
+                    </div>
+                    <div class="bg-white/85 p-3.5 rounded-2xl border border-warmBorder shadow-sm">
+                        <div class="font-extrabold text-midnight flex items-center gap-1.5">
+                            <i class="fa-solid fa-user-check text-soothingRed"></i>
+                            <span>1:6 Batch Focus</span>
+                        </div>
+                        <p class="text-[11px] text-mutedText mt-1">Individual attention for every student in small batches.</p>
+                    </div>
+                </div>
+
+                <div class="max-w-3xl mx-auto">
+                    <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" class="group w-full text-left rounded-2xl border border-dashed border-[#C7D8FF] bg-gradient-to-r from-white/90 to-[#EEF3FF]/70 px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 transition hover:border-soothingBlue hover:shadow-sm cursor-pointer">
+                        <div class="flex items-start gap-3 min-w-0">
+                            <span class="mt-0.5 w-9 h-9 shrink-0 rounded-xl bg-[#EEF3FF] border border-[#C7D8FF] text-soothingBlue flex items-center justify-center group-hover:bg-soothingBlue group-hover:text-logoYellow transition">
+                                <i class="fa-solid fa-seedling text-sm" aria-hidden="true"></i>
+                            </span>
+                            <div class="min-w-0 space-y-0.5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="text-sm font-extrabold text-midnight">Foundation Track</span>
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wide text-[#B45309] bg-[#FEF3C7] border border-[#FDE68A] px-2 py-0.5 rounded-full">Coming soon</span>
+                                </div>
+                                <p class="text-xs text-mutedText leading-relaxed">School annual exam series for younger classes — register interest and we’ll update you at launch.</p>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 text-xs font-extrabold text-soothingBlue shrink-0 sm:pl-2">
+                            Enquire
+                            <i class="fa-solid fa-arrow-right text-[10px] transition group-hover:translate-x-0.5" aria-hidden="true"></i>
+                        </span>
+                    </button>
                 </div>
 
                 <!-- SECTIONS 3, 4, 5 & 6: DEDICATED BOARD PROGRAMMES PAGE VIEWPORT -->
@@ -428,10 +491,8 @@
                                 <button type="button" onclick="CatalystApp.openBoardPage('ICSE')" id="board-tab-ICSE" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">ICSE</button>
                                 <button type="button" onclick="CatalystApp.openBoardPage('CBSE')" id="board-tab-CBSE" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">CBSE</button>
                                 <button type="button" onclick="CatalystApp.openBoardPage('WBBSE')" id="board-tab-WBBSE" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">WBBSE</button>
+                                <button type="button" onclick="CatalystApp.openBoardPage('CLASS12')" id="board-tab-CLASS12" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">Class 12</button>
                                 <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" id="board-tab-FOUNDATION" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">Foundation*</button>
-                                <button type="button" onclick="CatalystApp.closeBoardPage(true)" class="px-3 py-2 rounded-xl text-xs font-bold text-soothingRed hover:bg-white transition cursor-pointer" title="Close Board View">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
                             </div>
                         </div>
 
@@ -443,7 +504,7 @@
 
         <!-- SECTION 4: 30-SECOND BOARD READINESS QUIZ -->
         <section id="diagnostic-quiz-section" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="quiz-section-heading">
-            <div class="max-w-5xl mx-auto">
+            <div class="max-w-5xl mx-auto reveal-on-scroll">
                 <div id="diagnostic-quiz">
                     <div class="colorful-card-glass rounded-3xl p-5 sm:p-7 border-2 border-[#93B4FF] shadow-soothing-lg relative overflow-hidden">
                         <div class="shimmer-gold-bar h-1.5 w-full absolute top-0 left-0"></div>
@@ -550,7 +611,7 @@
         </section>
 
         <!-- SECTION 5: INTERACTIVE SYLLABUS PER SUBJECT EXPLORER -->
-        <section id="syllabus" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="syllabus-heading">
+        <section id="syllabus" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder reveal-on-scroll" aria-labelledby="syllabus-heading">
             <div class="max-w-7xl mx-auto space-y-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div class="space-y-1.5">
@@ -585,8 +646,8 @@
             </div>
         </section>
 
-        <!-- SECTION 6: FACULTY & STUDENT RESULTS -->
-        <section id="results" class="py-12 md:py-16 px-4 md:px-10 bg-white/60 border-b border-warmBorder" aria-labelledby="faculty-heading">
+        <!-- SECTION 6: FACULTY -->
+        <section id="faculty" class="py-12 md:py-16 px-4 md:px-10 bg-white/60 border-b border-warmBorder reveal-on-scroll" aria-labelledby="faculty-heading">
             <div class="max-w-7xl mx-auto space-y-8">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div class="space-y-1.5">
@@ -621,16 +682,17 @@
         </section>
 
         <!-- SECTION 7: STUDENT SUCCESS STORIES -->
-        <section id="success-stories" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="stories-heading">
+        <section id="success-stories" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder reveal-on-scroll" aria-labelledby="stories-heading">
             <div class="max-w-7xl mx-auto space-y-6">
                 <div class="space-y-1.5">
                     <span class="inline-flex items-center gap-1.5 bg-[#DCFCE7] text-[#15803D] px-3 py-1 rounded-full text-xs font-extrabold border border-[#86EFAC]">
                         <i class="fa-solid fa-chart-line"></i>
-                        Verified Score Improvements
+                        Student Outcomes
                     </span>
                     <h2 id="stories-heading" class="text-2xl sm:text-3xl font-extrabold text-midnight">
                         Student &amp; Parent Success Stories
                     </h2>
+                    <p class="text-xs text-mutedText max-w-2xl">Illustrative journeys from our mock-test and batch programmes — individual results vary.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -677,7 +739,7 @@
         </section>
 
         <!-- SECTION 8: FREQUENTLY ASKED QUESTIONS -->
-        <section id="campuses-faq" class="py-12 md:py-16 px-4 md:px-10 bg-white/60 border-b border-warmBorder" aria-labelledby="faq-heading">
+        <section id="campuses-faq" class="py-12 md:py-16 px-4 md:px-10 bg-white/60 border-b border-warmBorder reveal-on-scroll" aria-labelledby="faq-heading">
             <div class="max-w-4xl mx-auto space-y-6">
                 <div class="text-center space-y-1.5">
                     <span class="inline-flex items-center gap-1.5 bg-[#E0EAFF] text-soothingBlue px-3 py-1 rounded-full text-xs font-extrabold">
@@ -702,21 +764,51 @@
 
                     <div class="bg-white rounded-2xl border border-warmBorder p-4 sm:p-5 shadow-sm" role="listitem">
                         <button type="button" onclick="CatalystApp.toggleFaq(1)" class="w-full flex items-center justify-between text-left font-extrabold text-sm sm:text-base text-midnight cursor-pointer" aria-expanded="false" aria-controls="faq-body-1" id="faq-btn-1">
-                            <span>How does Instant Script Evaluation work after a mock test?</span>
+                            <span>How do I know the fees for the Final Board Mock Test Series?</span>
                             <i id="faq-icon-1" class="fa-solid fa-chevron-down text-xs text-soothingBlue transition-transform" aria-hidden="true"></i>
                         </button>
                         <div id="faq-body-1" class="hidden mt-2.5 text-xs sm:text-sm text-slateText leading-relaxed" role="region" aria-labelledby="faq-btn-1">
-                            Every answer script is checked against official board step-marking guidelines. Immediately after evaluation, students attend a dedicated doubt-clearing review to fix conceptual and presentation gaps.
+                            Fees and schedules are shared directly by the centre. WhatsApp or call <strong>+91 91631 94805</strong>, or submit an enquiry below — we will confirm board, subjects, and batch options for your child.
                         </div>
                     </div>
 
                     <div class="bg-white rounded-2xl border border-warmBorder p-4 sm:p-5 shadow-sm" role="listitem">
                         <button type="button" onclick="CatalystApp.toggleFaq(2)" class="w-full flex items-center justify-between text-left font-extrabold text-sm sm:text-base text-midnight cursor-pointer" aria-expanded="false" aria-controls="faq-body-2" id="faq-btn-2">
-                            <span>What is the batch size for regular classes at Catalyst Education?</span>
+                            <span>How does Instant Script Evaluation work after a mock test?</span>
                             <i id="faq-icon-2" class="fa-solid fa-chevron-down text-xs text-soothingBlue transition-transform" aria-hidden="true"></i>
                         </button>
                         <div id="faq-body-2" class="hidden mt-2.5 text-xs sm:text-sm text-slateText leading-relaxed" role="region" aria-labelledby="faq-btn-2">
-                            We maintain a strict <strong>1:6 Batch Focus</strong> for Classes 9 to 12 across all boards so every student receives direct mentorship and personalized feedback.
+                            Every answer script is checked against official board step-marking guidelines. Immediately after evaluation, students attend a dedicated doubt-clearing review to fix conceptual and presentation gaps.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-warmBorder p-4 sm:p-5 shadow-sm" role="listitem">
+                        <button type="button" onclick="CatalystApp.toggleFaq(3)" class="w-full flex items-center justify-between text-left font-extrabold text-sm sm:text-base text-midnight cursor-pointer" aria-expanded="false" aria-controls="faq-body-3" id="faq-btn-3">
+                            <span>What is the batch size for regular classes?</span>
+                            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-xs text-soothingBlue transition-transform" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq-body-3" class="hidden mt-2.5 text-xs sm:text-sm text-slateText leading-relaxed" role="region" aria-labelledby="faq-btn-3">
+                            We maintain a strict <strong>1:6 Batch Focus</strong> for Classes 9 to 12 across boards so every student receives direct mentorship and personalised feedback.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-warmBorder p-4 sm:p-5 shadow-sm" role="listitem">
+                        <button type="button" onclick="CatalystApp.toggleFaq(4)" class="w-full flex items-center justify-between text-left font-extrabold text-sm sm:text-base text-midnight cursor-pointer" aria-expanded="false" aria-controls="faq-body-4" id="faq-btn-4">
+                            <span>Do you offer Class 12 / ISC / WBCHSE programmes?</span>
+                            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-xs text-soothingBlue transition-transform" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq-body-4" class="hidden mt-2.5 text-xs sm:text-sm text-slateText leading-relaxed" role="region" aria-labelledby="faq-btn-4">
+                            Yes. Class 12 mock tests and coaching support cover <strong>ISC, CBSE, and WBCHSE</strong>. Contact us for current schedule and fees.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-warmBorder p-4 sm:p-5 shadow-sm" role="listitem">
+                        <button type="button" onclick="CatalystApp.toggleFaq(5)" class="w-full flex items-center justify-between text-left font-extrabold text-sm sm:text-base text-midnight cursor-pointer" aria-expanded="false" aria-controls="faq-body-5" id="faq-btn-5">
+                            <span>Is WBBSE support available in Bengali medium?</span>
+                            <i id="faq-icon-5" class="fa-solid fa-chevron-down text-xs text-soothingBlue transition-transform" aria-hidden="true"></i>
+                        </button>
+                        <div id="faq-body-5" class="hidden mt-2.5 text-xs sm:text-sm text-slateText leading-relaxed" role="region" aria-labelledby="faq-btn-5">
+                            Yes. WBBSE Madhyamik preparation can be discussed for <strong>English and Bengali medium</strong> students — share your medium when you enquire so we can guide you correctly.
                         </div>
                     </div>
                 </div>
@@ -724,7 +816,7 @@
         </section>
 
         <!-- SECTION 9: CONTACT US, CORPORATE DISCLOSURE & EXACT GOOGLE MAP -->
-        <section id="contact" class="py-12 md:py-16 px-4 md:px-10" aria-labelledby="contact-heading">
+        <section id="contact" class="py-12 md:py-16 px-4 md:px-10 reveal-on-scroll" aria-labelledby="contact-heading">
             <div class="max-w-7xl mx-auto space-y-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
@@ -763,8 +855,8 @@
                             </div>
                             <div class="pt-2 space-y-3">
                                 <button type="button" id="toggle-map-btn" onclick="CatalystApp.toggleMapIframe()" aria-expanded="false" aria-controls="contact-map-drawer" class="inline-flex items-center gap-2 bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold px-4 py-2.5 rounded-xl text-xs transition cursor-pointer">
-                                    <i class="fa-solid fa-diamond-turn-right"></i>
-                                    <span id="toggle-map-btn-label">Open in Google Maps</span>
+                                    <i class="fa-solid fa-map"></i>
+                                    <span id="toggle-map-btn-label">Show map</span>
                                 </button>
 
                                 <!-- Compact Lazy-Loaded Inline Map Drawer (Hidden by Default) -->
@@ -811,28 +903,74 @@
                     <div class="lg:col-span-7">
                         <div class="colorful-card-glass rounded-3xl p-6 sm:p-8 border border-warmBorder shadow-soothing">
                             <h3 class="text-lg sm:text-xl font-extrabold text-midnight mb-4">
-                                Enquire About Programmes &amp; Test Schedules
+                                Enquire About Programmes, Fees &amp; Schedules
                             </h3>
-                            <form id="contact-form" onsubmit="CatalystApp.handleContactSubmit(event)" class="space-y-4" novalidate>
+                            <form id="contact-form" onsubmit="CatalystApp.handleContactSubmit(event)" class="space-y-4 relative" novalidate>
+                                <div class="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
+                                    <label for="contact-company">Company</label>
+                                    <input type="text" id="contact-company" name="company" tabindex="-1" autocomplete="off">
+                                </div>
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <label for="contact-name" class="block text-xs font-bold text-midnight mb-1">Student / Parent Name *</label>
-                                        <input type="text" id="contact-name" name="name" required autocomplete="name" maxlength="80" placeholder="Enter full name" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-xs sm:text-sm focus:border-soothingBlue">
+                                        <input type="text" id="contact-name" name="name" required autocomplete="name" maxlength="80" placeholder="Enter full name" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-base focus:border-soothingBlue">
                                     </div>
                                     <div>
                                         <label for="contact-phone" class="block text-xs font-bold text-midnight mb-1">Mobile / WhatsApp Number *</label>
-                                        <input type="tel" id="contact-phone" name="phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s]{10,15}" maxlength="15" placeholder="+91 98XXX XXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-xs sm:text-sm focus:border-soothingBlue">
+                                        <input type="tel" id="contact-phone" name="phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s]{10,15}" maxlength="15" placeholder="+91 98XXX XXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-base focus:border-soothingBlue">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <div>
+                                        <label for="contact-email" class="block text-xs font-bold text-midnight mb-1">Email (optional)</label>
+                                        <input type="email" id="contact-email" name="email" autocomplete="email" maxlength="120" placeholder="name@email.com" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-base focus:border-soothingBlue">
+                                    </div>
+                                    <div>
+                                        <label for="contact-board" class="block text-xs font-bold text-midnight mb-1">Board *</label>
+                                        <select id="contact-board" name="board" required class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-base focus:border-soothingBlue">
+                                            <option value="">Select board</option>
+                                            <option value="ICSE">ICSE / ISC</option>
+                                            <option value="CBSE">CBSE</option>
+                                            <option value="WBBSE">WBBSE</option>
+                                            <option value="WBCHSE">WBCHSE</option>
+                                            <option value="CLASS12">Class 12 (any board)</option>
+                                            <option value="OTHER">Other / Not sure</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="contact-class" class="block text-xs font-bold text-midnight mb-1">Class *</label>
+                                        <select id="contact-class" name="studentClass" required class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-base focus:border-soothingBlue">
+                                            <option value="">Select class</option>
+                                            <option value="9">Class 9</option>
+                                            <option value="10">Class 10</option>
+                                            <option value="11">Class 11</option>
+                                            <option value="12">Class 12</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div>
-                                    <label for="contact-message" class="block text-xs font-bold text-midnight mb-1">Programme / Board Enquiry *</label>
-                                    <textarea id="contact-message" name="message" rows="3" required maxlength="1000" placeholder="Mention your class, board (ICSE / CBSE / WBBSE / WBCHSE), and mock test or batch query..." class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-xs sm:text-sm focus:border-soothingBlue"></textarea>
+                                    <label for="contact-message" class="block text-xs font-bold text-midnight mb-1">What do you need help with? *</label>
+                                    <textarea id="contact-message" name="message" rows="3" required maxlength="1000" placeholder="e.g. Fees &amp; schedule for CBSE Class 10 Final Mock Series / Free Pre-Board registration..." class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder bg-white text-base focus:border-soothingBlue"></textarea>
                                 </div>
-                                <button type="submit" class="bg-soothingBlue hover:bg-midnight text-white font-extrabold px-6 py-3 rounded-xl text-xs sm:text-sm transition cursor-pointer">
-                                    Submit Enquiry
-                                </button>
+                                <p class="text-[11px] text-mutedText">We use your phone (and email, if shared) only to respond about Catalyst Education programmes. We do not sell your details.</p>
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <button type="submit" class="bg-soothingBlue hover:bg-midnight text-white font-extrabold px-6 py-3 rounded-xl text-sm transition cursor-pointer min-h-[44px]">
+                                        Submit Enquiry
+                                    </button>
+                                    <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20fees%20and%20schedule." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#15803D] font-extrabold text-sm hover:underline">
+                                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                        Or WhatsApp us for fees
+                                    </a>
+                                </div>
                                 <div id="contact-status-msg" class="hidden p-3.5 rounded-xl bg-[#DCFCE7] text-[#15803D] text-xs font-bold border border-[#86EFAC]" role="status" aria-live="polite"></div>
                             </form>
+
+                            <!-- Google Form embed (paste embed URL in js/app.js → SiteConfig.googleForms.enquiry) -->
+                            <div id="enquiry-google-form-wrap" class="hidden mt-6 pt-6 border-t border-warmBorder space-y-3">
+                                <h4 class="text-sm font-extrabold text-midnight">Or submit via Google Form</h4>
+                                <p class="text-xs text-mutedText">If the form does not load, <a id="enquiry-google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="text-soothingBlue font-bold underline">open it in a new tab</a>.</p>
+                                <iframe id="enquiry-google-form" class="google-form-embed w-full border border-warmBorder shadow-sm" title="Catalyst Education Enquiry Google Form" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -864,10 +1002,11 @@
                 <div class="flex flex-wrap items-center gap-5 text-xs font-semibold text-gray-300">
                     <a href="#select-your-goal" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-white transition">Programmes</a>
                     <a href="#syllabus" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-white transition">Syllabus</a>
-                    <a href="#results" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-white transition">Faculty</a>
+                    <a href="#faculty" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-white transition">Faculty</a>
                     <a href="#success-stories" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-white transition">Testimonials</a>
                     <a href="#contact" onclick="CatalystApp.closeBoardPage(false)" class="hover:text-white transition">Contact Us</a>
-                    <button type="button" onclick="CatalystApp.openTermsModal()" class="text-logoYellow hover:text-white underline underline-offset-4 transition cursor-pointer">Terms of Service</button>
+                    <a href="disclaimer.html" class="hover:text-white transition">Disclaimer</a>
+                    <button type="button" onclick="CatalystApp.openTermsModal()" class="hover:text-white transition cursor-pointer text-xs font-semibold text-gray-300 bg-transparent border-0 p-0">Terms of Use</button>
                 </div>
             </div>
 
@@ -884,16 +1023,16 @@
     <!-- =====================================================================
          FREE MOCK TEST REGISTRATION POPUP MODAL (DEACTIVATED ON INITIAL LOAD)
          ===================================================================== -->
-    <div id="mockPopupModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-midnight/75 backdrop-blur-sm p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="popup-modal-title">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 border-2 border-logoYellow shadow-2xl relative overflow-hidden my-8">
+    <div id="mockPopupModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-midnight/75 backdrop-blur-sm p-3 sm:p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="popup-modal-title" style="-webkit-backdrop-filter: blur(4px);">
+        <div class="modal-panel modal-panel-animate bg-white rounded-3xl max-w-2xl w-full p-5 sm:p-8 border-2 border-logoYellow shadow-2xl relative overflow-hidden my-4 sm:my-8">
             <div class="shimmer-gold-bar h-2 w-full absolute top-0 left-0"></div>
 
-            <button type="button" onclick="CatalystApp.closeMockPopup()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-champagne hover:bg-soothingRed hover:text-white text-midnight flex items-center justify-center transition cursor-pointer" aria-label="Close Modal">
+            <button type="button" onclick="CatalystApp.closeMockPopup()" class="absolute top-4 right-4 w-10 h-10 min-h-[44px] min-w-[44px] rounded-full bg-champagne hover:bg-soothingRed hover:text-white text-midnight flex items-center justify-center transition cursor-pointer" aria-label="Close Modal">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <div id="popup-form-container" class="space-y-4">
-                <div class="flex items-center gap-3">
+            <div id="popup-form-container" class="space-y-4 pt-1">
+                <div class="flex flex-wrap items-center gap-3 pr-10">
                     <div class="bg-logoYellow px-2.5 py-1 rounded-lg border border-[#E6CF00]">
                         <svg class="h-8 w-auto block" viewBox="0 0 680 230" aria-hidden="true">
                             <use href="#catalyst-brand-logo"></use>
@@ -914,29 +1053,36 @@
                 <form onsubmit="CatalystApp.submitPopupMockForm(event)" class="space-y-3.5">
                     <div>
                         <label id="popup-board-label" class="block text-xs font-bold text-midnight mb-1">Select Board *</label>
-                        <div class="grid grid-cols-4 gap-1.5" role="group" aria-labelledby="popup-board-label">
-                            <button type="button" onclick="CatalystApp.selectPopupBoard('ICSE')" id="popup-board-ICSE" class="py-2 rounded-xl text-xs font-extrabold bg-soothingBlue text-white border border-soothingBlue cursor-pointer" aria-pressed="true">ICSE</button>
-                            <button type="button" onclick="CatalystApp.selectPopupBoard('CBSE')" id="popup-board-CBSE" class="py-2 rounded-xl text-xs font-extrabold bg-ivory text-midnight border border-warmBorder cursor-pointer" aria-pressed="false">CBSE</button>
-                            <button type="button" onclick="CatalystApp.selectPopupBoard('WBBSE')" id="popup-board-WBBSE" class="py-2 rounded-xl text-xs font-extrabold bg-ivory text-midnight border border-warmBorder cursor-pointer" aria-pressed="false">WBBSE</button>
-                            <button type="button" onclick="CatalystApp.selectPopupBoard('WBCHSE')" id="popup-board-WBCHSE" class="py-2 rounded-xl text-xs font-extrabold bg-ivory text-midnight border border-warmBorder cursor-pointer" aria-pressed="false">XII Boards</button>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5" role="group" aria-labelledby="popup-board-label">
+                            <button type="button" onclick="CatalystApp.selectPopupBoard('ICSE')" id="popup-board-ICSE" class="py-2.5 min-h-[44px] rounded-xl text-xs font-extrabold bg-soothingBlue text-white border border-soothingBlue cursor-pointer" aria-pressed="true">ICSE</button>
+                            <button type="button" onclick="CatalystApp.selectPopupBoard('CBSE')" id="popup-board-CBSE" class="py-2.5 min-h-[44px] rounded-xl text-xs font-extrabold bg-ivory text-midnight border border-warmBorder cursor-pointer" aria-pressed="false">CBSE</button>
+                            <button type="button" onclick="CatalystApp.selectPopupBoard('WBBSE')" id="popup-board-WBBSE" class="py-2.5 min-h-[44px] rounded-xl text-xs font-extrabold bg-ivory text-midnight border border-warmBorder cursor-pointer" aria-pressed="false">WBBSE</button>
+                            <button type="button" onclick="CatalystApp.selectPopupBoard('WBCHSE')" id="popup-board-WBCHSE" class="py-2.5 min-h-[44px] rounded-xl text-xs font-extrabold bg-ivory text-midnight border border-warmBorder cursor-pointer" aria-pressed="false">XII Boards</button>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div>
                             <label for="popup-student-name" class="block text-xs font-bold text-midnight mb-1">Student Name *</label>
-                            <input type="text" id="popup-student-name" name="student_name" required autocomplete="name" maxlength="80" placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder text-xs sm:text-sm">
+                            <input type="text" id="popup-student-name" name="student_name" required autocomplete="name" maxlength="80" placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder text-base">
                         </div>
                         <div>
                             <label for="popup-student-phone" class="block text-xs font-bold text-midnight mb-1">Phone / WhatsApp *</label>
-                            <input type="tel" id="popup-student-phone" name="student_phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s]{10,15}" maxlength="15" placeholder="+91 98XXX XXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder text-xs sm:text-sm">
+                            <input type="tel" id="popup-student-phone" name="student_phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s]{10,15}" maxlength="15" placeholder="+91 98XXX XXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-warmBorder text-base">
                         </div>
                     </div>
 
-                    <button type="submit" class="w-full bg-[#15803D] hover:bg-[#166534] text-white font-extrabold py-3.5 rounded-xl shadow-md transition text-xs sm:text-sm cursor-pointer">
+                    <button type="submit" class="w-full bg-[#15803D] hover:bg-[#166534] text-white font-extrabold py-3.5 min-h-[48px] rounded-xl shadow-md transition text-sm cursor-pointer">
                         Confirm Free Mock Test Pass
                     </button>
                 </form>
+
+                <!-- Google Form embed (paste embed URL in js/app.js → SiteConfig.googleForms.mockTest) -->
+                <div id="mock-google-form-wrap" class="hidden pt-4 border-t border-warmBorder space-y-3">
+                    <h4 class="text-sm font-extrabold text-midnight">Or register via Google Form</h4>
+                    <p class="text-xs text-mutedText">If the form does not load, <a id="mock-google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="text-soothingBlue font-bold underline">open it in a new tab</a>.</p>
+                    <iframe id="mock-google-form" class="google-form-embed w-full border border-warmBorder shadow-sm" title="Catalyst Education Free Mock Test Google Form" loading="lazy"></iframe>
+                </div>
             </div>
 
             <div id="popup-success-container" class="hidden text-center py-6 space-y-4">
@@ -958,19 +1104,24 @@
          TERMS OF SERVICE & CORPORATE GOVERNANCE MODAL
          ===================================================================== -->
     <div id="termsModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-midnight/75 backdrop-blur-sm p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title">
-        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 border border-warmBorder shadow-2xl relative my-8 space-y-4">
+        <div class="modal-panel modal-panel-animate bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 border border-warmBorder shadow-2xl relative my-4 sm:my-8 space-y-4">
             <div class="flex items-center justify-between border-b border-warmBorder pb-3">
-                <h3 id="terms-modal-title" class="text-lg sm:text-xl font-extrabold text-midnight">Terms of Service &amp; Corporate Disclosure</h3>
+                <h3 id="terms-modal-title" class="text-lg sm:text-xl font-extrabold text-midnight">Terms of Use &amp; Corporate Disclosure</h3>
                 <button type="button" onclick="CatalystApp.closeTermsModal()" class="w-8 h-8 rounded-full bg-champagne text-midnight flex items-center justify-center cursor-pointer" aria-label="Close Terms Modal">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
             <div class="space-y-3 text-xs sm:text-sm text-slateText leading-relaxed max-h-[65vh] overflow-y-auto pr-1">
                 <div class="p-4 rounded-2xl bg-[#EEF3FF] border border-[#93B4FF] font-extrabold text-midnight">
-                    1. Corporate Ownership Disclosure: Catalyst Education is an educational brand owned and operated by EdufinGrow LLP.
+                    1. Corporate ownership: Catalyst Education is an educational brand owned and operated by EdufinGrow LLP.
                 </div>
-                <p><strong>2. Academic &amp; Mock Test Programmes:</strong> Target 2027 Pre-Board Practice Tests (ICSE, CBSE, WBBSE) are 100% Free with no course purchase required. Final Board Mock Test Series fees and schedules are communicated officially by the centre prior to enrolment.</p>
-                <p><strong>3. Centre Jurisdiction:</strong> All classes and offline mock test evaluations take place at 65, Jodhpur Park, Kolkata, West Bengal 700068.</p>
+                <p><strong>2. Website use:</strong> Content on this website is for general information about Catalyst Education programmes. Using the site, submitting an enquiry, or registering for a free mock test does not create any guaranteed academic outcome.</p>
+                <p><strong>3. Academic &amp; mock test programmes:</strong> Target 2027 Pre-Board Practice Tests for Class X (ICSE, CBSE, WBBSE) are 100% free with no course purchase required. Final Board Mock Test Series and Class 12 programme fees, payment schedules and refund conditions are shared by the centre on enquiry and governed by the fee policy communicated at admission and by applicable law.</p>
+                <p><strong>4. Privacy of enquiries:</strong> Phone numbers and optional emails submitted via this website are used only to respond about Catalyst Education programmes. We do not sell personal data to third parties.</p>
+                <p><strong>5. Independent institution &amp; results:</strong> The Centre is an independent coaching institution and is not affiliated with or endorsed by CISCE, CBSE, WBBSE or any examination authority unless stated in writing. The Centre does not guarantee marks, ranks, admissions or selections. Full details are on our <a href="disclaimer.html" class="text-soothingBlue font-extrabold underline">Disclaimer</a> page.</p>
+                <p><strong>6. Changes:</strong> Reasonable changes may be made to schedules, faculty, course content or teaching methodology. Students and parents will be informed through WhatsApp, SMS, notice board, email or other usual channels where practicable.</p>
+                <p><strong>7. Governing law:</strong> These terms and the Centre’s disclaimer are governed by the laws of India. Subject to applicable law, courts at Kolkata, West Bengal have jurisdiction over related disputes.</p>
+                <p><strong>8. Centre address:</strong> 65, Jodhpur Park, Kolkata – 700068.</p>
             </div>
             <div class="pt-2 text-right">
                 <button type="button" onclick="CatalystApp.closeTermsModal()" class="bg-midnight text-white font-bold px-5 py-2 rounded-xl text-xs cursor-pointer">Close</button>
@@ -981,7 +1132,18 @@
     <!-- =====================================================================
          MODULAR APPLICATION ENGINE (STRICTLY ENCAPSULATED, ZERO HTML LEAKAGE)
          ===================================================================== -->
-        <script src="js/app.js" defer></script>
+    <!-- Sticky mobile contact actions -->
+    <div class="fixed bottom-4 right-4 z-40 flex flex-col gap-2 sm:bottom-6 sm:right-6" aria-label="Quick contact">
+        <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20about%20mock%20tests%20and%20fees." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 min-h-[48px] min-w-[48px] px-4 rounded-full bg-[#25D366] hover:bg-[#1ebe57] text-white font-extrabold text-sm shadow-lg transition" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+            <span class="hidden xs:inline sm:inline">WhatsApp</span>
+        </a>
+        <a href="tel:+919163194805" class="sm:hidden inline-flex items-center justify-center min-h-[48px] min-w-[48px] rounded-full bg-midnight text-logoYellow shadow-lg" aria-label="Call Catalyst Education">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </a>
+    </div>
+
+        <script src="js/app.js?v=7" defer></script>
 </body>
 </html>
 
