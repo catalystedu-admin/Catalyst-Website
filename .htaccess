@@ -8,6 +8,9 @@ Options -Indexes
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Clean URL: /disclaimer → disclaimer.html
+  RewriteRule ^disclaimer/?$ disclaimer.html [L]
 </IfModule>
 
 <IfModule mod_headers.c>

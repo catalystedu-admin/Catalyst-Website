@@ -32,7 +32,7 @@ const CatalystApp = (function () {
                     {
                         id: 'banner-1-free-preboard',
                         active: true,
-                        badge: 'FREE PRE-BOARD MOCK TEST ADVERTISEMENT • CLASS X',
+                        badge: 'FREE PRE-BOARD MOCK TEST • CLASS X',
                         badgeStyle: 'bg-[#DCFCE7] text-[#15803D] border-[#86EFAC]',
                         headline: 'পুজো শেষ, এবার পরীক্ষা শুরু!',
                         subheadline: 'Free Pre-Board Mock Test for Class X Students (ICSE, CBSE & WBBSE)',
@@ -140,8 +140,8 @@ const CatalystApp = (function () {
                                 badgeText: '100% FREE',
                                 subBadgeText: 'No Course Purchase Required',
                                 name: 'Target 2027 CISCE: Pre-Board Practice Test',
-                                targetAudience: 'Class X students preparing for the ICSE examination.',
-                                purpose: 'To help students assess their preparation before their school pre-board examinations.',
+                                forYou: 'If you are in Class X ICSE and want a free timed run before school pre-boards, this is for you.',
+                                youGet: 'You sit a board-pattern paper, get your answers checked, and walk away knowing where you stand.',
                                 priceDisplay: '100% FREE',
                                 highlightNote: 'No Course Purchase Required',
                                 ctaLabel: 'Register for Free Test',
@@ -153,8 +153,8 @@ const CatalystApp = (function () {
                                 badgeText: 'PAID PROGRAMME • FINAL SERIES',
                                 subBadgeText: 'Target 2027 CISCE Board',
                                 name: 'Target 2027 CISCE: Final Board Mock Test Series',
-                                targetAudience: 'Class X students preparing for the ICSE board examination in 2027.',
-                                purpose: 'Structured mock test practice for the final board examinations.',
+                                forYou: 'If you are targeting ICSE 2027 and want full-length board-style mocks with feedback, this is for you.',
+                                youGet: 'You practise under exam conditions, get answer papers evaluated, and clear doubts after every test.',
                                 priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'Full-Length CISCE Pattern Mock Papers',
                                 ctaLabel: 'Ask for fees & schedule',
@@ -176,8 +176,8 @@ const CatalystApp = (function () {
                                 badgeText: '100% FREE',
                                 subBadgeText: 'No Course Purchase Required',
                                 name: 'Target 2027 CBSE: Pre-Board Practice Test',
-                                targetAudience: 'Class X CBSE students.',
-                                purpose: 'Assess preparation before school pre-board examinations.',
+                                forYou: 'If you are in Class X CBSE and want a free check before school pre-boards, this is for you.',
+                                youGet: 'You attempt a board-pattern paper, get feedback, and see what still needs work.',
                                 priceDisplay: '100% FREE',
                                 highlightNote: 'No Course Purchase Required',
                                 ctaLabel: 'Register for Free Test',
@@ -189,8 +189,8 @@ const CatalystApp = (function () {
                                 badgeText: 'PAID PROGRAMME • FINAL SERIES',
                                 subBadgeText: 'Target 2027 CBSE Board',
                                 name: 'Target 2027 CBSE: Final Board Mock Test Series',
-                                targetAudience: 'Class X CBSE students preparing for the 2027 board examination.',
-                                purpose: 'Structured board-pattern mock test practice.',
+                                forYou: 'If you are preparing for CBSE Class X 2027 and want structured board-pattern mocks, this is for you.',
+                                youGet: 'You practise competency-style papers, get evaluated scripts, and clear doubts after each test.',
                                 priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'Latest NCERT & CBSE Competency Pattern',
                                 ctaLabel: 'Ask for fees & schedule',
@@ -212,8 +212,8 @@ const CatalystApp = (function () {
                                 badgeText: '100% FREE',
                                 subBadgeText: 'No Course Purchase Required',
                                 name: 'Target 2027 WBBSE: Pre-Board Practice Test',
-                                targetAudience: 'Class X students preparing for the West Bengal Board of Secondary Education examination.',
-                                purpose: 'Assess preparation before school pre-board examinations.',
+                                forYou: 'If you are in Class X WBBSE / Madhyamik and want a free timed practice before school pre-boards, this is for you.',
+                                youGet: 'You write a board-style paper, get it checked, and understand your readiness early.',
                                 priceDisplay: '100% FREE',
                                 highlightNote: 'No Course Purchase Required',
                                 ctaLabel: 'Register for Free Test',
@@ -225,8 +225,8 @@ const CatalystApp = (function () {
                                 badgeText: 'PAID PROGRAMME • FINAL SERIES',
                                 subBadgeText: 'Target 2027 WBBSE Board',
                                 name: 'Target 2027 WBBSE: Final Board Mock Test Series',
-                                targetAudience: 'Class X WBBSE students preparing for the 2027 board examination.',
-                                purpose: 'Structured practice through board-oriented mock tests.',
+                                forYou: 'If you are aiming for Madhyamik 2027 and want board-oriented mocks with feedback, this is for you.',
+                                youGet: 'You practise WBBSE-pattern papers (English or Bengali medium), get evaluation, and clear doubts.',
                                 priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'WBBSE Madhyamik Pattern • English & Bengali Medium',
                                 ctaLabel: 'Ask for fees & schedule',
@@ -248,8 +248,8 @@ const CatalystApp = (function () {
                                 badgeText: 'CLASS 12 • FINAL SERIES',
                                 subBadgeText: 'ISC • CBSE • WBCHSE',
                                 name: 'Target 2027: Class 12 Board Mock Test Series',
-                                targetAudience: 'Class 11–12 students preparing for ISC, CBSE, or WBCHSE examinations.',
-                                purpose: 'Full-length board-pattern practice with answer paper evaluation, feedback sharing, and doubt clearing.',
+                                forYou: 'If you are in Class 11–12 (ISC, CBSE, or WBCHSE) and want full-length board mocks, this is for you.',
+                                youGet: 'You practise under board conditions, get scripts evaluated, and clear doubts one-on-one after each test.',
                                 priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'Physics, Chemistry, Maths, Biology tracks',
                                 ctaLabel: 'Ask for fees & schedule',
@@ -271,8 +271,8 @@ const CatalystApp = (function () {
                                 badgeText: 'Coming Soon',
                                 subBadgeText: 'Coming Soon',
                                 name: 'School Annual Examination Test Series*',
-                                targetAudience: 'Foundation students from relevant school classes.',
-                                purpose: 'Practice and preparation for school annual examinations.',
+                                forYou: 'If you are in the junior classes and want structured practice for school annual exams, this track is being built for you.',
+                                youGet: 'Soon: subject-wise practice papers and guided preparation for school annual examinations.',
                                 statusDisplay: 'Coming Soon',
                                 footnote: '*Coming soon. Classes, subjects, boards, and test structure will be finalised later.',
                                 ctaLabel: 'Registration Opening Soon',
@@ -642,7 +642,7 @@ const CatalystApp = (function () {
 
             function buildBannerSlideInnerHtml(slide) {
                 const pillsHtml = (slide.boardsPill || []).map(function (p) {
-                    return '<span class="bg-white/15 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">' + p + '</span>';
+                    return '<span class="banner-tag">' + p + '</span>';
                 }).join('');
 
                 const bullets = (slide.highlightBullets && slide.highlightBullets.length)
@@ -653,23 +653,23 @@ const CatalystApp = (function () {
                 }).join('');
 
                 return (
-                    '<div class="carousel-slide-inner w-full h-full bg-gradient-to-r ' + slide.themeGradient + ' text-white px-10 sm:px-16 md:px-20">' +
-                        '<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center h-full pt-5 pb-12 sm:pt-8 sm:pb-12">' +
-                            '<div class="lg:col-span-8 space-y-2.5 sm:space-y-3.5 min-w-0">' +
+                    '<div class="carousel-slide-inner w-full h-full bg-gradient-to-r ' + slide.themeGradient + ' text-white px-5 sm:px-16 md:px-20">' +
+                        '<div class="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-6 items-center h-full pt-4 pb-11 sm:pt-6 sm:pb-11">' +
+                            '<div class="lg:col-span-8 space-y-2 sm:space-y-3 min-w-0">' +
                                 '<div class="flex flex-wrap items-center gap-2">' +
                                     '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-extrabold border ' + slide.badgeStyle + '">' +
                                         '<i class="fa-solid fa-bullhorn"></i><span>' + slide.badge + '</span>' +
                                     '</span>' +
                                 '</div>' +
                                 '<h2 class="text-lg sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-logoYellow leading-tight"' + ( /[\u0980-\u09FF]/.test(slide.headline) ? ' lang="bn"' : '' ) + '>' + slide.headline + '</h2>' +
-                                '<p class="text-sm sm:text-base font-bold text-white line-clamp-2">' + slide.subheadline + '</p>' +
+                                '<p class="text-sm sm:text-base font-bold text-white line-clamp-3 sm:line-clamp-2">' + slide.subheadline + '</p>' +
                                 '<p class="hidden sm:block text-xs sm:text-sm text-gray-200 max-w-2xl leading-relaxed line-clamp-2">' + slide.description + '</p>' +
                                 '<div class="flex flex-wrap items-center gap-2">' + pillsHtml + '</div>' +
                                 '<div class="pt-1 flex flex-wrap items-center gap-2.5 sm:gap-3">' +
-                                    '<button type="button" onclick="CatalystApp.triggerBannerCta(\'' + slide.ctaActionType + '\', \'' + slide.ctaBoardDefault + '\')" class="bg-[#15803D] hover:bg-[#166534] text-white font-extrabold px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-lg transition text-xs sm:text-sm cursor-pointer flex items-center gap-2 border border-[#86EFAC]/40">' +
-                                        '<span>' + slide.ctaLabel + '</span><i class="fa-solid fa-arrow-right text-logoYellow"></i>' +
+                                    '<button type="button" onclick="CatalystApp.triggerBannerCta(\'' + slide.ctaActionType + '\', \'' + slide.ctaBoardDefault + '\')" class="banner-cta-primary" aria-label="' + slide.ctaLabel + '">' +
+                                        '<span>' + slide.ctaLabel + '</span><i class="fa-solid fa-arrow-right text-logoYellow" aria-hidden="true"></i>' +
                                     '</button>' +
-                                    '<a href="' + (slide.secondaryTarget || '#select-your-goal') + '" class="bg-white/10 hover:bg-white/20 text-white font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl border border-white/25 transition text-xs sm:text-sm">' +
+                                    '<a href="' + (slide.secondaryTarget || '#select-your-goal') + '" class="banner-cta-secondary" aria-label="' + (slide.secondaryLabel || 'Select Your Goal') + '">' +
                                         (slide.secondaryLabel || 'Select Your Goal') +
                                     '</a>' +
                                 '</div>' +
@@ -827,6 +827,22 @@ const CatalystApp = (function () {
                     if (document.hidden) stopBannerAutoTimer();
                     else resetBannerAutoTimer();
                 });
+
+                const viewport = document.getElementById('hero-carousel-viewport');
+                if (!viewport) return;
+                let touchStartX = 0;
+                let touchStartY = 0;
+                viewport.addEventListener('touchstart', function (e) {
+                    touchStartX = e.touches[0].clientX;
+                    touchStartY = e.touches[0].clientY;
+                }, { passive: true });
+                viewport.addEventListener('touchend', function (e) {
+                    const dx = e.changedTouches[0].clientX - touchStartX;
+                    const dy = e.changedTouches[0].clientY - touchStartY;
+                    if (Math.abs(dx) < 45 || Math.abs(dx) < Math.abs(dy)) return;
+                    if (dx < 0) nextBanner();
+                    else prevBanner();
+                }, { passive: true });
             }
 
             function bindScrollReveals() {
@@ -883,8 +899,8 @@ const CatalystApp = (function () {
                     const tabBtn = document.getElementById('board-tab-' + k);
                     if (tabBtn) {
                         tabBtn.className = (k === normalizedKey)
-                            ? 'px-3.5 py-2 rounded-xl text-xs font-extrabold bg-midnight text-logoYellow shadow-sm transition cursor-pointer'
-                            : 'px-3.5 py-2 rounded-xl text-xs font-extrabold text-slateText hover:bg-white transition cursor-pointer';
+                            ? 'board-tab board-tab--active'
+                            : 'board-tab board-tab--idle';
                     }
                 });
 
@@ -901,22 +917,22 @@ const CatalystApp = (function () {
                     const fProg = boardData.programmes[0];
                     cardsContainer.className = 'grid grid-cols-1 max-w-2xl mx-auto gap-6';
                     cardsContainer.innerHTML =
-                        '<article class="rounded-3xl p-6 sm:p-8 bg-ivory border-2 border-[#D1D5DB] shadow-soothing space-y-5 relative">' +
+                        '<article class="prog-card prog-card--soon rounded-3xl p-6 sm:p-8 border-2 shadow-soothing space-y-5 relative">' +
                             '<div class="flex flex-wrap items-center gap-2">' +
                                 '<span class="inline-flex items-center gap-1.5 bg-[#FEF3C7] text-[#B45309] text-xs font-extrabold px-3.5 py-1.5 rounded-full border border-[#FDE68A]">' +
                                     '<i class="fa-solid fa-clock"></i><span>Coming Soon</span>' +
                                 '</span>' +
                             '</div>' +
-                            '<div class="space-y-2">' +
+                            '<div class="space-y-2.5">' +
                                 '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight">' + fProg.name + '</h4>' +
-                                '<p class="text-xs sm:text-sm text-slateText"><strong class="text-midnight">Target Audience:</strong> ' + fProg.targetAudience + '</p>' +
-                                '<p class="text-xs sm:text-sm text-slateText"><strong class="text-midnight">Purpose:</strong> ' + fProg.purpose + '</p>' +
+                                '<p class="text-xs sm:text-sm text-slateText leading-relaxed">' + fProg.forYou + '</p>' +
+                                '<p class="text-xs sm:text-sm text-slateText leading-relaxed">' + fProg.youGet + '</p>' +
                             '</div>' +
-                            '<div class="p-4 rounded-2xl bg-white border border-warmBorder text-xs text-mutedText">' +
+                            '<div class="p-4 rounded-2xl surface-panel border border-warmBorder text-xs text-mutedText">' +
                                 '<div class="font-bold text-midnight">' + fProg.footnote + '</div>' +
                             '</div>' +
                             '<div class="flex flex-wrap items-center gap-3 pt-2">' +
-                                '<button type="button" disabled aria-disabled="true" class="bg-[#E5E7EB] text-[#6B7280] font-extrabold px-5 py-3 rounded-xl text-xs sm:text-sm cursor-not-allowed flex items-center gap-2">' +
+                                '<button type="button" disabled aria-disabled="true" class="btn-disabled-soft bg-[#E5E7EB] text-[#4B5563] font-extrabold px-5 py-3 rounded-xl text-xs sm:text-sm cursor-not-allowed flex items-center gap-2">' +
                                     '<i class="fa-solid fa-lock"></i><span>' + fProg.ctaLabel + '</span>' +
                                 '</button>' +
                             '</div>' +
@@ -929,7 +945,7 @@ const CatalystApp = (function () {
                     cardsContainer.innerHTML = boardData.programmes.map(function (prog) {
                         if (prog.type === 'FREE') {
                             return (
-                                '<article class="rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#F0FDF4] to-white border-2 border-[#22C55E] shadow-soothing flex flex-col justify-between space-y-5 relative">' +
+                                '<article class="prog-card prog-card--free rounded-3xl p-6 sm:p-7 border-2 border-[#22C55E] shadow-soothing flex flex-col justify-between space-y-5 relative">' +
                                     '<div class="space-y-4">' +
                                         '<div class="flex flex-wrap items-center justify-between gap-2">' +
                                             '<span class="free-badge-pulse inline-flex items-center gap-1.5 bg-[#15803D] text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-sm">' +
@@ -942,18 +958,17 @@ const CatalystApp = (function () {
                                             '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight mt-1">' + prog.name + '</h4>' +
                                         '</div>' +
                                         '<div class="space-y-2.5 text-xs sm:text-sm text-slateText border-t border-[#BBF7D0] pt-4">' +
-                                            '<div><strong class="text-midnight">Target Audience:</strong> ' + prog.targetAudience + '</div>' +
-                                            '<div><strong class="text-midnight">Purpose:</strong> ' + prog.purpose + '</div>' +
-                                            '<div class="flex items-center gap-2 pt-1">' +
-                                                '<span class="font-extrabold text-midnight">Price:</span>' +
+                                            '<p class="leading-relaxed">' + prog.forYou + '</p>' +
+                                            '<p class="leading-relaxed">' + prog.youGet + '</p>' +
+                                            '<div class="flex flex-wrap items-center gap-2 pt-1">' +
                                                 '<span class="bg-[#15803D] text-white font-extrabold px-2.5 py-0.5 rounded-md text-xs">' + prog.priceDisplay + '</span>' +
                                                 '<span class="text-xs font-extrabold text-[#15803D]">• ' + prog.highlightNote + '</span>' +
                                             '</div>' +
                                         '</div>' +
                                     '</div>' +
                                     '<div class="pt-4 border-t border-[#BBF7D0]">' +
-                                        '<button type="button" onclick="CatalystApp.openMockPopup(\'' + prog.boardCode + '\', \'' + prog.name + ' (100% FREE)\')" class="w-full bg-[#15803D] hover:bg-[#166534] text-white font-extrabold py-3.5 px-6 rounded-2xl shadow-md transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
-                                            '<i class="fa-solid fa-clipboard-check text-logoYellow"></i><span>' + prog.ctaLabel + '</span>' +
+                                        '<button type="button" onclick="CatalystApp.openMockPopup(\'' + prog.boardCode + '\', \'' + prog.name + ' (100% FREE)\')" class="w-full bg-[#15803D] hover:bg-[#166534] text-white font-extrabold py-3.5 px-6 rounded-2xl shadow-md transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="' + prog.ctaLabel + ' for ' + prog.boardCode + '">' +
+                                            '<i class="fa-solid fa-clipboard-check text-logoYellow" aria-hidden="true"></i><span>' + prog.ctaLabel + '</span>' +
                                         '</button>' +
                                     '</div>' +
                                 '</article>'
@@ -961,16 +976,16 @@ const CatalystApp = (function () {
                         }
                         const waText = encodeURIComponent('Hi Catalyst Education, I want fees and schedule for ' + prog.name + ' (' + prog.boardCode + ').');
                         const secondaryBtn = prog.whatsapp
-                            ? ('<a href="https://wa.me/919163194805?text=' + waText + '" target="_blank" rel="noopener noreferrer" class="w-full sm:w-1/2 bg-white hover:bg-[#DCFCE7] text-[#15803D] border-2 border-[#15803D] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
-                                '<i class="fa-brands fa-whatsapp"></i><span>' + (prog.secondaryCtaLabel || 'WhatsApp Us') + '</span></a>')
-                            : ('<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name.replace(/'/g, "\\'") + '\')" class="w-full sm:w-1/2 bg-white hover:bg-[#DBEAFE] text-[#1D3B8B] border-2 border-[#1D3B8B] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
-                                '<span>' + (prog.secondaryCtaLabel || 'Contact for fees') + '</span><i class="fa-solid fa-arrow-right text-xs"></i></button>');
+                            ? ('<a href="https://wa.me/919163194805?text=' + waText + '" target="_blank" rel="noopener noreferrer" class="w-full sm:w-1/2 surface-panel hover:bg-[#DCFCE7] text-[#15803D] border-2 border-[#15803D] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="WhatsApp about ' + prog.name + '">' +
+                                '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>' + (prog.secondaryCtaLabel || 'WhatsApp Us') + '</span></a>')
+                            : ('<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name.replace(/'/g, "\\'") + '\')" class="w-full sm:w-1/2 surface-panel hover:bg-[#DBEAFE] text-[#1D3B8B] border-2 border-[#1D3B8B] font-extrabold py-3.5 px-4 rounded-2xl transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="' + (prog.secondaryCtaLabel || 'Contact for fees') + '">' +
+                                '<span>' + (prog.secondaryCtaLabel || 'Contact for fees') + '</span><i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></button>');
                         return (
-                            '<article class="rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#EFF6FF] to-white border-2 border-[#1D3B8B] shadow-soothing flex flex-col justify-between space-y-5 relative">' +
+                            '<article class="prog-card prog-card--paid rounded-3xl p-6 sm:p-7 border-2 border-[#1D3B8B] shadow-soothing flex flex-col justify-between space-y-5 relative">' +
                                 '<div class="space-y-4">' +
                                     '<div class="flex flex-wrap items-center justify-between gap-2">' +
                                         '<span class="inline-flex items-center gap-1.5 bg-[#1D3B8B] text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-sm">' +
-                                            '<i class="fa-solid fa-layer-group text-logoYellow"></i><span>' + prog.badgeText + '</span>' +
+                                            '<i class="fa-solid fa-layer-group text-logoYellow" aria-hidden="true"></i><span>' + prog.badgeText + '</span>' +
                                         '</span>' +
                                         '<span class="bg-[#DBEAFE] text-[#1D3B8B] text-xs font-extrabold px-3 py-1 rounded-full border border-[#93C5FD]">' + prog.subBadgeText + '</span>' +
                                     '</div>' +
@@ -979,14 +994,14 @@ const CatalystApp = (function () {
                                         '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight mt-1">' + prog.name + '</h4>' +
                                     '</div>' +
                                     '<div class="space-y-2.5 text-xs sm:text-sm text-slateText border-t border-[#BFDBFE] pt-4">' +
-                                        '<div><strong class="text-midnight">Target Audience:</strong> ' + prog.targetAudience + '</div>' +
-                                        '<div><strong class="text-midnight">Purpose:</strong> ' + prog.purpose + '</div>' +
-                                        '<div><strong class="text-midnight">Fees:</strong> <span class="text-soothingBlue font-bold">' + prog.priceDisplay + '</span></div>' +
+                                        '<p class="leading-relaxed">' + prog.forYou + '</p>' +
+                                        '<p class="leading-relaxed">' + prog.youGet + '</p>' +
+                                        '<p class="pt-0.5"><span class="text-soothingBlue font-bold">' + prog.priceDisplay + '</span></p>' +
                                     '</div>' +
                                 '</div>' +
                                 '<div class="pt-4 border-t border-[#BFDBFE] flex flex-wrap sm:flex-nowrap items-center gap-3">' +
-                                    '<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name.replace(/'/g, "\\'") + '\')" class="w-full sm:w-1/2 bg-[#1D3B8B] hover:bg-midnight text-white font-extrabold py-3.5 px-4 rounded-2xl shadow-md transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">' +
-                                        '<i class="fa-solid fa-comments text-logoYellow"></i><span>' + (prog.ctaLabel || 'Ask for fees & schedule') + '</span>' +
+                                    '<button type="button" onclick="CatalystApp.enrolPaidSeries(\'' + prog.boardCode + '\', \'' + prog.name.replace(/'/g, "\\'") + '\')" class="w-full sm:w-1/2 bg-[#1D3B8B] hover:bg-midnight text-white font-extrabold py-3.5 px-4 rounded-2xl shadow-md transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="' + (prog.ctaLabel || 'Ask for fees and schedule') + ' for ' + prog.name + '">' +
+                                        '<i class="fa-solid fa-comments text-logoYellow" aria-hidden="true"></i><span>' + (prog.ctaLabel || 'Ask for fees & schedule') + '</span>' +
                                     '</button>' +
                                     secondaryBtn +
                                 '</div>' +
@@ -1051,8 +1066,8 @@ const CatalystApp = (function () {
                     const btn = document.getElementById('cd-tab-' + k);
                     if (btn) {
                         btn.className = (k === boardKey)
-                            ? 'px-2.5 py-1 rounded-lg text-[11px] font-extrabold bg-soothingBlue text-white transition cursor-pointer'
-                            : 'px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer';
+                            ? 'pill-tab pill-tab--active'
+                            : 'pill-tab pill-tab--idle';
                     }
                 });
                 updateCountdownDisplay();
@@ -1212,8 +1227,8 @@ const CatalystApp = (function () {
                 const optionsGrid = document.getElementById('quiz-options-grid');
                 optionsGrid.innerHTML = currentQ.options.map(function (optText, idx) {
                     return (
-                        '<button type="button" id="quiz-opt-' + idx + '" onclick="CatalystApp.selectQuizOption(' + idx + ')" class="text-left p-3.5 rounded-2xl border border-warmBorder bg-white hover:border-soothingBlue transition text-xs sm:text-sm font-semibold text-midnight cursor-pointer flex items-center gap-2.5">' +
-                            '<span class="w-6 h-6 rounded-lg bg-champagne text-midnight font-extrabold flex items-center justify-center text-xs shrink-0">' + String.fromCharCode(65 + idx) + '</span>' +
+                        '<button type="button" id="quiz-opt-' + idx + '" onclick="CatalystApp.selectQuizOption(' + idx + ')" class="quiz-option text-left p-3.5 rounded-2xl border border-warmBorder transition text-xs sm:text-sm font-semibold text-midnight cursor-pointer flex items-center gap-2.5">' +
+                            '<span class="quiz-option-letter w-6 h-6 rounded-lg font-extrabold flex items-center justify-center text-xs shrink-0">' + String.fromCharCode(65 + idx) + '</span>' +
                             '<span>' + optText + '</span>' +
                         '</button>'
                     );
@@ -1237,22 +1252,22 @@ const CatalystApp = (function () {
                     if (!btn) return;
                     btn.disabled = true;
                     if (isCorrect && idx === selectedIndex) {
-                        btn.className = 'text-left p-3.5 rounded-2xl border-2 border-[#15803D] bg-[#DCFCE7] text-[#15803D] text-xs sm:text-sm font-extrabold flex items-center gap-2.5';
+                        btn.className = 'quiz-option quiz-option--correct';
                     } else if (idx === selectedIndex) {
-                        btn.className = 'text-left p-3.5 rounded-2xl border-2 border-soothingRed bg-[#FFE4E8] text-soothingRed text-xs sm:text-sm font-extrabold flex items-center gap-2.5';
+                        btn.className = 'quiz-option quiz-option--wrong';
                     } else if (!isTrap && idx === currentQ.ans) {
-                        btn.className = 'text-left p-3.5 rounded-2xl border-2 border-[#15803D] bg-[#F0FDF4] text-[#15803D] text-xs sm:text-sm font-bold flex items-center gap-2.5';
+                        btn.className = 'quiz-option quiz-option--answer';
                     } else {
-                        btn.className = 'text-left p-3.5 rounded-2xl border border-warmBorder bg-gray-50 text-mutedText text-xs sm:text-sm opacity-70 flex items-center gap-2.5';
+                        btn.className = 'quiz-option quiz-option--dim';
                     }
                 });
 
                 const feedbackBox = document.getElementById('quiz-feedback-box');
                 if (isCorrect) {
-                    feedbackBox.className = 'p-3.5 rounded-2xl text-xs leading-relaxed border border-[#86EFAC] bg-[#F0FDF4] text-[#15803D] font-medium';
+                    feedbackBox.className = 'callout-success';
                     feedbackBox.innerHTML = '<strong>Spot On!</strong> ' + currentQ.exp;
                 } else {
-                    feedbackBox.className = 'p-3.5 rounded-2xl text-xs leading-relaxed border border-[#FDA4AF] bg-[#FFF1F2] text-midnight font-medium';
+                    feedbackBox.className = 'callout-error';
                     feedbackBox.innerHTML = '<strong>Board Marking Insight:</strong> ' + currentQ.exp;
                 }
 
@@ -1312,8 +1327,8 @@ const CatalystApp = (function () {
                     const btn = document.getElementById('syl-board-' + k);
                     if (btn) {
                         btn.className = (k === boardKey)
-                            ? 'px-3.5 py-2 rounded-xl text-xs font-extrabold bg-midnight text-logoYellow transition cursor-pointer'
-                            : 'px-3.5 py-2 rounded-xl text-xs font-extrabold text-slateText hover:bg-champagne transition cursor-pointer';
+                            ? 'pill-tab pill-tab--active-dark'
+                            : 'pill-tab pill-tab--idle';
                     }
                 });
                 renderSyllabusView();
@@ -1325,8 +1340,8 @@ const CatalystApp = (function () {
                     const btn = document.getElementById('syl-subj-' + s);
                     if (btn) {
                         btn.className = (s === subjKey)
-                            ? 'px-4 py-2 rounded-xl text-xs font-extrabold bg-soothingBlue text-white shadow-sm transition cursor-pointer'
-                            : 'px-4 py-2 rounded-xl text-xs font-extrabold bg-white text-slateText border border-warmBorder hover:bg-champagne transition cursor-pointer';
+                            ? 'pill-tab pill-tab--active'
+                            : 'pill-tab pill-tab--ghost';
                     }
                 });
                 renderSyllabusView();
@@ -1387,17 +1402,17 @@ const CatalystApp = (function () {
                         return '<li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-soothingBlue mt-0.5 text-[10px]" aria-hidden="true"></i><span>' + p + '</span></li>';
                     }).join('');
                     const tipHtml = u.tip
-                        ? ('<p class="mt-2.5 text-[11px] font-bold text-midnight bg-[#FFF3B0]/70 border border-[#FDE68A] rounded-xl px-3 py-2">' + u.tip + '</p>')
+                        ? ('<p class="callout-tip mt-2.5">' + u.tip + '</p>')
                         : '';
 
                     return (
-                        '<div class="rounded-2xl bg-white border border-warmBorder overflow-hidden">' +
-                            '<button type="button" id="syl-unit-btn-' + idx + '" onclick="CatalystApp.toggleSyllabusUnit(' + idx + ')" aria-expanded="false" aria-controls="syl-unit-panel-' + idx + '" class="w-full flex items-start justify-between gap-3 p-3.5 text-left cursor-pointer hover:bg-[#F8FAFF] transition">' +
+                        '<div class="syl-unit-card rounded-2xl border border-warmBorder overflow-hidden">' +
+                            '<button type="button" id="syl-unit-btn-' + idx + '" onclick="CatalystApp.toggleSyllabusUnit(' + idx + ')" aria-expanded="false" aria-controls="syl-unit-panel-' + idx + '" aria-label="Toggle chapter: ' + u.title + '" class="syl-unit-btn w-full flex items-start justify-between gap-3 p-3.5 text-left cursor-pointer transition">' +
                                 '<span class="flex items-start gap-2.5 min-w-0">' +
                                     '<i class="fa-solid fa-circle-check text-soothingBlue mt-0.5 shrink-0" aria-hidden="true"></i>' +
                                     '<span class="min-w-0">' +
                                         '<span class="block text-xs sm:text-sm font-extrabold text-midnight leading-snug">' + u.title + '</span>' +
-                                        (u.marks ? '<span class="inline-block mt-1 text-[10px] font-extrabold uppercase tracking-wide text-soothingBlue bg-[#E0EAFF] px-2 py-0.5 rounded-full">' + u.marks + '</span>' : '') +
+                                        (u.marks ? '<span class="label-chip label-chip--blue inline-block mt-1">' + u.marks + '</span>' : '') +
                                     '</span>' +
                                 '</span>' +
                                 '<i id="syl-unit-icon-' + idx + '" class="fa-solid fa-chevron-down text-[10px] text-mutedText mt-1.5 shrink-0 transition-transform" aria-hidden="true"></i>' +
@@ -1424,7 +1439,7 @@ const CatalystApp = (function () {
                         '<div class="lg:col-span-8 space-y-4">' +
                             '<div class="flex flex-wrap items-center gap-2">' +
                                 '<span class="bg-midnight text-logoYellow text-xs font-extrabold px-3 py-1 rounded-full">' + activeSyllabusBoard + '</span>' +
-                                '<span class="bg-[#E0EAFF] text-soothingBlue text-xs font-extrabold px-3 py-1 rounded-full">' + activeSyllabusSubject + '</span>' +
+                                '<span class="label-chip label-chip--blue">' + activeSyllabusSubject + '</span>' +
                             '</div>' +
                             '<div>' +
                                 '<h3 class="text-lg sm:text-xl font-extrabold text-midnight">' + activeSyllabusSubject + ' High-Weightage Units &amp; Marking Distribution</h3>' +
@@ -1435,11 +1450,11 @@ const CatalystApp = (function () {
                         '<div class="lg:col-span-4 bg-ivory rounded-2xl p-5 border border-warmBorder space-y-4">' +
                             '<div class="text-xs font-extrabold uppercase tracking-wider text-soothingRed">Examiner Evaluation Focus</div>' +
                             '<p class="text-xs sm:text-sm text-slateText leading-relaxed">' + subjObj.focus + '</p>' +
-                            '<div class="text-[11px] font-bold text-midnight bg-[#FFF3B0] p-3 rounded-xl border border-[#F2D06B]">' +
+                            '<div class="callout-tip">' +
                                 tipLine +
                             '</div>' +
-                            '<button type="button" onclick="CatalystApp.openMockPopup(\'ICSE\', \'' + activeSyllabusSubject + ' Mock Assessment\')" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-4 rounded-xl text-xs transition cursor-pointer">' +
-                                'Register for Free ' + activeSyllabusSubject + ' Test' +
+                            '<button type="button" onclick="CatalystApp.openMockPopup(\'ICSE\', \'' + activeSyllabusSubject + ' Mock Assessment\')" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-4 rounded-xl text-xs transition cursor-pointer" aria-label="Register for free ' + activeSyllabusSubject + ' mock test">' +
+                                'Register for Free ' + activeSyllabusSubject + ' Mock Test' +
                             '</button>' +
                         '</div>' +
                     '</div>';
@@ -1456,7 +1471,7 @@ const CatalystApp = (function () {
                         '<article class="colorful-card-glass rounded-3xl p-6 border border-warmBorder shadow-soothing flex flex-col justify-between space-y-4">' +
                             '<div class="space-y-2.5">' +
                                 '<div class="flex items-center justify-between gap-2">' +
-                                    '<span class="bg-[#FFF3B0] text-midnight text-xs font-extrabold px-3 py-1 rounded-full border border-[#F2D06B]">' + f.badge + '</span>' +
+                                    '<span class="label-chip label-chip--gold">' + f.badge + '</span>' +
                                     '<span class="text-xs font-bold text-soothingBlue text-right">' + f.experience + '</span>' +
                                 '</div>' +
                                 '<h3 class="text-xl font-extrabold text-midnight">' + f.name + '</h3>' +
@@ -1863,7 +1878,36 @@ const CatalystApp = (function () {
                 observer.observe(el);
             }
 
+            function syncThemeToggleUi() {
+                const isDark = document.documentElement.classList.contains('dark');
+                const btn = document.getElementById('theme-toggle-btn');
+                const icon = document.getElementById('theme-toggle-icon');
+                if (btn) {
+                    const label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+                    btn.setAttribute('aria-label', label);
+                    btn.setAttribute('title', label);
+                }
+                if (icon) {
+                    icon.className = isDark
+                        ? 'fa-solid fa-sun text-sm'
+                        : 'fa-solid fa-moon text-sm';
+                }
+                const metaTheme = document.querySelector('meta[name="theme-color"]');
+                if (metaTheme) metaTheme.setAttribute('content', isDark ? '#0B1220' : '#0028B8');
+            }
+
+            function toggleTheme() {
+                const root = document.documentElement;
+                const next = root.classList.contains('dark') ? 'light' : 'dark';
+                root.classList.toggle('dark', next === 'dark');
+                try { localStorage.setItem('catalyst-theme', next); } catch (e) { /* ignore */ }
+                const metaTheme = document.querySelector('meta[name="theme-color"]');
+                if (metaTheme) metaTheme.setAttribute('content', next === 'dark' ? '#0B1220' : '#0028B8');
+                syncThemeToggleUi();
+            }
+
             function init() {
+                syncThemeToggleUi();
                 mountModule('BannerCarousel', function () {
                     renderBannerCarousel({ immediate: true });
                     bindBannerAutoplayControls();
@@ -1967,6 +2011,7 @@ const CatalystApp = (function () {
                 openTermsModal: openTermsModal,
                 closeTermsModal: closeTermsModal,
                 toggleMobileMenu: toggleMobileMenu,
+                toggleTheme: toggleTheme,
                 runRegressionSuite: runRegressionSuite
             };
         })();

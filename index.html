@@ -6,6 +6,16 @@
     <meta name="format-detection" content="telephone=yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    <script>
+        (function () {
+            try {
+                /* Default is always light; dark only when the user chose it */
+                if (localStorage.getItem('catalyst-theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            } catch (e) { /* ignore */ }
+        })();
+    </script>
     <title>Catalyst Education | Coaching &amp; Mock Test Centre in Kolkata (ICSE, CBSE, WBBSE, WBCHSE)</title>
     <meta name="description" content="Catalyst Education, Jodhpur Park, Kolkata: board-pattern mock tests and 1:6 batch coaching for Class 9 to 12 (ICSE, ISC, CBSE, WBBSE, WBCHSE). Free Class X pre-board practice.">
     <meta name="keywords" content="Catalyst Education Kolkata, mock test in Kolkata, coaching institute in Kolkata, ICSE mock test Kolkata, CBSE coaching Jodhpur Park, WBBSE Madhyamik mock test, WBCHSE coaching South Kolkata, Class 12 mock test Kolkata">
@@ -116,6 +126,21 @@
 <body class="ambient-mesh-bg text-slateText antialiased selection:bg-logoYellow selection:text-midnight min-h-screen flex flex-col">
     <a href="#website-view" class="skip-link">Skip to main content</a>
 
+    <!-- Soft animated DNA + study field (brand motif) — decorative only -->
+    <div class="dna-bg" aria-hidden="true">
+        <div class="dna-bg__strand dna-bg__strand--a"></div>
+        <div class="dna-bg__strand dna-bg__strand--b"></div>
+        <div class="dna-bg__strand dna-bg__strand--c"></div>
+        <span class="study-float study-float--1"><i class="fa-solid fa-book-open"></i></span>
+        <span class="study-float study-float--2"><i class="fa-solid fa-flask"></i></span>
+        <span class="study-float study-float--3"><i class="fa-solid fa-atom"></i></span>
+        <span class="study-float study-float--4"><i class="fa-solid fa-square-root-variable"></i></span>
+        <span class="study-float study-float--5"><i class="fa-solid fa-pencil"></i></span>
+        <span class="study-float study-float--6"><i class="fa-solid fa-microscope"></i></span>
+        <span class="study-float study-float--7">E = mc²</span>
+        <span class="study-float study-float--8">H₂O</span>
+    </div>
+
     <!-- =====================================================================
          CENTRALIZED DRY VECTOR LOGO SPRITE (EXACT UNALTERED CATALYST LOGO)
          ===================================================================== -->
@@ -206,9 +231,12 @@
 
             <!-- Primary Action & Mobile Drawer Button -->
             <div class="flex items-center gap-2">
-                <button type="button" onclick="CatalystApp.openMockPopup()" class="hidden sm:inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold h-10 px-4 rounded-xl shadow-sm transition text-sm cursor-pointer">
+                <button type="button" id="theme-toggle-btn" onclick="CatalystApp.toggleTheme()" class="theme-toggle-btn inline-flex items-center justify-center h-10 w-10 text-midnight rounded-xl border border-warmBorder hover:bg-champagne transition cursor-pointer" aria-label="Switch to dark mode" title="Switch to dark mode">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon text-sm" aria-hidden="true"></i>
+                </button>
+                <button type="button" onclick="CatalystApp.openMockPopup()" class="cta-glow-green hidden sm:inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold h-10 px-4 rounded-xl transition text-sm cursor-pointer" aria-label="Register for free mock test">
                     <i class="fa-solid fa-clipboard-check text-logoYellow" aria-hidden="true"></i>
-                    <span>Free Pre-Board Test</span>
+                    <span>Free Mock Test</span>
                 </button>
                 <button type="button" id="mobile-menu-btn" onclick="CatalystApp.toggleMobileMenu()" class="lg:hidden inline-flex items-center justify-center h-10 w-10 text-midnight rounded-xl hover:bg-champagne" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
                     <i class="fa-solid fa-bars text-lg"></i>
@@ -224,7 +252,7 @@
             <a href="#faculty" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Faculty</a>
             <a href="#success-stories" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Testimonials</a>
             <a href="#contact" onclick="CatalystApp.closeBoardPage(false); CatalystApp.toggleMobileMenu()" class="px-3 py-2.5 rounded-lg hover:bg-champagne">Contact Us</a>
-            <button type="button" onclick="CatalystApp.openMockPopup(); CatalystApp.toggleMobileMenu()" class="text-left px-3 py-2.5 rounded-lg bg-[#DCFCE7] text-[#15803D] font-bold mt-1">Free Pre-Board Test</button>
+            <button type="button" onclick="CatalystApp.openMockPopup(); CatalystApp.toggleMobileMenu()" class="cta-glow-green flex items-center gap-2 px-3 py-2.5 rounded-lg bg-[#15803D] hover:bg-[#166534] text-white font-extrabold mt-1" aria-label="Register for free mock test"><i class="fa-solid fa-clipboard-check text-logoYellow" aria-hidden="true"></i><span>Free Mock Test</span></button>
         </nav>
     </header>
 
@@ -234,12 +262,12 @@
     <main id="website-view" class="flex-grow">
 
         <!-- SECTION 1: OPENING — SLIM MOTTO + CAROUSEL + COUNTDOWN (one top story) -->
-        <section id="hero" class="pt-5 pb-10 md:pt-6 md:pb-12 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="ignite-heading">
-            <div class="max-w-7xl mx-auto space-y-5">
+        <section id="hero" class="pt-3 pb-6 md:pt-4 md:pb-8 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="ignite-heading">
+            <div class="max-w-7xl mx-auto space-y-3 md:space-y-4">
 
                 <!-- Brand band: motto left, next-step rail right so the row stays balanced -->
-                <div class="reveal-on-scroll is-visible flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5">
-                    <div class="space-y-2 max-w-2xl min-w-0">
+                <div class="reveal-on-scroll is-visible flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
+                    <div class="space-y-1.5 max-w-2xl min-w-0">
                         <h1 id="ignite-heading" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-midnight tracking-tight leading-[1.15]">
                             Ignite Potential. <span class="text-soothingBlue">Engineer</span> <span class="text-soothingRed">Excellence.</span>
                         </h1>
@@ -247,14 +275,11 @@
                             Coaching and board-pattern mock tests in <strong>Jodhpur Park, Kolkata</strong> for Class 9 to 12 across <strong>ICSE, ISC, CBSE, WBBSE &amp; WBCHSE</strong>, including free Class X pre-board practice.
                         </p>
                     </div>
-                    <div class="shrink-0 flex flex-col items-start lg:items-end gap-2.5 pb-0.5">
-                        <a href="#select-your-goal" class="inline-flex items-center gap-2 bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold h-11 px-5 rounded-xl transition text-sm">
+                    <div class="shrink-0">
+                        <a href="#select-your-goal" class="inline-flex items-center gap-2 bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold h-11 px-5 rounded-xl transition text-sm" aria-label="Explore available study programmes">
                             <span>Explore Programmes</span>
                             <i class="fa-solid fa-arrow-right text-[10px]" aria-hidden="true"></i>
                         </a>
-                        <p class="text-xs text-mutedText lg:text-right max-w-[240px] leading-relaxed">
-                            Choose ICSE, CBSE, WBBSE or Class 12 to see free pre-board and Final Series options.
-                        </p>
                     </div>
                 </div>
 
@@ -263,16 +288,16 @@
                     <div class="relative rounded-3xl overflow-hidden shadow-soothing-lg border-2 border-[#93B4FF]/80 bg-midnight">
                         <div id="hero-carousel-viewport" class="relative w-full" aria-live="polite"></div>
 
-                        <button type="button" id="carousel-prev-btn" onclick="CatalystApp.prevBanner()" aria-label="Previous Promotional Banner" class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
-                            <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
+                        <button type="button" id="carousel-prev-btn" onclick="CatalystApp.prevBanner()" aria-label="Previous promotional banner" class="absolute left-3 bottom-2 sm:bottom-auto sm:left-5 sm:top-1/2 sm:-translate-y-1/2 z-20 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
+                            <i class="fa-solid fa-chevron-left text-sm sm:text-base" aria-hidden="true"></i>
                         </button>
-                        <button type="button" id="carousel-next-btn" onclick="CatalystApp.nextBanner()" aria-label="Next Promotional Banner" class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
-                            <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
+                        <button type="button" id="carousel-next-btn" onclick="CatalystApp.nextBanner()" aria-label="Next promotional banner" class="absolute right-3 bottom-2 sm:bottom-auto sm:right-5 sm:top-1/2 sm:-translate-y-1/2 z-20 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-logoYellow text-midnight shadow-lg border border-warmBorder flex items-center justify-center transition cursor-pointer focus:outline-none">
+                            <i class="fa-solid fa-chevron-right text-sm sm:text-base" aria-hidden="true"></i>
                         </button>
 
-                        <div class="absolute bottom-3.5 left-0 right-0 z-20 px-6 flex items-center justify-between pointer-events-none">
+                        <div class="absolute bottom-[1.05rem] sm:bottom-3.5 left-0 right-0 z-20 px-6 flex items-center justify-center sm:justify-between pointer-events-none">
                             <div id="carousel-dots" class="flex items-center gap-2 pointer-events-auto" role="tablist" aria-label="Select Banner Slide"></div>
-                            <span id="carousel-counter-badge" class="bg-midnight/80 backdrop-blur-md text-logoYellow text-[11px] font-extrabold px-3 py-1 rounded-full border border-white/15">1 / 3</span>
+                            <span id="carousel-counter-badge" class="hidden sm:inline-block bg-midnight/80 backdrop-blur-md text-logoYellow text-[11px] font-extrabold px-3 py-1 rounded-full border border-white/15">1 / 3</span>
                         </div>
                     </div>
                 </div>
@@ -284,11 +309,11 @@
                             <span class="w-2 h-2 rounded-full bg-soothingRed animate-ping" aria-hidden="true"></span>
                             <span class="text-xs font-extrabold uppercase tracking-wider text-midnight">2027 Board Exam Countdown</span>
                         </div>
-                        <div class="flex items-center gap-1 bg-[#EEF3FF] p-1 rounded-xl border border-[#C7D8FF]">
-                            <button type="button" onclick="CatalystApp.switchCountdownBoard('CBSE')" id="cd-tab-CBSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold bg-soothingBlue text-white transition cursor-pointer">CBSE</button>
-                            <button type="button" onclick="CatalystApp.switchCountdownBoard('ICSE')" id="cd-tab-ICSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">ICSE</button>
-                            <button type="button" onclick="CatalystApp.switchCountdownBoard('WBBSE')" id="cd-tab-WBBSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">WBBSE</button>
-                            <button type="button" onclick="CatalystApp.switchCountdownBoard('WBCHSE')" id="cd-tab-WBCHSE" class="px-2.5 py-1 rounded-lg text-[11px] font-extrabold text-slateText hover:text-midnight transition cursor-pointer">WBCHSE</button>
+                        <div class="pill-tabs-rail" role="tablist" aria-label="Board exam countdown filter">
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('CBSE')" id="cd-tab-CBSE" class="pill-tab pill-tab--active" aria-label="Show CBSE board exam countdown">CBSE</button>
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('ICSE')" id="cd-tab-ICSE" class="pill-tab pill-tab--idle" aria-label="Show ICSE board exam countdown">ICSE</button>
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('WBBSE')" id="cd-tab-WBBSE" class="pill-tab pill-tab--idle" aria-label="Show WBBSE board exam countdown">WBBSE</button>
+                            <button type="button" onclick="CatalystApp.switchCountdownBoard('WBCHSE')" id="cd-tab-WBCHSE" class="pill-tab pill-tab--idle" aria-label="Show WBCHSE board exam countdown">WBCHSE</button>
                         </div>
                     </div>
 
@@ -320,11 +345,11 @@
         </section>
 
         <!-- SECTION 3: HOMEPAGE — SELECT YOUR GOAL -->
-        <section id="select-your-goal" class="py-12 md:py-16 px-4 md:px-10 bg-white/65 backdrop-blur-md border-b border-warmBorder" aria-labelledby="select-goal-heading">
-            <div class="max-w-7xl mx-auto space-y-8">
+        <section id="select-your-goal" class="py-8 md:py-12 px-4 md:px-10 bg-white/65 backdrop-blur-md border-b border-warmBorder" aria-labelledby="select-goal-heading">
+            <div class="max-w-7xl mx-auto space-y-5 md:space-y-6">
                 <div class="text-center max-w-2xl mx-auto space-y-2 reveal-on-scroll">
-                    <span class="inline-flex items-center gap-1.5 bg-[#FFF3B0] text-midnight px-3.5 py-1 rounded-full text-xs font-extrabold border border-[#F2D06B]">
-                        <i class="fa-solid fa-compass text-soothingRed"></i>
+                    <span class="label-chip label-chip--gold inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-compass text-soothingRed" aria-hidden="true"></i>
                         Target 2027 Board &amp; School Examinations
                     </span>
                     <h2 id="select-goal-heading" class="text-2xl sm:text-4xl font-extrabold text-midnight tracking-tight uppercase">
@@ -339,8 +364,8 @@
                 <div id="goal-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#93B4FF] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-1">
                         <div class="space-y-3">
-                            <div class="w-14 h-14 rounded-2xl bg-[#E0EAFF] border border-[#93B4FF] text-soothingBlue flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
-                                <i class="fa-solid fa-graduation-cap"></i>
+                            <div class="icon-well w-14 h-14 rounded-2xl bg-[#E0EAFF] border border-[#93B4FF] text-soothingBlue flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
+                                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
                             </div>
                             <div class="inline-block bg-[#DCFCE7] text-[#15803D] text-[11px] font-extrabold px-3 py-0.5 rounded-full border border-[#86EFAC]">
                                 Free Pre-Board + Final Series
@@ -351,7 +376,7 @@
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
-                            <button type="button" onclick="CatalystApp.openBoardPage('ICSE')" id="goal-btn-ICSE" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
+                            <button type="button" onclick="CatalystApp.openBoardPage('ICSE')" id="goal-btn-ICSE" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="View ICSE programmes">
                                 <span>View ICSE Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs text-logoYellow"></i>
                             </button>
@@ -360,8 +385,8 @@
 
                     <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#FDA4AF] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-2">
                         <div class="space-y-3">
-                            <div class="w-14 h-14 rounded-2xl bg-[#FFE4E8] border border-[#FDA4AF] text-soothingRed flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
-                                <i class="fa-solid fa-book-open-reader"></i>
+                            <div class="icon-well w-14 h-14 rounded-2xl bg-[#FFE4E8] border border-[#FDA4AF] text-soothingRed flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
+                                <i class="fa-solid fa-book-open-reader" aria-hidden="true"></i>
                             </div>
                             <div class="inline-block bg-[#DCFCE7] text-[#15803D] text-[11px] font-extrabold px-3 py-0.5 rounded-full border border-[#86EFAC]">
                                 Free Pre-Board + Final Series
@@ -372,7 +397,7 @@
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
-                            <button type="button" onclick="CatalystApp.openBoardPage('CBSE')" id="goal-btn-CBSE" class="w-full bg-soothingRed hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
+                            <button type="button" onclick="CatalystApp.openBoardPage('CBSE')" id="goal-btn-CBSE" class="w-full bg-soothingRed hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="View CBSE programmes">
                                 <span>View CBSE Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs text-logoYellow"></i>
                             </button>
@@ -381,8 +406,8 @@
 
                     <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#F2D06B] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-3">
                         <div class="space-y-3">
-                            <div class="w-14 h-14 rounded-2xl bg-[#FFF3B0] border border-[#F2D06B] text-[#B45309] flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
-                                <i class="fa-solid fa-award"></i>
+                            <div class="icon-well w-14 h-14 rounded-2xl bg-[#FFF3B0] border border-[#F2D06B] text-[#B45309] flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
+                                <i class="fa-solid fa-award" aria-hidden="true"></i>
                             </div>
                             <div class="inline-block bg-[#DCFCE7] text-[#15803D] text-[11px] font-extrabold px-3 py-0.5 rounded-full border border-[#86EFAC]">
                                 Free Pre-Board + Final Series
@@ -393,7 +418,7 @@
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
-                            <button type="button" onclick="CatalystApp.openBoardPage('WBBSE')" id="goal-btn-WBBSE" class="w-full bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
+                            <button type="button" onclick="CatalystApp.openBoardPage('WBBSE')" id="goal-btn-WBBSE" class="w-full bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="View WBBSE programmes">
                                 <span>View WBBSE Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
@@ -402,8 +427,8 @@
 
                     <article class="colorful-card-glass rounded-3xl p-6 border-2 border-[#93B4FF] shadow-soothing card-hover flex flex-col justify-between text-center group reveal-on-scroll reveal-delay-3">
                         <div class="space-y-3">
-                            <div class="w-14 h-14 rounded-2xl bg-[#EEF3FF] border border-[#93B4FF] text-soothingBlue flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
-                                <i class="fa-solid fa-flask"></i>
+                            <div class="icon-well w-14 h-14 rounded-2xl bg-[#EEF3FF] border border-[#93B4FF] text-soothingBlue flex items-center justify-center text-2xl mx-auto font-extrabold shadow-sm group-hover:scale-105 transition">
+                                <i class="fa-solid fa-flask" aria-hidden="true"></i>
                             </div>
                             <div class="inline-block bg-[#E0EAFF] text-soothingBlue text-[11px] font-extrabold px-3 py-0.5 rounded-full border border-[#93B4FF]">
                                 ISC • CBSE • WBCHSE
@@ -414,7 +439,7 @@
                             </p>
                         </div>
                         <div class="mt-6 pt-4 border-t border-warmBorder">
-                            <button type="button" onclick="CatalystApp.openBoardPage('CLASS12')" id="goal-btn-CLASS12" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2">
+                            <button type="button" onclick="CatalystApp.openBoardPage('CLASS12')" id="goal-btn-CLASS12" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-5 rounded-xl shadow-sm transition text-xs sm:text-sm cursor-pointer flex items-center justify-center gap-2" aria-label="View Class 12 programmes">
                                 <span>View Class 12 Programmes</span>
                                 <i class="fa-solid fa-arrow-right text-xs text-logoYellow"></i>
                             </button>
@@ -440,9 +465,9 @@
                 </div>
 
                 <div class="max-w-3xl mx-auto">
-                    <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" class="group w-full text-left rounded-2xl border border-dashed border-[#C7D8FF] bg-gradient-to-r from-white/90 to-[#EEF3FF]/70 px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 transition hover:border-soothingBlue hover:shadow-sm cursor-pointer">
+                    <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" class="foundation-track-btn group w-full text-left rounded-2xl border border-dashed border-[#C7D8FF] px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 transition hover:border-soothingBlue hover:shadow-sm cursor-pointer" aria-label="Enquire about Foundation Track programmes">
                         <div class="flex items-start gap-3 min-w-0">
-                            <span class="mt-0.5 w-9 h-9 shrink-0 rounded-xl bg-[#EEF3FF] border border-[#C7D8FF] text-soothingBlue flex items-center justify-center group-hover:bg-soothingBlue group-hover:text-logoYellow transition">
+                            <span class="icon-well mt-0.5 w-9 h-9 shrink-0 rounded-xl bg-[#EEF3FF] border border-[#C7D8FF] text-soothingBlue flex items-center justify-center group-hover:bg-soothingBlue group-hover:text-logoYellow transition">
                                 <i class="fa-solid fa-seedling text-sm" aria-hidden="true"></i>
                             </span>
                             <div class="min-w-0 space-y-0.5">
@@ -462,12 +487,12 @@
 
                 <!-- SECTIONS 3, 4, 5 & 6: DEDICATED BOARD PROGRAMMES PAGE VIEWPORT -->
                 <div id="board-programme-page-view" class="hidden pt-4 transition-all duration-300" aria-live="polite">
-                    <div class="bg-white/95 rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-soothingBlue shadow-soothing-lg space-y-6 relative overflow-hidden">
+                    <div class="surface-panel rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-soothingBlue shadow-soothing-lg space-y-6 relative overflow-hidden">
                         <div class="shimmer-gold-bar h-1.5 w-full absolute top-0 left-0"></div>
 
                         <div class="flex flex-col gap-4 pb-5 border-b border-warmBorder">
                             <div>
-                                <button type="button" onclick="CatalystApp.closeBoardPage(true)" class="inline-flex items-center gap-2 bg-[#EEF3FF] hover:bg-soothingBlue hover:text-white text-soothingBlue font-extrabold px-3.5 py-2 rounded-xl text-xs border border-[#C7D8FF] transition cursor-pointer">
+                                <button type="button" onclick="CatalystApp.closeBoardPage(true)" aria-label="Back to programme selection" class="board-back-btn inline-flex items-center gap-2 bg-[#EEF3FF] hover:bg-soothingBlue hover:text-white text-soothingBlue font-extrabold px-3.5 py-2 rounded-xl text-xs border border-[#C7D8FF] transition cursor-pointer">
                                     <i class="fa-solid fa-arrow-left text-[10px]" aria-hidden="true"></i>
                                     <span>Back</span>
                                 </button>
@@ -481,12 +506,12 @@
                                     </p>
                                 </div>
 
-                                <div class="flex flex-wrap items-center gap-1.5 bg-[#EEF3FF] p-1.5 rounded-2xl border border-[#C7D8FF] self-start lg:self-end shrink-0">
-                                    <button type="button" onclick="CatalystApp.openBoardPage('ICSE')" id="board-tab-ICSE" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">ICSE</button>
-                                    <button type="button" onclick="CatalystApp.openBoardPage('CBSE')" id="board-tab-CBSE" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">CBSE</button>
-                                    <button type="button" onclick="CatalystApp.openBoardPage('WBBSE')" id="board-tab-WBBSE" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">WBBSE</button>
-                                    <button type="button" onclick="CatalystApp.openBoardPage('CLASS12')" id="board-tab-CLASS12" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">Class 12</button>
-                                    <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" id="board-tab-FOUNDATION" class="px-3.5 py-2 rounded-xl text-xs font-extrabold transition cursor-pointer">Foundation*</button>
+                                <div class="board-tabs-rail flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl self-start lg:self-end shrink-0" role="tablist" aria-label="Programme board filter">
+                                    <button type="button" onclick="CatalystApp.openBoardPage('ICSE')" id="board-tab-ICSE" class="board-tab board-tab--idle" aria-label="Show ICSE programmes">ICSE</button>
+                                    <button type="button" onclick="CatalystApp.openBoardPage('CBSE')" id="board-tab-CBSE" class="board-tab board-tab--idle" aria-label="Show CBSE programmes">CBSE</button>
+                                    <button type="button" onclick="CatalystApp.openBoardPage('WBBSE')" id="board-tab-WBBSE" class="board-tab board-tab--idle" aria-label="Show WBBSE programmes">WBBSE</button>
+                                    <button type="button" onclick="CatalystApp.openBoardPage('CLASS12')" id="board-tab-CLASS12" class="board-tab board-tab--idle" aria-label="Show Class 12 programmes">Class 12</button>
+                                    <button type="button" onclick="CatalystApp.openBoardPage('FOUNDATION')" id="board-tab-FOUNDATION" class="board-tab board-tab--idle" aria-label="Show Foundation programmes">Foundation*</button>
                                 </div>
                             </div>
                         </div>
@@ -498,7 +523,7 @@
         </section>
 
         <!-- SECTION 4: 30-SECOND BOARD READINESS QUIZ -->
-        <section id="diagnostic-quiz-section" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="quiz-section-heading">
+        <section id="diagnostic-quiz-section" class="py-8 md:py-12 px-4 md:px-10 border-b border-warmBorder" aria-labelledby="quiz-section-heading">
             <div class="max-w-5xl mx-auto reveal-on-scroll">
                 <div id="diagnostic-quiz">
                     <div class="colorful-card-glass rounded-3xl p-5 sm:p-7 border-2 border-[#93B4FF] shadow-soothing-lg relative overflow-hidden">
@@ -507,8 +532,8 @@
                         <!-- Title + filters: stacked on mobile so selects stay aligned -->
                         <div class="flex flex-col gap-3 pb-4 border-b border-warmBorder">
                             <div class="flex items-center gap-2 min-w-0">
-                                <span class="w-7 h-7 shrink-0 rounded-lg bg-[#FFF3B0] border border-[#F2D06B] text-midnight flex items-center justify-center text-xs font-extrabold">
-                                    <i class="fa-solid fa-stopwatch text-soothingRed"></i>
+                                <span class="icon-well w-7 h-7 shrink-0 rounded-lg bg-[#FFF3B0] border border-[#F2D06B] text-midnight flex items-center justify-center text-xs font-extrabold">
+                                    <i class="fa-solid fa-stopwatch text-soothingRed" aria-hidden="true"></i>
                                 </span>
                                 <h2 id="quiz-section-heading" class="text-sm sm:text-base font-extrabold text-midnight">
                                     Test your board readiness in 30 seconds
@@ -541,8 +566,8 @@
                             <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-bold text-mutedText">
                                 <div class="flex flex-wrap items-center gap-2 min-w-0">
                                     <span id="quiz-q-counter" class="bg-midnight text-logoYellow px-2.5 py-1 rounded-lg font-extrabold">Question 1 of 10</span>
-                                    <span id="quiz-q-subject-badge" class="bg-[#E0EAFF] text-soothingBlue px-2.5 py-1 rounded-lg font-extrabold">Physics</span>
-                                    <span id="quiz-q-std-badge" class="bg-[#FFF3B0] text-midnight px-2.5 py-1 rounded-lg font-extrabold">9th/10th</span>
+                                    <span id="quiz-q-subject-badge" class="label-chip label-chip--blue">Physics</span>
+                                    <span id="quiz-q-std-badge" class="label-chip label-chip--gold">9th/10th</span>
                                 </div>
                                 <span id="quiz-progress-text" class="text-[11px] font-bold text-slateText shrink-0">10%</span>
                             </div>
@@ -564,7 +589,7 @@
                                 <button type="button" onclick="CatalystApp.restartQuiz()" class="text-xs font-bold text-mutedText hover:text-midnight transition cursor-pointer">
                                     <i class="fa-solid fa-rotate-right mr-1"></i>New Question Set
                                 </button>
-                                <button type="button" id="quiz-next-btn" onclick="CatalystApp.nextQuizQuestion()" disabled class="bg-soothingBlue disabled:bg-gray-300 disabled:text-gray-500 text-white font-extrabold px-5 py-2.5 rounded-xl text-xs transition cursor-pointer">
+                                <button type="button" id="quiz-next-btn" onclick="CatalystApp.nextQuizQuestion()" disabled class="btn-disabled-soft bg-soothingBlue disabled:bg-gray-200 disabled:text-gray-600 disabled:cursor-not-allowed text-white font-extrabold px-5 py-2.5 rounded-xl text-xs transition cursor-pointer">
                                     Next Question <i class="fa-solid fa-arrow-right ml-1"></i>
                                 </button>
                             </div>
@@ -576,7 +601,7 @@
                                 <i class="fa-solid fa-trophy"></i>
                             </div>
 
-                            <div class="inline-block bg-[#E0EAFF] text-soothingBlue text-xs font-extrabold px-3.5 py-1 rounded-full">
+                            <div class="label-chip label-chip--blue">
                                 Readiness Score: <span id="quiz-final-score">8 / 10</span>
                             </div>
 
@@ -606,12 +631,12 @@
         </section>
 
         <!-- SECTION 5: INTERACTIVE SYLLABUS PER SUBJECT EXPLORER -->
-        <section id="syllabus" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder reveal-on-scroll" aria-labelledby="syllabus-heading">
+        <section id="syllabus" class="py-8 md:py-12 px-4 md:px-10 border-b border-warmBorder reveal-on-scroll" aria-labelledby="syllabus-heading">
             <div class="max-w-7xl mx-auto space-y-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div class="space-y-1.5">
-                        <span class="inline-flex items-center gap-1.5 bg-[#E0EAFF] text-soothingBlue px-3 py-1 rounded-full text-xs font-extrabold border border-[#93B4FF]">
-                            <i class="fa-solid fa-layer-group"></i>
+                        <span class="label-chip label-chip--blue inline-flex items-center gap-1.5">
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
                             Board-Wise &amp; Subject-Wise Breakdown
                         </span>
                         <h2 id="syllabus-heading" class="text-2xl sm:text-3xl font-extrabold text-midnight">
@@ -620,20 +645,20 @@
                     </div>
 
                     <!-- Board Filter Tabs -->
-                    <div class="flex flex-wrap gap-1.5 bg-white/90 p-1.5 rounded-2xl border border-warmBorder">
-                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('ICSE10')" id="syl-board-ICSE10" class="px-3.5 py-2 rounded-xl text-xs font-extrabold bg-midnight text-logoYellow transition cursor-pointer">ICSE Class 10</button>
-                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('CBSE10')" id="syl-board-CBSE10" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-slateText hover:bg-champagne transition cursor-pointer">CBSE Class 10</button>
-                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('WBBSE10')" id="syl-board-WBBSE10" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-slateText hover:bg-champagne transition cursor-pointer">WBBSE Madhyamik</button>
-                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('CLASS12')" id="syl-board-CLASS12" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-slateText hover:bg-champagne transition cursor-pointer">ISC / CBSE / WBCHSE XII</button>
+                    <div class="pill-tabs-rail pill-tabs-rail--wide" role="tablist" aria-label="Syllabus board filter">
+                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('ICSE10')" id="syl-board-ICSE10" class="pill-tab pill-tab--active-dark" aria-label="Show ICSE Class 10 syllabus">ICSE Class 10</button>
+                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('CBSE10')" id="syl-board-CBSE10" class="pill-tab pill-tab--idle" aria-label="Show CBSE Class 10 syllabus">CBSE Class 10</button>
+                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('WBBSE10')" id="syl-board-WBBSE10" class="pill-tab pill-tab--idle" aria-label="Show WBBSE Madhyamik syllabus">WBBSE Madhyamik</button>
+                        <button type="button" onclick="CatalystApp.selectSyllabusBoard('CLASS12')" id="syl-board-CLASS12" class="pill-tab pill-tab--idle" aria-label="Show Class 12 syllabus">ISC / CBSE / WBCHSE XII</button>
                     </div>
                 </div>
 
                 <!-- Subject Filter Pills -->
-                <div class="flex flex-wrap gap-2">
-                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Physics')" id="syl-subj-Physics" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-soothingBlue text-white shadow-sm transition cursor-pointer">Physics</button>
-                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Chemistry')" id="syl-subj-Chemistry" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white text-slateText border border-warmBorder hover:bg-champagne transition cursor-pointer">Chemistry</button>
-                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Mathematics')" id="syl-subj-Mathematics" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white text-slateText border border-warmBorder hover:bg-champagne transition cursor-pointer">Mathematics</button>
-                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Biology')" id="syl-subj-Biology" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white text-slateText border border-warmBorder hover:bg-champagne transition cursor-pointer">Biology / Life Sc.</button>
+                <div class="pill-tabs-subjects" role="tablist" aria-label="Syllabus subject filter">
+                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Physics')" id="syl-subj-Physics" class="pill-tab pill-tab--active" aria-label="Show Physics syllabus">Physics</button>
+                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Chemistry')" id="syl-subj-Chemistry" class="pill-tab pill-tab--ghost" aria-label="Show Chemistry syllabus">Chemistry</button>
+                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Mathematics')" id="syl-subj-Mathematics" class="pill-tab pill-tab--ghost" aria-label="Show Mathematics syllabus">Mathematics</button>
+                    <button type="button" onclick="CatalystApp.selectSyllabusSubject('Biology')" id="syl-subj-Biology" class="pill-tab pill-tab--ghost" aria-label="Show Biology syllabus">Biology / Life Sc.</button>
                 </div>
 
                 <!-- Dynamic Syllabus Card -->
@@ -642,12 +667,12 @@
         </section>
 
         <!-- SECTION 6: FACULTY -->
-        <section id="faculty" class="py-12 md:py-16 px-4 md:px-10 bg-white/60 border-b border-warmBorder reveal-on-scroll" aria-labelledby="faculty-heading">
-            <div class="max-w-7xl mx-auto space-y-8">
+        <section id="faculty" class="py-8 md:py-12 px-4 md:px-10 bg-white/60 border-b border-warmBorder reveal-on-scroll" aria-labelledby="faculty-heading">
+            <div class="max-w-7xl mx-auto space-y-5 md:space-y-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div class="space-y-1.5">
-                        <span class="inline-flex items-center gap-1.5 bg-[#FFF3B0] text-midnight px-3 py-1 rounded-full text-xs font-extrabold border border-[#F2D06B]">
-                            <i class="fa-solid fa-chalkboard-user text-soothingRed"></i>
+                        <span class="label-chip label-chip--gold inline-flex items-center gap-1.5">
+                            <i class="fa-solid fa-chalkboard-user text-soothingRed" aria-hidden="true"></i>
                             Mentorship &amp; Academic Track Record
                         </span>
                         <h2 id="faculty-heading" class="text-2xl sm:text-3xl font-extrabold text-midnight">
@@ -677,11 +702,11 @@
         </section>
 
         <!-- SECTION 7: STUDENT SUCCESS STORIES -->
-        <section id="success-stories" class="py-12 md:py-16 px-4 md:px-10 border-b border-warmBorder reveal-on-scroll" aria-labelledby="stories-heading">
+        <section id="success-stories" class="py-8 md:py-12 px-4 md:px-10 border-b border-warmBorder reveal-on-scroll" aria-labelledby="stories-heading">
             <div class="max-w-7xl mx-auto space-y-6">
                 <div class="space-y-1.5">
-                    <span class="inline-flex items-center gap-1.5 bg-[#DCFCE7] text-[#15803D] px-3 py-1 rounded-full text-xs font-extrabold border border-[#86EFAC]">
-                        <i class="fa-solid fa-chart-line"></i>
+                    <span class="label-chip label-chip--green inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                         Student Outcomes
                     </span>
                     <h2 id="stories-heading" class="text-2xl sm:text-3xl font-extrabold text-midnight">
@@ -693,7 +718,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <article class="colorful-card-glass rounded-3xl p-6 border border-warmBorder shadow-soothing space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="bg-[#E0EAFF] text-soothingBlue text-xs font-extrabold px-3 py-1 rounded-full">64% &rarr; 94% in Physics</span>
+                            <span class="label-chip label-chip--blue">64% &rarr; 94% in Physics</span>
                             <span class="text-xs font-bold text-mutedText">ICSE Class 10</span>
                         </div>
                         <p class="text-xs sm:text-sm text-slateText leading-relaxed">
@@ -706,7 +731,7 @@
 
                     <article class="colorful-card-glass rounded-3xl p-6 border border-warmBorder shadow-soothing space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="bg-[#FFE4E8] text-soothingRed text-xs font-extrabold px-3 py-1 rounded-full">61% &rarr; 92.4% Aggregate</span>
+                            <span class="label-chip label-chip--rose">61% &rarr; 92.4% Aggregate</span>
                             <span class="text-xs font-bold text-mutedText">CBSE Class 10</span>
                         </div>
                         <p class="text-xs sm:text-sm text-slateText leading-relaxed">
@@ -719,7 +744,7 @@
 
                     <article class="colorful-card-glass rounded-3xl p-6 border border-warmBorder shadow-soothing space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="bg-[#FFF3B0] text-midnight text-xs font-extrabold px-3 py-1 rounded-full">96/100 in Mathematics</span>
+                            <span class="label-chip label-chip--gold">96/100 in Mathematics</span>
                             <span class="text-xs font-bold text-mutedText">WBBSE Madhyamik</span>
                         </div>
                         <p class="text-xs sm:text-sm text-slateText leading-relaxed">
@@ -734,11 +759,11 @@
         </section>
 
         <!-- SECTION 8: FREQUENTLY ASKED QUESTIONS -->
-        <section id="campuses-faq" class="py-12 md:py-16 px-4 md:px-10 bg-white/60 border-b border-warmBorder reveal-on-scroll" aria-labelledby="faq-heading">
+        <section id="campuses-faq" class="py-8 md:py-12 px-4 md:px-10 bg-white/60 border-b border-warmBorder reveal-on-scroll" aria-labelledby="faq-heading">
             <div class="max-w-4xl mx-auto space-y-6">
                 <div class="text-center space-y-1.5">
-                    <span class="inline-flex items-center gap-1.5 bg-[#E0EAFF] text-soothingBlue px-3 py-1 rounded-full text-xs font-extrabold">
-                        <i class="fa-solid fa-circle-question"></i>
+                    <span class="label-chip label-chip--blue inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
                         Board Mock Tests &amp; Coaching FAQ
                     </span>
                     <h2 id="faq-heading" class="text-2xl sm:text-3xl font-extrabold text-midnight">
@@ -811,12 +836,12 @@
         </section>
 
         <!-- SECTION 9: CONTACT US, CORPORATE DISCLOSURE & EXACT GOOGLE MAP -->
-        <section id="contact" class="py-12 md:py-16 px-4 md:px-10 reveal-on-scroll" aria-labelledby="contact-heading">
-            <div class="max-w-7xl mx-auto space-y-8">
+        <section id="contact" class="py-8 md:py-12 px-4 md:px-10 reveal-on-scroll" aria-labelledby="contact-heading">
+            <div class="max-w-7xl mx-auto space-y-5 md:space-y-6">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
                     <!-- Left Column: Centre Details -->
-                    <div class="lg:col-span-5 space-y-5">
+                    <div class="lg:col-span-5 space-y-5 lg:sticky lg:top-24">
                         <h2 id="contact-heading" class="text-2xl sm:text-3xl font-extrabold text-midnight">
                             Contact Us
                         </h2>
@@ -833,19 +858,19 @@
                                 <i class="fa-solid fa-phone-volume text-soothingRed text-lg mt-0.5"></i>
                                 <div>
                                     <div class="font-extrabold text-midnight">Admissions &amp; Mock Test Helpline</div>
-                                    <a href="tel:+919163194805" class="text-soothingBlue font-bold hover:underline">+91 91631 94805</a>
+                                    <a href="tel:+919163194805" class="text-soothingBlue font-bold hover:underline" aria-label="Call Catalyst Education at +91 91631 94805">+91 91631 94805</a>
                                 </div>
                             </div>
                             <div class="flex items-start gap-3">
                                 <i class="fa-solid fa-envelope text-soothingBlue text-lg mt-0.5"></i>
                                 <div>
                                     <div class="font-extrabold text-midnight">Official Email &amp; Website</div>
-                                    <div><a href="mailto:info@catalysteducation.net" class="text-soothingBlue font-bold hover:underline">info@catalysteducation.net</a></div>
-                                    <div><a href="https://www.catalysteducation.net/" class="text-soothingBlue font-bold hover:underline" rel="noopener noreferrer">www.catalysteducation.net</a></div>
+                                    <div><a href="mailto:info@catalysteducation.net" class="text-soothingBlue font-bold hover:underline" aria-label="Email Catalyst Education at info@catalysteducation.net">info@catalysteducation.net</a></div>
+                                    <div><a href="https://www.catalysteducation.net/" class="text-soothingBlue font-bold hover:underline" rel="noopener noreferrer" aria-label="Visit Catalyst Education website">www.catalysteducation.net</a></div>
                                 </div>
                             </div>
                             <div class="pt-2 space-y-3">
-                                <button type="button" id="toggle-map-btn" onclick="CatalystApp.toggleMapIframe()" aria-expanded="false" aria-controls="contact-map-drawer" class="inline-flex items-center gap-2 bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold px-4 py-2.5 rounded-xl text-xs transition cursor-pointer">
+                                <button type="button" id="toggle-map-btn" onclick="CatalystApp.toggleMapIframe()" aria-expanded="false" aria-controls="contact-map-drawer" aria-label="Show centre location map" class="inline-flex items-center gap-2 bg-midnight hover:bg-soothingBlue text-logoYellow font-extrabold px-4 py-2.5 rounded-xl text-xs transition cursor-pointer">
                                     <i class="fa-solid fa-map"></i>
                                     <span id="toggle-map-btn-label">Show map</span>
                                 </button>
@@ -886,7 +911,7 @@
                             <p class="text-xs text-slateText mb-4">
                                 Submit the form below and we will call or WhatsApp you about fees and schedules.
                                 Prefer chat?
-                                <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20fees%20and%20schedule." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[#15803D] font-extrabold hover:underline">
+                                <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20fees%20and%20schedule." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[#15803D] font-extrabold hover:underline" aria-label="WhatsApp Catalyst Education about fees and schedule">
                                     <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                                     WhatsApp us
                                 </a>
@@ -970,7 +995,7 @@
     <!-- =====================================================================
          WEBSITE FOOTER (WITH MANDATORY EDUFINGROW LLP DISCLOSURE)
          ===================================================================== -->
-    <footer class="bg-midnight text-white pt-10 pb-8 px-4 md:px-10 border-t-4 border-logoYellow">
+    <footer class="bg-midnight text-white pt-10 pb-32 sm:pb-24 px-4 md:px-10 border-t-4 border-logoYellow">
         <div class="max-w-7xl mx-auto space-y-6">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-white/15">
                 <div class="flex items-center gap-4">
@@ -1011,7 +1036,7 @@
          FREE MOCK TEST REGISTRATION POPUP MODAL (DEACTIVATED ON INITIAL LOAD)
          ===================================================================== -->
     <div id="mockPopupModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-midnight/75 backdrop-blur-sm p-3 sm:p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="popup-modal-title" style="-webkit-backdrop-filter: blur(4px);">
-        <div class="modal-panel modal-panel-animate bg-white rounded-3xl max-w-2xl w-full p-5 sm:p-8 border-2 border-logoYellow shadow-2xl relative my-4 sm:my-8">
+        <div class="modal-panel modal-panel-animate surface-panel rounded-3xl max-w-2xl w-full p-5 sm:p-8 border-2 border-logoYellow shadow-2xl relative my-4 sm:my-8">
             <div class="shimmer-gold-bar h-2 w-full absolute top-0 left-0"></div>
 
             <button type="button" onclick="CatalystApp.closeMockPopup()" class="absolute top-4 right-4 z-10 w-10 h-10 min-h-[44px] min-w-[44px] rounded-full bg-champagne hover:bg-soothingRed hover:text-white text-midnight flex items-center justify-center transition cursor-pointer" aria-label="Close Modal">
@@ -1092,7 +1117,7 @@
          TERMS OF SERVICE & CORPORATE GOVERNANCE MODAL
          ===================================================================== -->
     <div id="termsModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-midnight/75 backdrop-blur-sm p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title">
-        <div class="modal-panel modal-panel-animate bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 border border-warmBorder shadow-2xl relative my-4 sm:my-8 space-y-4">
+        <div class="modal-panel modal-panel-animate surface-panel rounded-3xl max-w-2xl w-full p-6 sm:p-8 border border-warmBorder shadow-2xl relative my-4 sm:my-8 space-y-4">
             <div class="flex items-center justify-between border-b border-warmBorder pb-3">
                 <h3 id="terms-modal-title" class="text-lg sm:text-xl font-extrabold text-midnight">Terms of Use &amp; Corporate Disclosure</h3>
                 <button type="button" onclick="CatalystApp.closeTermsModal()" class="w-8 h-8 rounded-full bg-champagne text-midnight flex items-center justify-center cursor-pointer" aria-label="Close Terms Modal">
@@ -1130,7 +1155,7 @@
         </a>
     </div>
 
-        <script src="js/app.js?v=10" defer></script>
+        <script src="js/app.js?v=11" defer></script>
 </body>
 </html>
 
