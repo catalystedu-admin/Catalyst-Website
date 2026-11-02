@@ -159,22 +159,23 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  /* Carousel: fixed frame so every slide is the same size */
+  /* Carousel: fixed frame so every slide is the same size.
+     Mobile needs extra height so CTA buttons clear the dots/counter chrome. */
   #hero-carousel-viewport {
     position: relative;
     overflow: hidden;
-    height: 340px;
+    height: 430px;
   }
 
   @media (min-width: 640px) {
     #hero-carousel-viewport {
-      height: 370px;
+      height: 390px;
     }
   }
 
   @media (min-width: 1024px) {
     #hero-carousel-viewport {
-      height: 400px;
+      height: 410px;
     }
   }
 

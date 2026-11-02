@@ -35,8 +35,8 @@ const CatalystApp = (function () {
                         badge: 'FREE PRE-BOARD MOCK TEST ADVERTISEMENT • CLASS X',
                         badgeStyle: 'bg-[#DCFCE7] text-[#15803D] border-[#86EFAC]',
                         headline: 'পুজো শেষ, এবার পরীক্ষা শুরু!',
-                        subheadline: 'Free Pre-Board Mock Test Programme for Class X Students — ICSE, CBSE & WBBSE',
-                        description: 'Assess your complete board preparation before your school pre-board examinations in a realistic exam environment. 100% FREE — No Course Purchase Required.',
+                        subheadline: 'Free Pre-Board Mock Test for Class X Students (ICSE, CBSE & WBBSE)',
+                        description: 'A full board-pattern run before school pre-boards, in a timed exam setting. Completely free. No course purchase needed.',
                         boardsPill: ['ICSE (Class X)', 'CBSE (Class X)', 'WBBSE (Class X)'],
                         ctaLabel: 'Register for Free Test',
                         ctaActionType: 'register-free',
@@ -46,7 +46,12 @@ const CatalystApp = (function () {
                         themeGradient: 'from-[#16233B] via-[#1D3B8B] to-[#0F172A]',
                         artworkTag: '',
                         highlightBoxTitle: '100% FREE Pre-Board Practice Test',
-                        highlightBoxSub: 'No Course Purchase Required • Instant Script Evaluation'
+                        highlightBoxSub: 'No course purchase required',
+                        highlightBullets: [
+                            'Timed Class X papers in board pattern',
+                            'Answer paper check with clear feedback',
+                            'Open to ICSE, CBSE and WBBSE students'
+                        ]
                     },
                     {
                         id: 'banner-2-festival-offers',
@@ -54,8 +59,8 @@ const CatalystApp = (function () {
                         badge: 'FESTIVAL & SEASONAL ACADEMIC OFFERS',
                         badgeStyle: 'bg-[#FFF3B0] text-midnight border-[#F2D06B]',
                         headline: 'Festival Scholarship & Test Series Offer',
-                        subheadline: 'Special Seasonal Benefits on Target 2027 Final Board Mock Test Series (ICSE, CBSE & WBBSE)',
-                        description: 'Seasonal benefits on Class X & XII Final Board Mock Test Series and 1:6 Batch Focus programmes. Contact us for current offer details and fees.',
+                        subheadline: 'Seasonal benefits on Target 2027 Final Board Mock Test Series (ICSE, CBSE & WBBSE)',
+                        description: 'Limited seasonal benefits on Class X and XII Final Series and 1:6 batch programmes. Ask us for current offer details and fees.',
                         boardsPill: ['Seasonal Offer', 'Target 2027 Mock Series', 'Contact for Details'],
                         ctaLabel: 'Explore Offer',
                         ctaActionType: 'scroll-goal',
@@ -65,16 +70,21 @@ const CatalystApp = (function () {
                         themeGradient: 'from-[#4A1525] via-[#881337] to-[#16233B]',
                         artworkTag: 'Seasonal Promotional Offer',
                         highlightBoxTitle: 'Festive Enrolment Benefits',
-                        highlightBoxSub: 'Ask us for current offer details & fees'
+                        highlightBoxSub: 'Ask us for current offer details & fees',
+                        highlightBullets: [
+                            'Seasonal fee benefits on Final Series',
+                            'Covers Class X and XII board mocks',
+                            'Details shared on enquiry'
+                        ]
                     },
                     {
                         id: 'banner-3-new-courses',
                         active: true,
                         badge: 'NEWLY LAUNCHED COURSES • TARGET 2027',
                         badgeStyle: 'bg-[#E0EAFF] text-soothingBlue border-[#93B4FF]',
-                        headline: 'Target 2027 — Final Board Mock Test Series',
-                        subheadline: 'Newly Launched Full-Syllabus Board Simulation for Class X & XII (ICSE, CBSE & WBBSE)',
-                        description: 'Structured board-pattern question papers, instant script evaluation, and 1-on-1 post-test doubt clearing with expert faculty.',
+                        headline: 'Target 2027: Final Board Mock Test Series',
+                        subheadline: 'Full-syllabus board simulation for Class X & XII (ICSE, CBSE & WBBSE)',
+                        description: 'Board-pattern question papers, instant answer paper evaluation and guidance, plus 1-on-1 doubt clearing after each test.',
                         boardsPill: ['Target 2027 CISCE', 'Target 2027 CBSE', 'Target 2027 WBBSE'],
                         ctaLabel: 'Explore Test Series',
                         ctaActionType: 'open-board',
@@ -84,7 +94,12 @@ const CatalystApp = (function () {
                         themeGradient: 'from-[#0F2942] via-[#1D3B8B] to-[#1E293B]',
                         artworkTag: 'New Academic Initiative',
                         highlightBoxTitle: 'Structured Board Practice',
-                        highlightBoxSub: 'Full-Length Papers • Examiner Marking Scheme'
+                        highlightBoxSub: 'Full-length papers • Examiner marking scheme',
+                        highlightBullets: [
+                            'Full-syllabus papers for Class X and XII',
+                            'Answer paper evaluation and feedback sharing',
+                            '1-on-1 doubt clearing with faculty'
+                        ]
                     },
                     {
                         id: 'banner-4-additional-promo',
@@ -92,9 +107,9 @@ const CatalystApp = (function () {
                         badge: 'UPCOMING ACADEMIC INITIATIVE',
                         badgeStyle: 'bg-[#FEF3C7] text-[#B45309] border-[#FDE68A]',
                         headline: 'School Annual Examination Test Series*',
-                        subheadline: 'Foundation Programmes — Launching Soon',
-                        description: 'Structured practice and evaluation for school annual examinations.',
-                        boardsPill: ['Foundation Track', '*Launching Soon'],
+                        subheadline: 'Foundation Programmes: Coming Soon',
+                        description: 'Structured practice for school annual examinations for younger classes.',
+                        boardsPill: ['Foundation Track', 'Coming Soon'],
                         ctaLabel: 'View Foundation Status',
                         ctaActionType: 'open-board',
                         ctaBoardDefault: 'FOUNDATION',
@@ -102,8 +117,13 @@ const CatalystApp = (function () {
                         secondaryTarget: '#contact',
                         themeGradient: 'from-[#1E293B] via-[#334155] to-[#0F172A]',
                         artworkTag: 'Future Expansion',
-                        highlightBoxTitle: '*Launching Soon',
-                        highlightBoxSub: 'Foundation Annual Exam Test Series'
+                        highlightBoxTitle: 'Coming Soon',
+                        highlightBoxSub: 'Foundation Annual Exam Test Series',
+                        highlightBullets: [
+                            'School annual exam practice series',
+                            'Designed for younger foundation classes',
+                            'Register interest before launch'
+                        ]
                     }
                 ],
 
@@ -119,7 +139,7 @@ const CatalystApp = (function () {
                                 type: 'FREE',
                                 badgeText: '100% FREE',
                                 subBadgeText: 'No Course Purchase Required',
-                                name: 'Target 2027 CISCE — Pre-Board Practice Test',
+                                name: 'Target 2027 CISCE: Pre-Board Practice Test',
                                 targetAudience: 'Class X students preparing for the ICSE examination.',
                                 purpose: 'To help students assess their preparation before their school pre-board examinations.',
                                 priceDisplay: '100% FREE',
@@ -132,7 +152,7 @@ const CatalystApp = (function () {
                                 type: 'PAID',
                                 badgeText: 'PAID PROGRAMME • FINAL SERIES',
                                 subBadgeText: 'Target 2027 CISCE Board',
-                                name: 'Target 2027 CISCE — Final Board Mock Test Series',
+                                name: 'Target 2027 CISCE: Final Board Mock Test Series',
                                 targetAudience: 'Class X students preparing for the ICSE board examination in 2027.',
                                 purpose: 'Structured mock test practice for the final board examinations.',
                                 priceDisplay: 'Contact us for fees & schedule',
@@ -155,7 +175,7 @@ const CatalystApp = (function () {
                                 type: 'FREE',
                                 badgeText: '100% FREE',
                                 subBadgeText: 'No Course Purchase Required',
-                                name: 'Target 2027 CBSE — Pre-Board Practice Test',
+                                name: 'Target 2027 CBSE: Pre-Board Practice Test',
                                 targetAudience: 'Class X CBSE students.',
                                 purpose: 'Assess preparation before school pre-board examinations.',
                                 priceDisplay: '100% FREE',
@@ -168,7 +188,7 @@ const CatalystApp = (function () {
                                 type: 'PAID',
                                 badgeText: 'PAID PROGRAMME • FINAL SERIES',
                                 subBadgeText: 'Target 2027 CBSE Board',
-                                name: 'Target 2027 CBSE — Final Board Mock Test Series',
+                                name: 'Target 2027 CBSE: Final Board Mock Test Series',
                                 targetAudience: 'Class X CBSE students preparing for the 2027 board examination.',
                                 purpose: 'Structured board-pattern mock test practice.',
                                 priceDisplay: 'Contact us for fees & schedule',
@@ -191,7 +211,7 @@ const CatalystApp = (function () {
                                 type: 'FREE',
                                 badgeText: '100% FREE',
                                 subBadgeText: 'No Course Purchase Required',
-                                name: 'Target 2027 WBBSE — Pre-Board Practice Test',
+                                name: 'Target 2027 WBBSE: Pre-Board Practice Test',
                                 targetAudience: 'Class X students preparing for the West Bengal Board of Secondary Education examination.',
                                 purpose: 'Assess preparation before school pre-board examinations.',
                                 priceDisplay: '100% FREE',
@@ -204,7 +224,7 @@ const CatalystApp = (function () {
                                 type: 'PAID',
                                 badgeText: 'PAID PROGRAMME • FINAL SERIES',
                                 subBadgeText: 'Target 2027 WBBSE Board',
-                                name: 'Target 2027 WBBSE — Final Board Mock Test Series',
+                                name: 'Target 2027 WBBSE: Final Board Mock Test Series',
                                 targetAudience: 'Class X WBBSE students preparing for the 2027 board examination.',
                                 purpose: 'Structured practice through board-oriented mock tests.',
                                 priceDisplay: 'Contact us for fees & schedule',
@@ -220,16 +240,16 @@ const CatalystApp = (function () {
                         key: 'CLASS12',
                         pageTitle: 'Class 12 Programmes',
                         breadcrumb: 'Class 12 Programmes',
-                        subtitle: 'Mock test series and 1:6 batch support for ISC, CBSE Class 12, and WBCHSE — contact us for fees and schedule.',
+                        subtitle: 'Mock test series and 1:6 batch support for ISC, CBSE Class 12, and WBCHSE. Contact us for fees and schedule.',
                         programmes: [
                             {
                                 id: 'class12-prog-mock',
                                 type: 'PAID',
                                 badgeText: 'CLASS 12 • FINAL SERIES',
                                 subBadgeText: 'ISC • CBSE • WBCHSE',
-                                name: 'Target 2027 — Class 12 Board Mock Test Series',
+                                name: 'Target 2027: Class 12 Board Mock Test Series',
                                 targetAudience: 'Class 11–12 students preparing for ISC, CBSE, or WBCHSE examinations.',
-                                purpose: 'Full-length board-pattern practice with script evaluation and doubt clearing.',
+                                purpose: 'Full-length board-pattern practice with answer paper evaluation, feedback sharing, and doubt clearing.',
                                 priceDisplay: 'Contact us for fees & schedule',
                                 highlightNote: 'Physics, Chemistry, Maths, Biology tracks',
                                 ctaLabel: 'Ask for fees & schedule',
@@ -243,20 +263,19 @@ const CatalystApp = (function () {
                         key: 'FOUNDATION',
                         pageTitle: 'Foundation Programmes',
                         breadcrumb: 'Foundation Programmes',
-                        subtitle: 'Future expansion programmes for school annual examination preparation.',
+                        subtitle: 'Future programmes for school annual examination preparation.',
                         programmes: [
                             {
                                 id: 'foundation-prog-soon',
                                 type: 'COMING_SOON',
-                                badgeText: 'LAUNCHING SOON',
+                                badgeText: 'Coming Soon',
                                 subBadgeText: 'Coming Soon',
                                 name: 'School Annual Examination Test Series*',
                                 targetAudience: 'Foundation students from relevant school classes.',
                                 purpose: 'Practice and preparation for school annual examinations.',
-                                statusDisplay: 'LAUNCHING SOON',
-                                footnote: '*Launching Soon — The classes, subjects, boards and test structure will be finalised later.',
+                                statusDisplay: 'Coming Soon',
+                                footnote: '*Coming soon. Classes, subjects, boards, and test structure will be finalised later.',
                                 ctaLabel: 'Registration Opening Soon',
-                                secondaryCtaLabel: 'Payment Inactive',
                                 boardCode: 'Foundation'
                             }
                         ]
@@ -264,10 +283,10 @@ const CatalystApp = (function () {
                 },
 
                 boardCountdowns: {
-                    CBSE: { title: 'CBSE Board Exam', targetIso: '2027-02-15T10:30:00+05:30', targetLabel: 'Target: Feb 15, 2027', milestone: 'Mock Test Roadmap' },
-                    ICSE: { title: 'ICSE & ISC Exam', targetIso: '2027-02-18T11:00:00+05:30', targetLabel: 'Target: Feb 18, 2027', milestone: 'Mock Test Roadmap' },
-                    WBBSE: { title: 'WBBSE Madhyamik', targetIso: '2027-02-10T11:45:00+05:30', targetLabel: 'Target: Feb 10, 2027', milestone: 'Mock Test Roadmap' },
-                    WBCHSE: { title: 'WBCHSE Higher Sec', targetIso: '2027-03-03T10:00:00+05:30', targetLabel: 'Target: Mar 3, 2027', milestone: 'Mock Test Roadmap' }
+                    CBSE: { title: 'CBSE Board Exam', targetIso: '2027-02-15T10:30:00+05:30', targetLabel: 'Target: Feb 15, 2027' },
+                    ICSE: { title: 'ICSE & ISC Exam', targetIso: '2027-02-18T11:00:00+05:30', targetLabel: 'Target: Feb 18, 2027' },
+                    WBBSE: { title: 'WBBSE Madhyamik', targetIso: '2027-02-10T11:45:00+05:30', targetLabel: 'Target: Feb 10, 2027' },
+                    WBCHSE: { title: 'WBCHSE Higher Sec', targetIso: '2027-03-03T10:00:00+05:30', targetLabel: 'Target: Mar 3, 2027' }
                 },
 
                 faculty: [
@@ -276,8 +295,8 @@ const CatalystApp = (function () {
                         active: true,
                         name: 'Alapan Roy',
                         role: 'Lead Mentor & Academic Head',
-                        specialization: 'Board Examination Strategy, Concept Architecture & Script Evaluation',
-                        experience: '1:6 Batch Focus • Classes 9 to 12',
+                        specialization: 'Board exam strategy, concept building, and answer paper evaluation with feedback sharing.',
+                        experience: 'Lead Mentor',
                         badge: 'Lead Faculty'
                     },
                     {
@@ -285,7 +304,7 @@ const CatalystApp = (function () {
                         active: true,
                         name: 'Science Faculty Panel',
                         role: 'Physics, Chemistry & Biology mentors',
-                        specialization: 'Numerical problem-solving, diagram precision & board marking scheme audits',
+                        specialization: 'Numerical problem-solving, diagram precision, and board marking scheme audits.',
                         experience: 'ICSE, ISC, CBSE, WBBSE & WBCHSE',
                         badge: 'Subject Panel'
                     },
@@ -294,7 +313,7 @@ const CatalystApp = (function () {
                         active: true,
                         name: 'Mathematics Faculty Panel',
                         role: 'Mathematics & analytical reasoning mentors',
-                        specialization: 'Step-marking optimization, speed drills & post-test doubt clearing',
+                        specialization: 'Step-marking practice, speed drills, and post-test doubt clearing.',
                         experience: 'Classes 9 to 12 • All Boards',
                         badge: 'Subject Panel'
                     }
@@ -302,28 +321,153 @@ const CatalystApp = (function () {
 
                 syllabusDatabase: {
                     ICSE10: {
-                        Physics: { units: ['Force, Work, Power & Energy (22 Marks)', 'Light & Spectrum (18 Marks)', 'Sound & Current Electricity (24 Marks)', 'Heat & Modern Physics (16 Marks)'], focus: 'Ray diagrams, numerical unit conversions & circuit resistance derivations.' },
-                        Chemistry: { units: ['Periodic Table & Chemical Bonding (18 Marks)', 'Study of Acids, Bases & Salts + Mole Concept (22 Marks)', 'Metallurgy & Study of Compounds HCl, NH3, HNO3, H2SO4 (24 Marks)', 'Organic Chemistry & IUPAC Nomenclature (16 Marks)'], focus: 'Balanced equations, observation tables & gas identification tests.' },
-                        Mathematics: { units: ['Commercial Maths & Algebra (28 Marks)', 'Geometry & Circles (20 Marks)', 'Mensuration & Trigonometry (20 Marks)', 'Statistics & Probability (12 Marks)'], focus: 'Step-by-step theorem proofs, ogive graphs & heights and distances.' },
-                        Biology: { units: ['Basic Biology & Cell Division (14 Marks)', 'Plant Physiology — Transpiration & Photosynthesis (22 Marks)', 'Human Anatomy — Circulatory, Excretory, Nervous & Endocrine (32 Marks)', 'Population & Pollution (12 Marks)'], focus: 'Labelled biological diagrams, location/function tables & genetic crosses.' }
+                        Physics: {
+                            focus: 'Ray diagrams, numerical unit conversions & circuit resistance derivations.',
+                            units: [
+                                { title: 'Force, Work, Power & Energy', marks: '22 Marks', points: ['Newton’s laws and free-body diagrams', 'Work-energy theorem and power calculations', 'Machines: MA, VR and efficiency'], tip: 'Always write units after every final numerical answer.' },
+                                { title: 'Light & Spectrum', marks: '18 Marks', points: ['Reflection, refraction and Snell’s law', 'Lens/mirror formula with sign convention', 'Dispersion, spectrum and colour'], tip: 'Draw neat ray diagrams; half the marks sit in the figure.' },
+                                { title: 'Sound & Current Electricity', marks: '24 Marks', points: ['Wave speed, frequency and echo problems', 'Ohm’s law and series-parallel circuits', 'Heating effect and household wiring basics'], tip: 'Show resistance combination steps before substituting values.' },
+                                { title: 'Heat & Modern Physics', marks: '16 Marks', points: ['Calorimetry and specific heat', 'Latent heat change of state', 'Radioactivity and atomic models overview'], tip: 'Convert °C/K carefully in heat equations.' }
+                            ]
+                        },
+                        Chemistry: {
+                            focus: 'Balanced equations, observation tables & gas identification tests.',
+                            units: [
+                                { title: 'Periodic Table & Chemical Bonding', marks: '18 Marks', points: ['Periods, groups and periodic trends', 'Ionic vs covalent bonding with examples', 'Lewis structures and polarity'], tip: 'Link property questions back to electronic configuration.' },
+                                { title: 'Study of Acids, Bases & Salts + Mole Concept', marks: '22 Marks', points: ['pH, indicators and neutralisation', 'Preparation and uses of common salts', 'Mole, molar mass and stoichiometric ratios'], tip: 'Balance the equation before starting any mole calculation.' },
+                                { title: 'Metallurgy & Study of Compounds HCl, NH3, HNO3, H2SO4', marks: '24 Marks', points: ['Extraction and refining stages', 'Laboratory preparation of key compounds', 'Properties, tests and industrial uses'], tip: 'Observation tables must match the expected colour / smell change.' },
+                                { title: 'Organic Chemistry & IUPAC Nomenclature', marks: '16 Marks', points: ['Homologous series and functional groups', 'IUPAC naming of simple organics', 'Isomerism and typical reactions'], tip: 'Practise naming and structure conversion both ways.' }
+                            ]
+                        },
+                        Mathematics: {
+                            focus: 'Step-by-step theorem proofs, ogive graphs & heights and distances.',
+                            units: [
+                                { title: 'Commercial Maths & Algebra', marks: '28 Marks', points: ['GST, shares and banking applications', 'Quadratic equations and factorisation', 'Simultaneous linear equations'], tip: 'Write each algebraic step; method marks are generous.' },
+                                { title: 'Geometry & Circles', marks: '20 Marks', points: ['Circle theorems and tangent properties', 'Similar triangles applications', 'Constructions with justification'], tip: 'State the theorem name before using it in a proof.' },
+                                { title: 'Mensuration & Trigonometry', marks: '20 Marks', points: ['Surface area and volume of solids', 'Trig ratios and identities', 'Heights and distances'], tip: 'Sketch the figure and mark known angles first.' },
+                                { title: 'Statistics & Probability', marks: '12 Marks', points: ['Mean, median and mode', 'Ogive and histogram interpretation', 'Basic probability events'], tip: 'Check class intervals before reading cumulative frequency.' }
+                            ]
+                        },
+                        Biology: {
+                            focus: 'Labelled biological diagrams, location/function tables & genetic crosses.',
+                            units: [
+                                { title: 'Basic Biology & Cell Division', marks: '14 Marks', points: ['Cell structure and organelles', 'Mitosis vs meiosis stages', 'Chromosome behaviour'], tip: 'Label diagrams with straight lines and exact terms.' },
+                                { title: 'Plant Physiology: Transpiration & Photosynthesis', marks: '22 Marks', points: ['Stomatal mechanism and factors', 'Light and dark reactions overview', 'Experiments and observations'], tip: 'Link each factor to rate of process clearly.' },
+                                { title: 'Human Anatomy: Circulatory, Excretory, Nervous & Endocrine', marks: '32 Marks', points: ['Heart, vessels and circulation path', 'Nephron and urine formation', 'Reflex arc, brain parts and hormones'], tip: 'Use location-function tables for endocrine questions.' },
+                                { title: 'Population & Pollution', marks: '12 Marks', points: ['Population growth concerns', 'Air, water and soil pollution', 'Control and conservation measures'], tip: 'Give one precise example with each pollution type.' }
+                            ]
+                        }
                     },
                     CBSE10: {
-                        Physics: { units: ['Light — Reflection & Refraction (12 Marks)', 'The Human Eye & Colourful World (5 Marks)', 'Electricity (12 Marks)', 'Magnetic Effects of Electric Current (6 Marks)'], focus: 'NCERT exemplar numericals, sign convention & competency case studies.' },
-                        Chemistry: { units: ['Chemical Reactions & Equations (6 Marks)', 'Acids, Bases & Salts (6 Marks)', 'Metals & Non-Metals (7 Marks)', 'Carbon & Its Compounds (6 Marks)'], focus: 'Assertion-reasoning questions, redox identification & functional groups.' },
-                        Mathematics: { units: ['Number Systems & Algebra (26 Marks)', 'Coordinate Geometry & Geometry (21 Marks)', 'Trigonometry & Mensuration (22 Marks)', 'Statistics & Probability (11 Marks)'], focus: 'Case-based questions, quadratic word problems & surface area combinations.' },
-                        Biology: { units: ['Life Processes (10 Marks)', 'Control & Coordination (6 Marks)', 'How Do Organisms Reproduce (7 Marks)', 'Heredity & Our Environment (7 Marks)'], focus: 'Flowcharts for human digestion/circulation & Mendelian dihybrid ratios.' }
+                        Physics: {
+                            focus: 'NCERT exemplar numericals, sign convention & competency case studies.',
+                            units: [
+                                { title: 'Light: Reflection & Refraction', marks: '12 Marks', points: ['Mirror and lens formulae', 'Sign convention practice', 'Power of lens and combination'], tip: 'Competency questions often hide data in a short paragraph.' },
+                                { title: 'The Human Eye & Colourful World', marks: '5 Marks', points: ['Defects of vision and correction', 'Dispersion and atmospheric refraction', 'Scattering of light'], tip: 'Match each defect to the correct lens quickly.' },
+                                { title: 'Electricity', marks: '12 Marks', points: ['Ohm’s law and resistivity', 'Series vs parallel circuits', 'Electric power and energy bills'], tip: 'Draw the circuit before writing equations.' },
+                                { title: 'Magnetic Effects of Electric Current', marks: '6 Marks', points: ['Magnetic field around a conductor', 'Fleming’s left-hand rule', 'Electric motor basics'], tip: 'State the rule direction carefully in answers.' }
+                            ]
+                        },
+                        Chemistry: {
+                            focus: 'Assertion-reasoning questions, redox identification & functional groups.',
+                            units: [
+                                { title: 'Chemical Reactions & Equations', marks: '6 Marks', points: ['Types of reactions', 'Balancing and redox clues', 'Effects of oxidation in daily life'], tip: 'Identify reaction type before writing products.' },
+                                { title: 'Acids, Bases & Salts', marks: '6 Marks', points: ['pH scale and indicators', 'Important salts and uses', 'Neutralisation applications'], tip: 'Assertion-reason pairs often test pH logic.' },
+                                { title: 'Metals & Non-Metals', marks: '7 Marks', points: ['Reactivity series', 'Ionic compounds properties', 'Extraction and corrosion'], tip: 'Use reactivity series to predict displacement.' },
+                                { title: 'Carbon & Its Compounds', marks: '6 Marks', points: ['Covalent bonding in carbon', 'Homologous series and nomenclature', 'Soap/detergent cleansing action'], tip: 'Practise functional-group identification drills.' }
+                            ]
+                        },
+                        Mathematics: {
+                            focus: 'Case-based questions, quadratic word problems & surface area combinations.',
+                            units: [
+                                { title: 'Number Systems & Algebra', marks: '26 Marks', points: ['Real numbers and Euclid’s algorithm', 'Polynomials and zeroes', 'Quadratic and linear equations'], tip: 'Case-based items reward clear assumption statements.' },
+                                { title: 'Coordinate Geometry & Geometry', marks: '21 Marks', points: ['Distance and section formula', 'Triangles and circles theorems', 'Constructions'], tip: 'Mark given lengths on the figure first.' },
+                                { title: 'Trigonometry & Mensuration', marks: '22 Marks', points: ['Trig identities and ratios', 'Heights and distances', 'Surface areas and volumes'], tip: 'Convert all units before volume calculations.' },
+                                { title: 'Statistics & Probability', marks: '11 Marks', points: ['Mean of grouped data', 'Median and mode', 'Simple probability'], tip: 'Check if data is discrete or continuous.' }
+                            ]
+                        },
+                        Biology: {
+                            focus: 'Flowcharts for human digestion/circulation & Mendelian dihybrid ratios.',
+                            units: [
+                                { title: 'Life Processes', marks: '10 Marks', points: ['Nutrition and digestion path', 'Respiration and transport', 'Excretion overview'], tip: 'Flowcharts score well when arrows are labelled.' },
+                                { title: 'Control & Coordination', marks: '6 Marks', points: ['Nervous system basics', 'Hormones in animals and plants', 'Reflex action'], tip: 'Differentiate nervous vs hormonal control clearly.' },
+                                { title: 'How Do Organisms Reproduce', marks: '7 Marks', points: ['Asexual methods', 'Human reproductive system', 'Reproductive health'], tip: 'Use precise biological terms, not casual language.' },
+                                { title: 'Heredity & Our Environment', marks: '7 Marks', points: ['Mendelian inheritance', 'Sex determination', 'Ecosystems and management of resources'], tip: 'Write Punnett squares neatly for genetic crosses.' }
+                            ]
+                        }
                     },
                     WBBSE10: {
-                        Physics: { units: ['Concerns About Our Environment & Behaviour of Gases (12 Marks)', 'Light & Current Electricity (24 Marks)', 'Thermal Phenomena & Atomic Nucleus (14 Marks)'], focus: 'PV=nRT numericals, lens formula proofs & English/Bengali terminology.' },
-                        Chemistry: { units: ['Periodic Table & Ionic/Covalent Bonding (12 Marks)', 'Electrolysis & Inorganic Chemistry in Lab (14 Marks)', 'Metallurgy & Organic Chemistry (14 Marks)'], focus: 'Electrodes reactions, industrial preparation conditions & structural isomerism.' },
-                        Mathematics: { units: ['Arithmetic — Simple/Compound Interest & Partnership (14 Marks)', 'Algebra & Quadratic Surds (22 Marks)', 'Geometry, Theorems & Constructions (24 Marks)', 'Trigonometry, Mensuration & Statistics (30 Marks)'], focus: 'Madhyamik geometric rider proofs, mensuration solids & median/mode tables.' },
-                        Biology: { units: ['Control & Coordination in Living Organisms (18 Marks)', 'Continuity of Life — Cell Division & Reproduction (18 Marks)', 'Heredity & Common Genetic Diseases (16 Marks)', 'Evolution, Adaptation & Environment (28 Marks)'], focus: 'Reflex arc neat diagrams, chromosome movement stages & Nitrogen cycle.' }
+                        Physics: {
+                            focus: 'PV=nRT numericals, lens formula proofs & English/Bengali terminology.',
+                            units: [
+                                { title: 'Concerns About Our Environment & Behaviour of Gases', marks: '12 Marks', points: ['Environmental physics ideas', 'Gas laws and PV=nRT', 'Pressure and temperature relations'], tip: 'Keep SI units consistent in gas equations.' },
+                                { title: 'Light & Current Electricity', marks: '24 Marks', points: ['Lens/mirror formulae', 'Ohm’s law and circuits', 'English and Bengali key terms'], tip: 'Practise terminology in your exam medium.' },
+                                { title: 'Thermal Phenomena & Atomic Nucleus', marks: '14 Marks', points: ['Heat transfer modes', 'Calorimetry basics', 'Nuclear structure overview'], tip: 'State assumptions before calorimetry sums.' }
+                            ]
+                        },
+                        Chemistry: {
+                            focus: 'Electrodes reactions, industrial preparation conditions & structural isomerism.',
+                            units: [
+                                { title: 'Periodic Table & Ionic/Covalent Bonding', marks: '12 Marks', points: ['Periodic classification', 'Ionic and covalent examples', 'Properties linked to bonding'], tip: 'Compare melting point / conductivity by bond type.' },
+                                { title: 'Electrolysis & Inorganic Chemistry in Lab', marks: '14 Marks', points: ['Electrode reactions', 'Lab preparation conditions', 'Observation-based questions'], tip: 'Write anode/cathode products separately.' },
+                                { title: 'Metallurgy & Organic Chemistry', marks: '14 Marks', points: ['Metal extraction outline', 'Functional groups', 'Structural isomerism'], tip: 'Draw isomers with clear carbon skeletons.' }
+                            ]
+                        },
+                        Mathematics: {
+                            focus: 'Madhyamik geometric rider proofs, mensuration solids & median/mode tables.',
+                            units: [
+                                { title: 'Arithmetic: Simple/Compound Interest & Partnership', marks: '14 Marks', points: ['SI and CI formulae', 'Partnership sharing', 'Time-value word problems'], tip: 'Underline principal, rate and time before solving.' },
+                                { title: 'Algebra & Quadratic Surds', marks: '22 Marks', points: ['Quadratic equations', 'Surds simplification', 'Linear systems'], tip: 'Rationalise carefully; show each step.' },
+                                { title: 'Geometry, Theorems & Constructions', marks: '24 Marks', points: ['Rider proofs', 'Circle and triangle theorems', 'Standard constructions'], tip: 'Begin proofs with Given / To Prove / Construction.' },
+                                { title: 'Trigonometry, Mensuration & Statistics', marks: '30 Marks', points: ['Trig applications', 'Solid mensuration', 'Median and mode tables'], tip: 'Tabulate mid-values before finding mean/median.' }
+                            ]
+                        },
+                        Biology: {
+                            focus: 'Reflex arc neat diagrams, chromosome movement stages & Nitrogen cycle.',
+                            units: [
+                                { title: 'Control & Coordination in Living Organisms', marks: '18 Marks', points: ['Nervous coordination', 'Hormonal coordination', 'Reflex arc diagrams'], tip: 'Label receptor, effector and synapse clearly.' },
+                                { title: 'Continuity of Life: Cell Division & Reproduction', marks: '18 Marks', points: ['Mitosis and meiosis', 'Reproductive structures', 'Fertilisation overview'], tip: 'Sequence chromosome stages without skipping.' },
+                                { title: 'Heredity & Common Genetic Diseases', marks: '16 Marks', points: ['Inheritance patterns', 'Common genetic disorders', 'Variation sources'], tip: 'Use correct disease names and inheritance type.' },
+                                { title: 'Evolution, Adaptation & Environment', marks: '28 Marks', points: ['Adaptation examples', 'Evolution ideas', 'Nitrogen cycle and ecology'], tip: 'Connect adaptation to habitat in one clear sentence.' }
+                            ]
+                        }
                     },
                     CLASS12: {
-                        Physics: { units: ['Electrostatics & Current Electricity (16 Marks)', 'Magnetic Effects, EMI & Alternating Current (17 Marks)', 'Ray & Wave Optics (18 Marks)', 'Dual Nature, Atoms, Nuclei & Semiconductors (19 Marks)'], focus: 'Phasor diagrams, Huygens wave theory derivations & Kirchhoff loop numericals.' },
-                        Chemistry: { units: ['Physical Chemistry — Solutions, Electrochemistry & Kinetics (23 Marks)', 'Inorganic — d & f Block + Coordination Compounds (14 Marks)', 'Organic — Haloalkanes, Alcohols, Carbonyls, Amines & Biomolecules (33 Marks)'], focus: 'Nernst equation problems, named organic mechanisms & conversion roadmaps.' },
-                        Mathematics: { units: ['Relations, Functions & Algebra of Matrices (18 Marks)', 'Calculus — Continuity, Derivatives, Integrals & Differential Eq. (35 Marks)', 'Vectors & 3D Geometry (14 Marks)', 'Linear Programming & Probability (13 Marks)'], focus: 'Definite integration properties, Bayes theorem & shortest distance in 3D.' },
-                        Biology: { units: ['Reproduction in Flowering Plants & Humans (16 Marks)', 'Genetics & Molecular Basis of Inheritance (20 Marks)', 'Biology & Human Welfare (12 Marks)', 'Biotechnology & Ecology (22 Marks)'], focus: 'Lac operon schematic, recombinant DNA steps & population growth curves.' }
+                        Physics: {
+                            focus: 'Phasor diagrams, Huygens wave theory derivations & Kirchhoff loop numericals.',
+                            units: [
+                                { title: 'Electrostatics & Current Electricity', marks: '16 Marks', points: ['Coulomb’s law and field/potential', 'Capacitors and combinations', 'Kirchhoff’s laws'], tip: 'Assign current directions before writing loop equations.' },
+                                { title: 'Magnetic Effects, EMI & Alternating Current', marks: '17 Marks', points: ['Moving charges in magnetic fields', 'Faraday’s law and induction', 'AC circuits and phasors'], tip: 'Draw phasors for LCR before computing impedance.' },
+                                { title: 'Ray & Wave Optics', marks: '18 Marks', points: ['Ray optics instruments', 'Interference and diffraction', 'Huygens principle applications'], tip: 'State assumptions in every derivation line.' },
+                                { title: 'Dual Nature, Atoms, Nuclei & Semiconductors', marks: '19 Marks', points: ['Photoelectric effect', 'Bohr model and nuclei', 'Semiconductor devices'], tip: 'Keep formulae and graph axes labelled in photoelectric answers.' }
+                            ]
+                        },
+                        Chemistry: {
+                            focus: 'Nernst equation problems, named organic mechanisms & conversion roadmaps.',
+                            units: [
+                                { title: 'Physical Chemistry: Solutions, Electrochemistry & Kinetics', marks: '23 Marks', points: ['Colligative properties', 'Nernst equation and cells', 'Rate laws and order'], tip: 'Track electron flow and cell notation carefully.' },
+                                { title: 'Inorganic: d & f Block + Coordination Compounds', marks: '14 Marks', points: ['Transition element trends', 'Lanthanoids overview', 'Coordination nomenclature and isomerism'], tip: 'Practise naming complexes with oxidation numbers.' },
+                                { title: 'Organic: Haloalkanes, Alcohols, Carbonyls, Amines & Biomolecules', marks: '33 Marks', points: ['Named reactions and mechanisms', 'Functional group conversions', 'Biomolecule structures'], tip: 'Map conversions as a roadmap before writing reagents.' }
+                            ]
+                        },
+                        Mathematics: {
+                            focus: 'Definite integration properties, Bayes theorem & shortest distance in 3D.',
+                            units: [
+                                { title: 'Relations, Functions & Algebra of Matrices', marks: '18 Marks', points: ['Types of relations and functions', 'Inverse trigonometric ideas', 'Matrices and determinants'], tip: 'Check domain/range before inverting a function.' },
+                                { title: 'Calculus: Continuity, Derivatives, Integrals & Differential Eq.', marks: '35 Marks', points: ['Continuity and differentiability', 'Applications of derivatives', 'Definite integrals and DEs'], tip: 'Use standard integral properties to shorten work.' },
+                                { title: 'Vectors & 3D Geometry', marks: '14 Marks', points: ['Vector algebra', 'Lines and planes in space', 'Shortest distance problems'], tip: 'Write direction ratios consistently throughout.' },
+                                { title: 'Linear Programming & Probability', marks: '13 Marks', points: ['LPP graphical method', 'Conditional probability', 'Bayes theorem'], tip: 'Shade the feasible region before reading vertices.' }
+                            ]
+                        },
+                        Biology: {
+                            focus: 'Lac operon schematic, recombinant DNA steps & population growth curves.',
+                            units: [
+                                { title: 'Reproduction in Flowering Plants & Humans', marks: '16 Marks', points: ['Sexual reproduction in plants', 'Human reproductive system', 'Reproductive health'], tip: 'Sequence gamete formation to fertilisation clearly.' },
+                                { title: 'Genetics & Molecular Basis of Inheritance', marks: '20 Marks', points: ['Mendelian extensions', 'DNA replication and code', 'Lac operon'], tip: 'Draw lac operon with inducer state labelled.' },
+                                { title: 'Biology & Human Welfare', marks: '12 Marks', points: ['Human health and disease', 'Microbes in human welfare', 'Strategies for food production'], tip: 'Name one microbe with each applied example.' },
+                                { title: 'Biotechnology & Ecology', marks: '22 Marks', points: ['rDNA technology steps', 'Biotech applications', 'Population and ecosystem dynamics'], tip: 'List enzyme tools in the correct process order.' }
+                            ]
+                        }
                     }
                 }
             };
@@ -501,24 +645,31 @@ const CatalystApp = (function () {
                     return '<span class="bg-white/15 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">' + p + '</span>';
                 }).join('');
 
+                const bullets = (slide.highlightBullets && slide.highlightBullets.length)
+                    ? slide.highlightBullets
+                    : ['Board-pattern question papers', 'Answer paper evaluation and guidance', 'Post-test doubt clearing'];
+                const bulletsHtml = bullets.map(function (b) {
+                    return '<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4ADE80]"></i><span>' + b + '</span></div>';
+                }).join('');
+
                 return (
-                    '<div class="carousel-slide-inner w-full h-full bg-gradient-to-r ' + slide.themeGradient + ' text-white px-12 sm:px-16 md:px-20">' +
-                        '<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center h-full py-8 sm:py-9">' +
-                            '<div class="lg:col-span-8 space-y-3 sm:space-y-3.5 min-w-0">' +
+                    '<div class="carousel-slide-inner w-full h-full bg-gradient-to-r ' + slide.themeGradient + ' text-white px-10 sm:px-16 md:px-20">' +
+                        '<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center h-full pt-5 pb-12 sm:pt-8 sm:pb-12">' +
+                            '<div class="lg:col-span-8 space-y-2.5 sm:space-y-3.5 min-w-0">' +
                                 '<div class="flex flex-wrap items-center gap-2">' +
                                     '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-extrabold border ' + slide.badgeStyle + '">' +
                                         '<i class="fa-solid fa-bullhorn"></i><span>' + slide.badge + '</span>' +
                                     '</span>' +
                                 '</div>' +
-                                '<h2 class="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-logoYellow leading-tight"' + ( /[\u0980-\u09FF]/.test(slide.headline) ? ' lang="bn"' : '' ) + '>' + slide.headline + '</h2>' +
+                                '<h2 class="text-lg sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-logoYellow leading-tight"' + ( /[\u0980-\u09FF]/.test(slide.headline) ? ' lang="bn"' : '' ) + '>' + slide.headline + '</h2>' +
                                 '<p class="text-sm sm:text-base font-bold text-white line-clamp-2">' + slide.subheadline + '</p>' +
-                                '<p class="text-xs sm:text-sm text-gray-200 max-w-2xl leading-relaxed line-clamp-2">' + slide.description + '</p>' +
+                                '<p class="hidden sm:block text-xs sm:text-sm text-gray-200 max-w-2xl leading-relaxed line-clamp-2">' + slide.description + '</p>' +
                                 '<div class="flex flex-wrap items-center gap-2">' + pillsHtml + '</div>' +
-                                '<div class="pt-1 flex flex-wrap items-center gap-3">' +
-                                    '<button type="button" onclick="CatalystApp.triggerBannerCta(\'' + slide.ctaActionType + '\', \'' + slide.ctaBoardDefault + '\')" class="bg-[#15803D] hover:bg-[#166534] text-white font-extrabold px-5 py-3 rounded-2xl shadow-lg transition text-xs sm:text-sm cursor-pointer flex items-center gap-2 border border-[#86EFAC]/40">' +
+                                '<div class="pt-1 flex flex-wrap items-center gap-2.5 sm:gap-3">' +
+                                    '<button type="button" onclick="CatalystApp.triggerBannerCta(\'' + slide.ctaActionType + '\', \'' + slide.ctaBoardDefault + '\')" class="bg-[#15803D] hover:bg-[#166534] text-white font-extrabold px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-lg transition text-xs sm:text-sm cursor-pointer flex items-center gap-2 border border-[#86EFAC]/40">' +
                                         '<span>' + slide.ctaLabel + '</span><i class="fa-solid fa-arrow-right text-logoYellow"></i>' +
                                     '</button>' +
-                                    '<a href="' + (slide.secondaryTarget || '#select-your-goal') + '" class="bg-white/10 hover:bg-white/20 text-white font-bold px-5 py-3 rounded-2xl border border-white/25 transition text-xs sm:text-sm">' +
+                                    '<a href="' + (slide.secondaryTarget || '#select-your-goal') + '" class="bg-white/10 hover:bg-white/20 text-white font-bold px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl border border-white/25 transition text-xs sm:text-sm">' +
                                         (slide.secondaryLabel || 'Select Your Goal') +
                                     '</a>' +
                                 '</div>' +
@@ -534,9 +685,7 @@ const CatalystApp = (function () {
                                         '<p class="text-xs text-gray-200 line-clamp-2">' + slide.highlightBoxSub + '</p>' +
                                     '</div>' +
                                     '<div class="border-t border-white/15 pt-3 space-y-2 text-xs text-gray-100">' +
-                                        '<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4ADE80]"></i><span>Class X Board-Pattern Question Papers</span></div>' +
-                                        '<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4ADE80]"></i><span>Instant Script Evaluation &amp; Doubt Clearing</span></div>' +
-                                        '<div class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-logoYellow"></i><span>65, Jodhpur Park, Kolkata 700068</span></div>' +
+                                        bulletsHtml +
                                     '</div>' +
                                 '</div>' +
                             '</div>' +
@@ -724,13 +873,11 @@ const CatalystApp = (function () {
                 const pageContainer = document.getElementById('board-programme-page-view');
                 const titleEl = document.getElementById('board-page-title');
                 const subEl = document.getElementById('board-page-subtitle');
-                const breadEl = document.getElementById('board-page-breadcrumb');
                 const cardsContainer = document.getElementById('board-page-cards-container');
                 if (!pageContainer || !cardsContainer) return;
 
-                titleEl.textContent = boardData.pageTitle;
-                subEl.textContent = boardData.subtitle;
-                breadEl.textContent = boardData.breadcrumb;
+                if (titleEl) titleEl.textContent = boardData.pageTitle;
+                if (subEl) subEl.textContent = boardData.subtitle;
 
                 ['ICSE', 'CBSE', 'WBBSE', 'CLASS12', 'FOUNDATION'].forEach(function (k) {
                     const tabBtn = document.getElementById('board-tab-' + k);
@@ -755,32 +902,30 @@ const CatalystApp = (function () {
                     cardsContainer.className = 'grid grid-cols-1 max-w-2xl mx-auto gap-6';
                     cardsContainer.innerHTML =
                         '<article class="rounded-3xl p-6 sm:p-8 bg-ivory border-2 border-[#D1D5DB] shadow-soothing space-y-5 relative">' +
-                            '<div class="flex flex-wrap items-center justify-between gap-2">' +
+                            '<div class="flex flex-wrap items-center gap-2">' +
                                 '<span class="inline-flex items-center gap-1.5 bg-[#FEF3C7] text-[#B45309] text-xs font-extrabold px-3.5 py-1.5 rounded-full border border-[#FDE68A]">' +
-                                    '<i class="fa-solid fa-clock"></i><span>' + fProg.subBadgeText + '</span>' +
+                                    '<i class="fa-solid fa-clock"></i><span>Coming Soon</span>' +
                                 '</span>' +
-                                '<span class="bg-midnight text-logoYellow text-xs font-extrabold px-3.5 py-1 rounded-full">STATUS: ' + fProg.statusDisplay + '</span>' +
                             '</div>' +
                             '<div class="space-y-2">' +
                                 '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight">' + fProg.name + '</h4>' +
                                 '<p class="text-xs sm:text-sm text-slateText"><strong class="text-midnight">Target Audience:</strong> ' + fProg.targetAudience + '</p>' +
                                 '<p class="text-xs sm:text-sm text-slateText"><strong class="text-midnight">Purpose:</strong> ' + fProg.purpose + '</p>' +
                             '</div>' +
-                            '<div class="p-4 rounded-2xl bg-white border border-warmBorder text-xs text-mutedText space-y-1">' +
+                            '<div class="p-4 rounded-2xl bg-white border border-warmBorder text-xs text-mutedText">' +
                                 '<div class="font-bold text-midnight">' + fProg.footnote + '</div>' +
-                                '<div>Registration and payment buttons remain inactive until the programme is launched.</div>' +
                             '</div>' +
                             '<div class="flex flex-wrap items-center gap-3 pt-2">' +
                                 '<button type="button" disabled aria-disabled="true" class="bg-[#E5E7EB] text-[#6B7280] font-extrabold px-5 py-3 rounded-xl text-xs sm:text-sm cursor-not-allowed flex items-center gap-2">' +
                                     '<i class="fa-solid fa-lock"></i><span>' + fProg.ctaLabel + '</span>' +
                                 '</button>' +
-                                '<button type="button" disabled aria-disabled="true" class="bg-[#F3F4F6] text-[#9CA3AF] border border-[#D1D5DB] font-bold px-5 py-3 rounded-xl text-xs sm:text-sm cursor-not-allowed">' +
-                                    fProg.secondaryCtaLabel +
-                                '</button>' +
                             '</div>' +
                         '</article>';
                 } else {
-                    cardsContainer.className = 'grid grid-cols-1 lg:grid-cols-2 gap-6';
+                    const progCount = (boardData.programmes || []).length;
+                    cardsContainer.className = progCount === 1
+                        ? 'grid grid-cols-1 max-w-2xl mx-auto gap-6'
+                        : 'grid grid-cols-1 lg:grid-cols-2 gap-6';
                     cardsContainer.innerHTML = boardData.programmes.map(function (prog) {
                         if (prog.type === 'FREE') {
                             return (
@@ -793,7 +938,7 @@ const CatalystApp = (function () {
                                             '<span class="bg-[#DCFCE7] text-[#15803D] text-xs font-extrabold px-3 py-1 rounded-full border border-[#86EFAC]">' + prog.highlightNote + '</span>' +
                                         '</div>' +
                                         '<div>' +
-                                            '<div class="text-[11px] font-extrabold uppercase tracking-wider text-[#15803D]">Programme A — Free Programme</div>' +
+                                            '<div class="text-[11px] font-extrabold uppercase tracking-wider text-[#15803D]">Free Programme</div>' +
                                             '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight mt-1">' + prog.name + '</h4>' +
                                         '</div>' +
                                         '<div class="space-y-2.5 text-xs sm:text-sm text-slateText border-t border-[#BBF7D0] pt-4">' +
@@ -830,7 +975,7 @@ const CatalystApp = (function () {
                                         '<span class="bg-[#DBEAFE] text-[#1D3B8B] text-xs font-extrabold px-3 py-1 rounded-full border border-[#93C5FD]">' + prog.subBadgeText + '</span>' +
                                     '</div>' +
                                     '<div>' +
-                                        '<div class="text-[11px] font-extrabold uppercase tracking-wider text-soothingBlue">Paid Programme — Contact for Fees</div>' +
+                                        '<div class="text-[11px] font-extrabold uppercase tracking-wider text-soothingBlue">Paid Programme: Contact for Fees</div>' +
                                         '<h4 class="text-xl sm:text-2xl font-extrabold text-midnight mt-1">' + prog.name + '</h4>' +
                                     '</div>' +
                                     '<div class="space-y-2.5 text-xs sm:text-sm text-slateText border-t border-[#BFDBFE] pt-4">' +
@@ -930,14 +1075,12 @@ const CatalystApp = (function () {
                 const mEl = document.getElementById('cd-mins');
                 const sEl = document.getElementById('cd-secs');
                 const tEl = document.getElementById('cd-board-title');
-                const msEl = document.getElementById('cd-milestone');
 
                 if (dEl) dEl.textContent = String(days).padStart(2, '0');
                 if (hEl) hEl.textContent = String(hours).padStart(2, '0');
                 if (mEl) mEl.textContent = String(mins).padStart(2, '0');
                 if (sEl) sEl.textContent = String(secs).padStart(2, '0');
                 if (tEl) tEl.textContent = cfg.title + ' • ' + cfg.targetLabel;
-                if (msEl) msEl.textContent = cfg.milestone;
             }
 
             // 07. 30-SECOND BOARD READINESS QUIZ (NON-REPEATING 5-ATTEMPT ROTATION)
@@ -1049,7 +1192,7 @@ const CatalystApp = (function () {
 
                 document.getElementById('quiz-q-counter').textContent = 'Question ' + (quizCurrentIndex + 1) + ' of ' + activeQuizSet.length;
                 document.getElementById('quiz-q-subject-badge').textContent = currentQ.subject;
-                document.getElementById('quiz-q-std-badge').textContent = (stdKey === '11_12') ? '11th/12th standards' : '9th/10th standards';
+                document.getElementById('quiz-q-std-badge').textContent = (stdKey === '11_12') ? '11th/12th' : '9th/10th';
 
                 const pct = Math.round(((quizCurrentIndex + 1) / activeQuizSet.length) * 100);
                 document.getElementById('quiz-progress-text').textContent = pct + '%';
@@ -1135,11 +1278,11 @@ const CatalystApp = (function () {
 
                 const motivationEl = document.getElementById('quiz-tailored-motivation');
                 if (safeScore <= 4) {
-                    motivationEl.textContent = 'Every topper starts by discovering their blind spots. Take our free full-length mock test with instant script evaluation and doubt clearing to build rock-solid fundamentals and jump 25+ marks before your boards.';
+                    motivationEl.textContent = 'Every topper starts by finding their blind spots. Take our free full-length mock test with instant answer paper evaluation and guidance to strengthen fundamentals before your boards.';
                 } else if (safeScore <= 7) {
-                    motivationEl.textContent = 'You have a strong conceptual base! With targeted mock test practice and step-by-step script evaluation in our 1:6 batches, you can turn these 70s into a 95%+ board distinction.';
+                    motivationEl.textContent = 'You have a strong conceptual base. With targeted mock practice and clear answer paper feedback in our 1:6 batches, you can turn these 70s into a high board score.';
                 } else {
-                    motivationEl.textContent = 'Outstanding performance! You are already in the top tier—now sharpen your exam temperament with our full-length mock test series to eliminate subtle examiner traps and secure a 98%+ board rank.';
+                    motivationEl.textContent = 'Strong performance. Sharpen your exam temperament with our full-length mock test series to avoid subtle examiner traps and aim for a top board rank.';
                 }
             }
 
@@ -1189,35 +1332,111 @@ const CatalystApp = (function () {
                 renderSyllabusView();
             }
 
+            function normalizeSyllabusUnit(unit) {
+                if (typeof unit === 'string') {
+                    const markMatch = unit.match(/\(([^)]*Marks?)\)\s*$/i);
+                    return {
+                        title: markMatch ? unit.replace(/\s*\([^)]*Marks?\)\s*$/i, '').trim() : unit,
+                        marks: markMatch ? markMatch[1] : '',
+                        points: ['Revise core definitions and board-typical examples for this chapter.'],
+                        tip: 'Practise one timed question set from this chapter.'
+                    };
+                }
+                return {
+                    title: unit.title || 'Chapter',
+                    marks: unit.marks || '',
+                    points: unit.points || [],
+                    tip: unit.tip || ''
+                };
+            }
+
+            function toggleSyllabusUnit(index) {
+                const panel = document.getElementById('syl-unit-panel-' + index);
+                const btn = document.getElementById('syl-unit-btn-' + index);
+                const icon = document.getElementById('syl-unit-icon-' + index);
+                if (!panel || !btn) return;
+
+                const willOpen = panel.classList.contains('hidden');
+                // Accordion: close other open units in this view
+                const allPanels = document.querySelectorAll('[id^="syl-unit-panel-"]');
+                Array.prototype.forEach.call(allPanels, function (el) {
+                    const idx = el.id.replace('syl-unit-panel-', '');
+                    const otherBtn = document.getElementById('syl-unit-btn-' + idx);
+                    const otherIcon = document.getElementById('syl-unit-icon-' + idx);
+                    el.classList.add('hidden');
+                    if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+                    if (otherIcon) otherIcon.classList.remove('rotate-180');
+                });
+
+                if (willOpen) {
+                    panel.classList.remove('hidden');
+                    btn.setAttribute('aria-expanded', 'true');
+                    if (icon) icon.classList.add('rotate-180');
+                }
+            }
+
             function renderSyllabusView() {
                 const container = document.getElementById('syllabus-content-container');
                 if (!container) return;
                 const boardObj = ContentStore.syllabusDatabase[activeSyllabusBoard] || ContentStore.syllabusDatabase.ICSE10;
                 const subjObj = boardObj[activeSyllabusSubject] || boardObj.Physics;
+                const units = (subjObj.units || []).map(normalizeSyllabusUnit);
 
-                const unitsHtml = subjObj.units.map(function (u) {
+                const unitsHtml = units.map(function (u, idx) {
+                    const pointsHtml = (u.points || []).map(function (p) {
+                        return '<li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-soothingBlue mt-0.5 text-[10px]" aria-hidden="true"></i><span>' + p + '</span></li>';
+                    }).join('');
+                    const tipHtml = u.tip
+                        ? ('<p class="mt-2.5 text-[11px] font-bold text-midnight bg-[#FFF3B0]/70 border border-[#FDE68A] rounded-xl px-3 py-2">' + u.tip + '</p>')
+                        : '';
+
                     return (
-                        '<li class="flex items-start gap-2.5 p-3 rounded-2xl bg-white border border-warmBorder text-xs sm:text-sm font-semibold text-midnight">' +
-                            '<i class="fa-solid fa-circle-check text-soothingBlue mt-0.5"></i><span>' + u + '</span>' +
-                        '</li>'
+                        '<div class="rounded-2xl bg-white border border-warmBorder overflow-hidden">' +
+                            '<button type="button" id="syl-unit-btn-' + idx + '" onclick="CatalystApp.toggleSyllabusUnit(' + idx + ')" aria-expanded="false" aria-controls="syl-unit-panel-' + idx + '" class="w-full flex items-start justify-between gap-3 p-3.5 text-left cursor-pointer hover:bg-[#F8FAFF] transition">' +
+                                '<span class="flex items-start gap-2.5 min-w-0">' +
+                                    '<i class="fa-solid fa-circle-check text-soothingBlue mt-0.5 shrink-0" aria-hidden="true"></i>' +
+                                    '<span class="min-w-0">' +
+                                        '<span class="block text-xs sm:text-sm font-extrabold text-midnight leading-snug">' + u.title + '</span>' +
+                                        (u.marks ? '<span class="inline-block mt-1 text-[10px] font-extrabold uppercase tracking-wide text-soothingBlue bg-[#E0EAFF] px-2 py-0.5 rounded-full">' + u.marks + '</span>' : '') +
+                                    '</span>' +
+                                '</span>' +
+                                '<i id="syl-unit-icon-' + idx + '" class="fa-solid fa-chevron-down text-[10px] text-mutedText mt-1.5 shrink-0 transition-transform" aria-hidden="true"></i>' +
+                            '</button>' +
+                            '<div id="syl-unit-panel-' + idx + '" class="hidden px-3.5 pb-3.5 pt-0 border-t border-warmBorder/70" role="region" aria-labelledby="syl-unit-btn-' + idx + '">' +
+                                '<p class="text-[10px] font-extrabold uppercase tracking-wider text-mutedText pt-3 mb-2">What to revise</p>' +
+                                '<ul class="space-y-1.5 text-xs text-slateText leading-relaxed">' + pointsHtml + '</ul>' +
+                                tipHtml +
+                            '</div>' +
+                        '</div>'
                     );
                 }).join('');
 
+                const focusTips = {
+                    Physics: 'Focus on diagrams, units, and step-wise numerical presentation in board answers.',
+                    Chemistry: 'Practise balanced equations, observation tables, and named reactions under timed conditions.',
+                    Mathematics: 'Show every marking step clearly; neat working often recovers easy method marks.',
+                    Biology: 'Prioritise labelled diagrams, definitions, and exact board terminology.'
+                };
+                const tipLine = focusTips[activeSyllabusSubject] || 'Practise under timed conditions and review every paper with faculty feedback.';
+
                 container.innerHTML =
-                    '<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">' +
+                    '<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">' +
                         '<div class="lg:col-span-8 space-y-4">' +
                             '<div class="flex flex-wrap items-center gap-2">' +
                                 '<span class="bg-midnight text-logoYellow text-xs font-extrabold px-3 py-1 rounded-full">' + activeSyllabusBoard + '</span>' +
                                 '<span class="bg-[#E0EAFF] text-soothingBlue text-xs font-extrabold px-3 py-1 rounded-full">' + activeSyllabusSubject + '</span>' +
                             '</div>' +
-                            '<h3 class="text-lg sm:text-xl font-extrabold text-midnight">' + activeSyllabusSubject + ' High-Weightage Units &amp; Marking Distribution</h3>' +
-                            '<ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">' + unitsHtml + '</ul>' +
+                            '<div>' +
+                                '<h3 class="text-lg sm:text-xl font-extrabold text-midnight">' + activeSyllabusSubject + ' High-Weightage Units &amp; Marking Distribution</h3>' +
+                                '<p class="text-[11px] text-mutedText mt-1">Tap a chapter to see revision points and a mock-test tip.</p>' +
+                            '</div>' +
+                            '<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-start">' + unitsHtml + '</div>' +
                         '</div>' +
                         '<div class="lg:col-span-4 bg-ivory rounded-2xl p-5 border border-warmBorder space-y-4">' +
                             '<div class="text-xs font-extrabold uppercase tracking-wider text-soothingRed">Examiner Evaluation Focus</div>' +
                             '<p class="text-xs sm:text-sm text-slateText leading-relaxed">' + subjObj.focus + '</p>' +
                             '<div class="text-[11px] font-bold text-midnight bg-[#FFF3B0] p-3 rounded-xl border border-[#F2D06B]">' +
-                                'Includes Instant Script Evaluation — After tests, evaluation &amp; doubt clearing.' +
+                                tipLine +
                             '</div>' +
                             '<button type="button" onclick="CatalystApp.openMockPopup(\'ICSE\', \'' + activeSyllabusSubject + ' Mock Assessment\')" class="w-full bg-soothingBlue hover:bg-midnight text-white font-extrabold py-3 px-4 rounded-xl text-xs transition cursor-pointer">' +
                                 'Register for Free ' + activeSyllabusSubject + ' Test' +
@@ -1236,17 +1455,13 @@ const CatalystApp = (function () {
                     return (
                         '<article class="colorful-card-glass rounded-3xl p-6 border border-warmBorder shadow-soothing flex flex-col justify-between space-y-4">' +
                             '<div class="space-y-2.5">' +
-                                '<div class="flex items-center justify-between">' +
+                                '<div class="flex items-center justify-between gap-2">' +
                                     '<span class="bg-[#FFF3B0] text-midnight text-xs font-extrabold px-3 py-1 rounded-full border border-[#F2D06B]">' + f.badge + '</span>' +
-                                    '<span class="text-xs font-bold text-soothingBlue">' + f.experience + '</span>' +
+                                    '<span class="text-xs font-bold text-soothingBlue text-right">' + f.experience + '</span>' +
                                 '</div>' +
                                 '<h3 class="text-xl font-extrabold text-midnight">' + f.name + '</h3>' +
                                 '<div class="text-xs font-bold text-soothingRed">' + f.role + '</div>' +
                                 '<p class="text-xs text-slateText leading-relaxed">' + f.specialization + '</p>' +
-                            '</div>' +
-                            '<div class="pt-3 border-t border-warmBorder text-[11px] font-bold text-mutedText flex items-center justify-between">' +
-                                '<span>65, Jodhpur Park Centre</span>' +
-                                '<span class="text-soothingBlue">Instant Script Evaluation</span>' +
                             '</div>' +
                         '</article>'
                     );
@@ -1397,8 +1612,11 @@ const CatalystApp = (function () {
                 }
                 selectPopupBoard(preselectedBoard || selectedPopupBoard || 'ICSE');
 
+                // Mount/reload after the modal is visible so the iframe is not blank
+                ensureGoogleForm('mock-google-form-wrap', 'mock-google-form', 'mock-google-form-link', SiteConfig.googleForms && SiteConfig.googleForms.mockTest, true);
+
                 const firstField = document.getElementById('popup-student-name');
-                if (firstField) {
+                if (firstField && !firstField.closest('.hidden')) {
                     setTimeout(function () { firstField.focus(); }, 50);
                 }
             }
@@ -1546,12 +1764,12 @@ const CatalystApp = (function () {
                     { name: 'Exact SVG Brand Logo Integrity', pass: Boolean(document.getElementById('catalyst-brand-logo')) },
                     { name: 'Homepage Banner Carousel & Bengali Headline Present', pass: activeBanners.length === 3 && activeBanners[0].headline === 'পুজো শেষ, এবার পরীক্ষা শুরু!' },
                     { name: 'SELECT YOUR GOAL Section & 4 Click Here Buttons', pass: bodyText.includes('SELECT YOUR GOAL') && ['ICSE', 'CBSE', 'WBBSE', 'FOUNDATION'].every(function (k) { return Boolean(document.getElementById('goal-btn-' + k)); }) },
-                    { name: 'ICSE, CBSE, WBBSE Free (Green) & Paid (Blue) + Foundation Launching Soon', pass: Boolean(bp.ICSE && bp.CBSE && bp.WBBSE && bp.FOUNDATION) && bp.ICSE.programmes.length === 2 && bp.FOUNDATION.programmes[0].statusDisplay === 'LAUNCHING SOON' },
+                    { name: 'ICSE, CBSE, WBBSE Free (Green) & Paid (Blue) + Foundation Coming Soon', pass: Boolean(bp.ICSE && bp.CBSE && bp.WBBSE && bp.FOUNDATION) && bp.ICSE.programmes.length === 2 && bp.FOUNDATION.programmes[0].statusDisplay === 'Coming Soon' },
                     { name: 'Auto-Popup Deactivated on Load', pass: SiteConfig.features.autoOpenMockPopup === false && Boolean(document.getElementById('mockPopupModal')) },
                     { name: '50-Question Pools for Both 9/10 & 11/12', pass: ContentStore.quizPool.length === 50 && ContentStore.quizPool11_12.length === 50 },
                     { name: 'Strict <100% Cap on All Examiner Traps', pass: traps9_10.length === 5 && traps11_12.length === 5 && traps9_10.every(function (t) { return t.isUnbeatableTrap; }) && traps11_12.every(function (t) { return t.isUnbeatableTrap; }) },
                     { name: 'Zero Meta Instructions in Quiz UI', pass: !bodyText.includes('No One Scores 100%') && !bodyText.includes('Easy → Hard') },
-                    { name: 'Classes 9 to 12, 1:6 Batch Focus & Instant Script Evaluation Copy', pass: bodyText.includes('Classes 9 to 12 • All Boards') && bodyText.includes('1:6 Batch Focus') && bodyText.includes('Instant Script Evaluation') },
+                    { name: 'Classes 9 to 12, 1:6 Batch Focus & Answer Paper Check Copy', pass: bodyText.includes('Classes 9 to 12 • All Boards') && bodyText.includes('1:6 Batch Focus') && bodyText.includes('Instant Answer Paper Check') },
                     { name: 'Reliable Google Maps Embed Configured (22.5075016,88.3647385)', pass: Boolean(mapIframe) && (mapIframe.getAttribute('data-src') || '').includes('22.5075016,88.3647385') },
                     { name: 'EdufinGrow LLP Disclosure Intact', pass: bodyText.includes(SiteConfig.legalDisclosure) },
                     { name: 'Alapan Roy Faculty Profile Active', pass: ContentStore.faculty.some(function (f) { return f.name === 'Alapan Roy' && f.active; }) },
@@ -1575,33 +1793,44 @@ const CatalystApp = (function () {
                 return raw;
             }
 
-            function mountGoogleForm(wrapId, iframeId, linkId, url) {
+            function ensureGoogleForm(wrapId, iframeId, linkId, url, forceReload) {
                 const wrap = document.getElementById(wrapId);
                 const iframe = document.getElementById(iframeId);
                 const link = document.getElementById(linkId);
                 const embedUrl = toGoogleFormEmbedUrl(url);
                 if (!wrap || !iframe || !embedUrl) return false;
-                iframe.setAttribute('src', embedUrl);
+
+                const currentSrc = iframe.getAttribute('src') || '';
+                if (!currentSrc || currentSrc === 'about:blank') {
+                    iframe.setAttribute('src', embedUrl);
+                } else if (forceReload) {
+                    // Re-assign after the modal is painted so a previously-hidden iframe loads
+                    requestAnimationFrame(function () {
+                        iframe.setAttribute('src', embedUrl);
+                    });
+                }
                 if (link) {
-                    link.href = embedUrl.replace('embedded=true', 'usp=sf_link').replace('?&', '?');
-                    if (link.href.indexOf('http') !== 0) link.href = embedUrl;
+                    const openUrl = embedUrl.replace('embedded=true', 'usp=sf_link').replace('?&', '?');
+                    link.href = openUrl.indexOf('http') === 0 ? openUrl : embedUrl;
                 }
                 wrap.classList.remove('hidden');
                 return true;
             }
 
             function mountGoogleForms() {
-                mountGoogleForm(
+                ensureGoogleForm(
                     'enquiry-google-form-wrap',
                     'enquiry-google-form',
                     'enquiry-google-form-link',
-                    SiteConfig.googleForms && SiteConfig.googleForms.enquiry
+                    SiteConfig.googleForms && SiteConfig.googleForms.enquiry,
+                    false
                 );
-                mountGoogleForm(
+                ensureGoogleForm(
                     'mock-google-form-wrap',
                     'mock-google-form',
                     'mock-google-form-link',
-                    SiteConfig.googleForms && SiteConfig.googleForms.mockTest
+                    SiteConfig.googleForms && SiteConfig.googleForms.mockTest,
+                    false
                 );
             }
 
@@ -1669,11 +1898,28 @@ const CatalystApp = (function () {
                         renderFacultyGrid();
                     });
                 }, '200px 0px');
+                // Prefetch mock form early so the free-test popup is never empty.
+                // Enquiry form still waits until Contact is near the viewport.
+                mountModule('GoogleFormsMock', function () {
+                    ensureGoogleForm(
+                        'mock-google-form-wrap',
+                        'mock-google-form',
+                        'mock-google-form-link',
+                        SiteConfig.googleForms && SiteConfig.googleForms.mockTest,
+                        false
+                    );
+                });
                 whenVisible('#contact', function () {
-                    mountModule('GoogleForms', function () {
-                        mountGoogleForms();
+                    mountModule('GoogleFormsEnquiry', function () {
+                        ensureGoogleForm(
+                            'enquiry-google-form-wrap',
+                            'enquiry-google-form',
+                            'enquiry-google-form-link',
+                            SiteConfig.googleForms && SiteConfig.googleForms.enquiry,
+                            false
+                        );
                     });
-                }, '160px 0px');
+                }, '200px 0px');
 
                 restoreBoardFromHash();
                 if ((location.hash || '').replace(/^#/, '') === 'terms') {
@@ -1710,6 +1956,7 @@ const CatalystApp = (function () {
                 claimQuizFreeMockTest: claimQuizFreeMockTest,
                 selectSyllabusBoard: selectSyllabusBoard,
                 selectSyllabusSubject: selectSyllabusSubject,
+                toggleSyllabusUnit: toggleSyllabusUnit,
                 toggleFaq: toggleFaq,
                 toggleMapIframe: toggleMapIframe,
                 handleContactSubmit: handleContactSubmit,
