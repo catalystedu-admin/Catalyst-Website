@@ -113,14 +113,43 @@
     left: 0;
   }
 
+  /* Soft frame so Google Forms sit cleanly inside the card / modal */
+  .google-form-shell {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(42, 54, 79, 0.12);
+    background:
+      linear-gradient(180deg, #ffffff 0%, #f7f5f0 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      0 10px 28px -16px rgba(22, 35, 59, 0.28);
+  }
+
+  .google-form-shell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  }
+
   .google-form-embed {
+    display: block;
     width: 100%;
-    min-height: 520px;
-    height: 70vh;
-    max-height: 720px;
+    min-height: 640px;
+    height: min(78vh, 880px);
+    max-height: none;
+    margin: 0;
     border: 0;
-    border-radius: 1rem;
-    background: #fff;
+    border-radius: 0;
+    background: #f0ebe3;
+  }
+
+  #mockPopupModal .google-form-embed {
+    min-height: 560px;
+    height: min(68vh, 720px);
   }
 
   .modal-panel {
@@ -250,10 +279,20 @@
 }
 
 @media (max-width: 768px) {
+  .google-form-shell {
+    border-radius: 1rem;
+  }
+
   .google-form-embed {
-    min-height: 640px;
-    height: 75vh;
-    height: 75dvh;
+    min-height: 720px;
+    height: 78vh;
+    height: 78dvh;
+  }
+
+  #mockPopupModal .google-form-embed {
+    min-height: 620px;
+    height: 70vh;
+    height: 70dvh;
   }
 }
 

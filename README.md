@@ -71,6 +71,17 @@ Enquiry and Free Mock Test use embedded Google Forms configured in `js/app.js` �
 - Responses land in the linked Google Forms / Sheets (check the Google account that owns the forms).
 - To change a form: update the embed `src` URL in `SiteConfig.googleForms`, commit, and push.
 
+### Allow responses without Google sign-in
+
+The website cannot bypass Google’s sign-in gate. Fix it in each form’s editor:
+
+1. Open the form → **Settings** (gear).
+2. **Responses** → turn **off** “Limit to 1 response” (this forces sign-in).
+3. **Collect email addresses** → choose **Do not collect** or **Responder input** — not **Verified**.
+4. Remove any **File upload** questions (uploads also force sign-in).
+5. Confirm sharing is **Anyone with the link can respond** (not restricted to a Google Workspace domain).
+6. Preview the embed URL (`…/viewform?embedded=true`) in a private window — you should see fields, not “Sign in to continue”.
+
 PHP fallback (only if you later use paid hosting): `api/contact.php` / `api/register.php` → `info@catalysteducation.net`, with `storage/*.log` backup. Set `useGoogleFormsOnly: false` and remove `hidden` from the built-in forms to re-enable.
 
 ## Fees policy (on the site)

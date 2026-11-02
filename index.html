@@ -976,7 +976,9 @@
                             <!-- Google Form embed (URL in js/app.js → SiteConfig.googleForms.enquiry) -->
                             <div id="enquiry-google-form-wrap" class="hidden space-y-3">
                                 <p class="text-xs text-mutedText">If the form does not load, <a id="enquiry-google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="text-soothingBlue font-bold underline">open it in a new tab</a>.</p>
-                                <iframe id="enquiry-google-form" class="google-form-embed w-full border border-warmBorder shadow-sm" title="Catalyst Education Enquiry Google Form" loading="lazy"></iframe>
+                                <div class="google-form-shell">
+                                    <iframe id="enquiry-google-form" class="google-form-embed" title="Catalyst Education Enquiry Google Form" loading="lazy"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1087,7 +1089,9 @@
                 <!-- Google Form embed (URL in js/app.js → SiteConfig.googleForms.mockTest) -->
                 <div id="mock-google-form-wrap" class="hidden space-y-3">
                     <p class="text-xs text-mutedText">If the form does not load, <a id="mock-google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="text-soothingBlue font-bold underline">open it in a new tab</a>.</p>
-                    <iframe id="mock-google-form" class="google-form-embed w-full border border-warmBorder shadow-sm" title="Catalyst Education Free Mock Test Google Form" loading="lazy"></iframe>
+                    <div class="google-form-shell">
+                        <iframe id="mock-google-form" class="google-form-embed" title="Catalyst Education Free Mock Test Google Form" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
 
