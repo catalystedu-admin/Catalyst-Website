@@ -12,7 +12,9 @@ You do **not** need npm to view or host this site.
 - **Host on GoDaddy:** upload the files below into `public_html`. Visitors never use npm.
 - **npm is only for developers** if someone changes Tailwind CSS classes and must rebuild `css/styles.css`. That CSS file is already built.
 
-Contact / free-test **email sending** needs PHP on GoDaddy. The page itself still works as normal HTML.
+**Current live path (free):** GitHub Pages + Google Forms (no PHP required).
+
+Optional: PHP contact/register still exists under `api/` for paid GoDaddy hosting later — those built-in forms are hidden while `useGoogleFormsOnly` is true.
 
 ## What to upload to GoDaddy (`public_html`)
 
@@ -61,31 +63,19 @@ Do **not** upload `node_modules/`, `src/`, or `package.json` unless you want the
 
 The Catalyst brand logo SVG (`#catalyst-brand-logo`) must stay intact — do not edit it.
 
-## Forms (after GoDaddy upload)
+## Forms (Google Forms — free / GitHub Pages)
 
-- `api/contact.php` and `api/register.php` send to `info@catalysteducation.net`.
-- If the host blocks PHP `mail()`, leads are still saved under `storage/*.log` for follow-up.
-- Change `$TO_EMAIL` in those PHP files only if your inbox changes.
+Enquiry and Free Mock Test use embedded Google Forms configured in `js/app.js` → `SiteConfig.googleForms`.
+
+- `features.useGoogleFormsOnly: true` hides the old PHP forms in the page.
+- Responses land in the linked Google Forms / Sheets (check the Google account that owns the forms).
+- To change a form: update the embed `src` URL in `SiteConfig.googleForms`, commit, and push.
+
+PHP fallback (only if you later use paid hosting): `api/contact.php` / `api/register.php` → `info@catalysteducation.net`, with `storage/*.log` backup. Set `useGoogleFormsOnly: false` and remove `hidden` from the built-in forms to re-enable.
 
 ## Fees policy (on the site)
 
 Paid Final Series / Class 12 fees are **not listed on the website**. Visitors are asked to **Contact us / WhatsApp** for fees and schedule. Update programme copy in `js/app.js` only when you decide to publish numbers.
-
-## Add Google Forms under Enquiry + Free Mock popup
-
-1. Open your Google Form → **Send** → **<>** (Embed).
-2. Copy the `src` URL (it looks like `https://docs.google.com/forms/d/e/.../viewform?embedded=true`).
-3. Open `js/app.js` and paste into `SiteConfig.googleForms`:
-
-```js
-googleForms: {
-  enquiry: 'PASTE_ENQUIRY_FORM_EMBED_URL_HERE',
-  mockTest: 'PASTE_MOCK_TEST_FORM_EMBED_URL_HERE'
-}
-```
-
-4. Save and refresh. The Google Form appears under each built-in form.  
-   If either URL is left empty, that Google Form block stays hidden.
 
 ## Browser & mobile support
 

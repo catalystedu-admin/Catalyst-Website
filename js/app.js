@@ -13,14 +13,16 @@ const CatalystApp = (function () {
                     phone: '+91 91631 94805',
                     mapShortUrl: 'https://maps.app.goo.gl/uCdQUWaw2RVJAuqQA'
                 },
-                // Paste Google Form embed URLs here (Send → <> Embed → copy src="...")
-                // Example: 'https://docs.google.com/forms/d/e/XXXX/viewform?embedded=true'
+                // Google Form embed URLs (Send → <> Embed → copy src="...")
+                // Site uses these for free/static hosting (GitHub Pages). PHP forms stay in the HTML but are hidden.
                 googleForms: {
-                    enquiry: '',
-                    mockTest: ''
+                    enquiry: 'https://docs.google.com/forms/d/e/1FAIpQLScOttQdU9aIUoRo-_97d0GLbk_XLVTTSfbvRLPvfTbDrSgEHA/viewform?embedded=true',
+                    mockTest: 'https://docs.google.com/forms/d/e/1FAIpQLSd9ikSwXF8GQB8AGvDFhpi3MNfLUvlIkLnWElAWN3hPZ0gQ7w/viewform?embedded=true'
                 },
                 features: {
-                    autoOpenMockPopup: false
+                    autoOpenMockPopup: false,
+                    // true = show Google Forms only (no PHP contact/register). Required for GitHub Pages.
+                    useGoogleFormsOnly: true
                 }
             };
 

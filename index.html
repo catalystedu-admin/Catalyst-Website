@@ -905,7 +905,15 @@
                             <h3 class="text-lg sm:text-xl font-extrabold text-midnight mb-4">
                                 Enquire About Programmes, Fees &amp; Schedules
                             </h3>
-                            <form id="contact-form" onsubmit="CatalystApp.handleContactSubmit(event)" class="space-y-4 relative" novalidate>
+                            <p class="text-xs text-slateText mb-4">
+                                Submit the form below and we will call or WhatsApp you about fees and schedules.
+                                Prefer chat?
+                                <a href="https://wa.me/919163194805?text=Hi%20Catalyst%20Education%2C%20I%20want%20to%20know%20fees%20and%20schedule." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[#15803D] font-extrabold hover:underline">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                    WhatsApp us
+                                </a>
+                            </p>
+                            <form id="contact-form" onsubmit="CatalystApp.handleContactSubmit(event)" class="hidden space-y-4 relative" novalidate aria-hidden="true">
                                 <div class="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
                                     <label for="contact-company">Company</label>
                                     <input type="text" id="contact-company" name="company" tabindex="-1" autocomplete="off">
@@ -965,9 +973,8 @@
                                 <div id="contact-status-msg" class="hidden p-3.5 rounded-xl bg-[#DCFCE7] text-[#15803D] text-xs font-bold border border-[#86EFAC]" role="status" aria-live="polite"></div>
                             </form>
 
-                            <!-- Google Form embed (paste embed URL in js/app.js → SiteConfig.googleForms.enquiry) -->
-                            <div id="enquiry-google-form-wrap" class="hidden mt-6 pt-6 border-t border-warmBorder space-y-3">
-                                <h4 class="text-sm font-extrabold text-midnight">Or submit via Google Form</h4>
+                            <!-- Google Form embed (URL in js/app.js → SiteConfig.googleForms.enquiry) -->
+                            <div id="enquiry-google-form-wrap" class="hidden space-y-3">
                                 <p class="text-xs text-mutedText">If the form does not load, <a id="enquiry-google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="text-soothingBlue font-bold underline">open it in a new tab</a>.</p>
                                 <iframe id="enquiry-google-form" class="google-form-embed w-full border border-warmBorder shadow-sm" title="Catalyst Education Enquiry Google Form" loading="lazy"></iframe>
                             </div>
@@ -1050,7 +1057,7 @@
                     Select your board and standard to reserve your seat at 65, Jodhpur Park, Kolkata 700068.
                 </p>
 
-                <form onsubmit="CatalystApp.submitPopupMockForm(event)" class="space-y-3.5">
+                <form id="popup-mock-php-form" onsubmit="CatalystApp.submitPopupMockForm(event)" class="hidden space-y-3.5" aria-hidden="true">
                     <div>
                         <label id="popup-board-label" class="block text-xs font-bold text-midnight mb-1">Select Board *</label>
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5" role="group" aria-labelledby="popup-board-label">
@@ -1077,9 +1084,8 @@
                     </button>
                 </form>
 
-                <!-- Google Form embed (paste embed URL in js/app.js → SiteConfig.googleForms.mockTest) -->
-                <div id="mock-google-form-wrap" class="hidden pt-4 border-t border-warmBorder space-y-3">
-                    <h4 class="text-sm font-extrabold text-midnight">Or register via Google Form</h4>
+                <!-- Google Form embed (URL in js/app.js → SiteConfig.googleForms.mockTest) -->
+                <div id="mock-google-form-wrap" class="hidden space-y-3">
                     <p class="text-xs text-mutedText">If the form does not load, <a id="mock-google-form-link" href="#" target="_blank" rel="noopener noreferrer" class="text-soothingBlue font-bold underline">open it in a new tab</a>.</p>
                     <iframe id="mock-google-form" class="google-form-embed w-full border border-warmBorder shadow-sm" title="Catalyst Education Free Mock Test Google Form" loading="lazy"></iframe>
                 </div>
